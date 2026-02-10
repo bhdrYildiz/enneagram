@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaYoutube, FaTripadvisor } from 'react-icons/fa'
+import { FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaYoutube, FaTripadvisor, } from 'react-icons/fa'
+import { FaLocationPin } from 'react-icons/fa6';
 
 const TopInfoBar = () => {
     const [isVisible, setIsVisible] = useState(true);
@@ -29,11 +30,15 @@ const TopInfoBar = () => {
                 <div className="flex items-center space-x-6 text-on-primary text-xs">
                     <div className="flex items-center space-x-2">
                         <FaPhone className="w-3 h-3" />
-                        <span>+90 530 389 71 63</span>
+                        <span>+90 543 540 64 43</span>
                     </div>
                     <div className="flex items-center space-x-2">
                         <FaEnvelope className="w-3 h-3" />
-                        <span>info@enneagram.com</span>
+                        <span>bilgi@enneagramegitim.com</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                        <FaLocationPin className="w-3 h-3" />
+                        <span>Molla Gürani, Zaviye Sk. No:4 Kat:3, 34096 Fatih/İstanbul</span>
                     </div>
                 </div>
 

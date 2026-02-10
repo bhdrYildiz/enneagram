@@ -3,7 +3,7 @@
 import LogoMarquee from "@/motion/LogoMarquee";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import {
     FiArrowUpRight,
     FiUsers,
@@ -11,12 +11,14 @@ import {
     FiTarget,
     FiHeart,
 } from "react-icons/fi";
+import { AnimatePresence, motion } from "framer-motion";
 
 type ServiceItem = {
     title: string;
     desc: string;
     href: string;
     icon: React.ReactNode;
+    image: string;
 };
 export default function Services() {
     const items: ServiceItem[] = [
@@ -25,26 +27,33 @@ export default function Services() {
             desc: "Eğitime ‘mizaç merkezli’ perspektif sunan, yeni, özgün ve nitelikli bir eğitim yaklaşımıdır. Mizaçların farklılıklarını esas alır ve mizaç merkezli rehberlik süreçlerinden oluşur.",
             href: "/hizmetlerimiz",
             icon: <FiUsers className="w-7 h-7" />,
+            image: "/hero-1.jpg",
         },
         {
             title: "EnneagramİK",
             desc: "EnneagramİK raporlamaları ile, yönetim, işe alım, kariyer yönetimi, ekip oluşturma, eğitim planlama, personel ve müşteri ilişkileri yönetimi süreçlerinde şirket ve eğitim kurumlarına destek olur.",
             href: "/egitimlerimiz",
             icon: <FiBookOpen className="w-7 h-7" />,
+            image: "/hero-2.jpg",
         },
         {
             title: "Enrehet",
             desc: "Enrehet, Rehber Öğretmenler için tasarlanmış bireysel ya da grup halinde uygulanabilen, mizaçlar özelinde hazırlanmış Rehberlik Etkinlikleri'dir.",
             href: "/mizac-tipleri",
             icon: <FiTarget className="w-7 h-7" />,
+            image: "/hero-3.jpg",
         },
         {
             title: "Enneagram Eğitimleri",
             desc: "Enneagram eğitimleri doğuştan sahip olduğumuz mizaç yapımızı bilmek, tanımak ve farkedebilmekte detaylı ve geniş bir bilgi edinmemizi sağlar.",
             href: "/iletisim",
             icon: <FiHeart className="w-7 h-7" />,
+            image: "/hero-1.jpg",
         },
     ];
+
+    const defaultImage = items[0]?.image ?? "/hero-1.jpg";
+    const [activeImage, setActiveImage] = useState<string>(defaultImage);
 
     return (
         <section className="relative py-20 bg-primary font-cormorant text-on-primary">
@@ -67,12 +76,26 @@ export default function Services() {
                     <div className="lg:row-start-2 lg:col-start-1">
                         <div className="relative w-full max-w-[660px] mt-8">
                             <div className="relative aspect-[4/4] w-full overflow-hidden border border-on-primary/15 bg-primary/20">
-                                <Image
-                                    src="/hero-1.jpg"
-                                    alt="Services"
-                                    fill
-                                    className="object-cover"
-                                />
+                                <AnimatePresence mode="wait">
+                                    <motion.div
+                                        key={activeImage}
+                                        className="absolute inset-0"
+                                        initial={{ opacity: 0, scale: 1.03, filter: "blur(6px)" }}
+                                        animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                                        exit={{ opacity: 0, scale: 0.99, filter: "blur(6px)" }}
+                                        transition={{ duration: 0.1, ease: "easeOut" }}
+                                    >
+                                        <Image
+                                            src={activeImage}
+                                            alt="Services"
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 1024px) 100vw, 660px"
+                                            priority={false}
+                                        />
+                                    </motion.div>
+                                </AnimatePresence>
+                                <div className="pointer-events-none absolute inset-0 bg-black/5" />
                             </div>
                         </div>
                     </div>
@@ -83,6 +106,7 @@ export default function Services() {
                                     key={it.title}
                                     href={it.href}
                                     className="group block border-b border-on-primary/15 py-7"
+                                    onMouseEnter={() => setActiveImage(it.image)}
                                 >
                                     <div className="flex items-start gap-5">
                                         <div className="mt-1 text-secondary group-hover:text-hover transition-colors">

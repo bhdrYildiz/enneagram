@@ -7,6 +7,8 @@ import {
     FaInstagram,
     FaTripadvisor,
     FaWhatsapp,
+    FaYoutube,
+    FaTwitter,
 } from "react-icons/fa";
 
 export default function Footer() {
@@ -21,9 +23,9 @@ export default function Footer() {
                         </h3>
 
                         <p className="leading-relaxed font-[200]">
-                            Kavaklıönü Mah., Atatürk Blv. No:61
+                            Molla Gürani, Zaviye Sk. No:4 Kat:3, 34096
                             <br />
-                            Ürgüp / Nevşehir
+                            Fatih/İstanbul
                         </p>
 
                         <div className="space-y-2">
@@ -33,7 +35,7 @@ export default function Footer() {
                                     href="mailto:info@yildizhotelcappadocia.com"
                                     className="hover:underline break-all font-[200]"
                                 >
-                                    info@yildizhotelcappadocia.com
+                                    bilgi@enneagrameğitim.com
                                 </a>
                             </p>
 
@@ -43,7 +45,7 @@ export default function Footer() {
                                     href="tel:+903843414610"
                                     className="hover:underline font-[200]"
                                 >
-                                    0 (384) 341 46 10
+                                    0543 540 64 43
                                 </a>
                             </p>
 
@@ -54,22 +56,25 @@ export default function Footer() {
                                     target="_blank"
                                     className="hover:underline font-[200]"
                                 >
-                                    +90 532 564 52 77
+                                    0543 540 64 43
                                 </a>
                             </p>
                         </div>
 
                         <div className="flex items-center justify-center md:justify-start gap-5 pt-2 text-xl">
-                            <a className="hover:text-hover transition-colors" href="https://www.instagram.com/urgupyildizhotel/" target="_blank">
+                            <a className="hover:text-hover transition-colors" href="https://www.instagram.com/enneagramegitim/" target="_blank">
                                 <FaInstagram />
                             </a>
-                            <a className="hover:text-hover transition-colors" href="https://www.facebook.com/urgupyildizhotel/" target="_blank">
+                            <a className="hover:text-hover transition-colors" href="https://www.facebook.com/enneagramegitim/" target="_blank">
                                 <FaFacebookF />
                             </a>
-                            <a className="hover:text-hover transition-colors" href="https://www.tripadvisor.com.tr/Hotel_Review-g297989-d3161070-Reviews-Yildiz_Hotel-Urgup_Cappadocia.html" target="_blank">
-                                <FaTripadvisor />
+                            <a className="hover:text-hover transition-colors" href="https://www.x.com/enneagramegitim/" target="_blank">
+                                <FaTwitter />
                             </a>
-                            <a className="hover:text-hover transition-colors" href="https://wa.me/905325645277" target="_blank">
+                            <a className="hover:text-hover transition-colors" href="https://www.youtube.com/@tv.enneagram" target="_blank">
+                                <FaYoutube />
+                            </a>
+                            <a className="hover:text-hover transition-colors" href="https://wa.me/905435406443" target="_blank">
                                 <FaWhatsapp />
                             </a>
                         </div>

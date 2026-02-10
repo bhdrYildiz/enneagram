@@ -3,7 +3,7 @@
 import { navLinks } from '@/constant/constant'
 import Link from 'next/link'
 import Image from "next/image";
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
 type Props = {
@@ -48,8 +48,6 @@ const Nav = ({ openNav, fixed = false, isHomePage = false }: Props) => {
                         className="object-contain transition-all duration-300"
                     />
                 </div>
-
-                {/* Navlinks */}
                 <div className='hidden lg:flex items-center space-x-10'>
                     {navLinks.map((link) => (
                         <Link href={link.url} key={link.id}>
@@ -65,8 +63,6 @@ const Nav = ({ openNav, fixed = false, isHomePage = false }: Props) => {
                         </Link>
                     ))}
                 </div>
-
-                {/* Buttons */}
                 <div className='flex items-center space-x-4'>
                     <Link
                         href="/tatilini-tasarla"
