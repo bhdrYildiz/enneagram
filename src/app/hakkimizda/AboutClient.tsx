@@ -2,16 +2,29 @@
 
 import Image from 'next/image';
 import {
-    BedDouble,
     ShieldCheck,
-    KeyRound
+    KeyRound,
+    School
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { fadeInLeft, fadeInRight, fadeUp, stagger } from '@/app/lib/animations';
+import { fadeInRight, fadeUp, stagger } from '@/app/lib/animations';
 import PageHero from '@/components/ui/PageHero';
 
 export default function AboutClient() {
+
+    const logos = [
+        { src: "/thy-logo.png", alt: "Logo 1" },
+        { src: "/dyson-logo.png", alt: "Logo 2" },
+        { src: "/maya-logo.png", alt: "Logo 3" },
+        { src: "/bilfen-logo.png", alt: "Logo 4" },
+        { src: "/vizyon-logo.png", alt: "Logo 5" },
+        { src: "/bilim-koleji-logo.png", alt: "Logo 6" },
+        { src: "/ago-logo.jpg", alt: "Logo 7" },
+        { src: "/armagan-logo.png", alt: "Logo 8" },
+        { src: "/yom-logo.png", alt: "Logo 9" },
+    ];
+
     return (
         <>
             <main className="flex flex-col font-cormorant bg-[#ffffff]">
@@ -124,26 +137,31 @@ export default function AboutClient() {
                                 ENNEAGRAM EĞİTİM & DANIŞMANLIK
                             </motion.p>
                             <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl tracking-wide">
-                                Yerel İmkanlar
+                                Referanslarımız
                             </motion.h2>
-                            <motion.p variants={fadeUp} className="text-base leading-relaxed text-primary font-[300] tracking-wide">
-                                Otelimiz Ürgüp ilçe merkezinde yer almaktadır. Ürgüp otogarına 300 metre mesafede bulunmaktadır. Çarşı merkezine 500 metre mesafede bulunmaktadır.
-                                Kapadokya&apos;da yer alan gezi ve örenyerlerine araba ile 10 - 15 dakikada ulaşabilirsiniz.
+
+                            <motion.p
+                                variants={fadeUp}
+                                className="text-base leading-relaxed text-primary font-[300] tracking-wide"
+                            >
+                                Farklı sektörlerden seçkin kurum ve markalarla uzun soluklu iş birlikleri
+                                yürütüyoruz. Her projede güven, kalite ve sürdürülebilir değer üretmeyi
+                                odağımıza alıyoruz.
                             </motion.p>
 
                             <motion.div variants={fadeUp} className="space-y-5 pt-4">
                                 {[
                                     {
-                                        title: 'Yerel Restoranlar',
-                                        text: 'Çarşı merkezinde yer alan restoranlarımızda yerel lezzetleri deneyimleyebilirsiniz.',
+                                        title: "Kurumsal İş Birlikleri",
+                                        text: "Ulusal ve uluslararası ölçekte faaliyet gösteren markalarla stratejik projeler geliştiriyoruz.",
                                     },
                                     {
-                                        title: 'Konum',
-                                        text: 'Ürgüp otogarından yürüyerek 5 dakikada otelimize ulaşabilirsiniz.',
+                                        title: "Eğitim ve Danışmanlık",
+                                        text: "Eğitim kurumları ve organizasyonlara özel, ihtiyaç odaklı çözümler sunuyoruz.",
                                     },
                                     {
-                                        title: 'Gezi ve Örenyerleri',
-                                        text: 'Kapadokya\'da yer alan gezi ve örenyerlerine araba ile 10 - 15 dakikada ulaşabilirsiniz.',
+                                        title: "Güven ve Süreklilik",
+                                        text: "Uzun vadeli iş ilişkileri kurarak, birlikte büyümeyi ve değer üretmeyi hedefliyoruz.",
                                     },
                                 ].map((item) => (
                                     <div key={item.title} className="flex gap-4">
@@ -151,34 +169,49 @@ export default function AboutClient() {
                                             ★
                                         </div>
                                         <div>
-                                            <p className="text-lg tracking-wide text-primary font-[300]">{item.title}</p>
-                                            <p className="text-sm text-primary font-[300] tracking-wide">{item.text}</p>
+                                            <p className="text-lg tracking-wide text-primary font-[300]">
+                                                {item.title}
+                                            </p>
+                                            <p className="text-sm text-primary font-[300] tracking-wide">
+                                                {item.text}
+                                            </p>
                                         </div>
                                     </div>
                                 ))}
                             </motion.div>
                         </motion.div>
 
-                        <div className="space-y-8">
-                            {[
-                                '/images/otelBahce/resim9.jpeg',
-                                '/images/otelBahce/resim14.jpeg',
-                                '/images/otelBahce/resim15.jpeg',
-                            ].map((src, index) => (
+                        <div className="grid grid-cols-2 gap-6">
+                            {logos.map((logo, index) => (
                                 <motion.div
-                                    key={src}
+                                    key={logo.src}
                                     variants={fadeInRight}
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.3 }}
-                                    className="relative h-[320px] md:h-[480px] max-w-[560px] overflow-hidden shadow-lg"
+                                    className="
+                relative
+                h-[140px]
+                w-full
+                flex
+                items-center
+                justify-center
+                overflow-hidden
+                rounded-lg
+                border border-neutral-200
+                bg-white
+                transition
+                duration-300
+                hover:scale-[1.04]
+                hover:shadow-lg
+            "
                                 >
                                     <Image
-                                        src={src}
-                                        alt={`Yerel imkanlar ${index + 1}`}
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, 360px"
-                                        className="object-cover"
+                                        src={logo.src}
+                                        alt={`Logo ${index + 1}`}
+                                        width={140}
+                                        height={80}
+                                        className="object-contain"
                                     />
                                 </motion.div>
                             ))}
@@ -190,34 +223,34 @@ export default function AboutClient() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {[
                                 {
-                                    title: 'GÜVENLİ KONAKLAMA',
+                                    title: "KÖKLÜ UZMANLIK",
                                     text:
-                                        'Misafirlerimizin güvenliği için temizlik ve hijyen standartlarını titizlikle uygularız.',
+                                        "Enneagram alanında Türkiye’de öncü yaklaşım ve yıllara yayılan saha deneyimiyle, güvenilir bir eğitim ve danışmanlık sunuyoruz.",
                                     icon: <ShieldCheck className="h-6 w-6" />,
                                 },
                                 {
-                                    title: '24 SAAT İPTAL HAKKI',
+                                    title: "UYGULAMALI GELİŞİM",
                                     text:
-                                        'Planlarınız değişirse, uygun koşullarda 24 saat içinde iptal kolaylığı sunuyoruz.',
+                                        "Kişi ve ekip dinamiklerini anlayan, pratiğe dönük içeriklerle farkındalığı davranışa dönüştüren programlar tasarlıyoruz.",
                                     icon: <KeyRound className="h-6 w-6" />,
                                 },
                                 {
-                                    title: 'TAM ODA DONANIMI',
+                                    title: "KURUMA ÖZEL ÇÖZÜMLER",
                                     text:
-                                        'Odalarımız konforunuz için gerekli tüm detaylarla donatılmıştır.',
-                                    icon: <BedDouble className="h-6 w-6" />,
+                                        "İhtiyaç analiziyle başlayan; iletişim, liderlik ve kurum kültürüne özel tasarlanan eğitim ve danışmanlık süreçleri yürütüyoruz.",
+                                    icon: <School className="h-6 w-6" />,
                                 },
                             ].map((card) => (
                                 <div
                                     key={card.title}
-                                    className="group border border-black/10 bg-white text-primary transition-all duration-600 ease-out hover:-translate-y-2 hover:shadow-2xl hover:bg-primary hover:text-white"
+                                    className="group border border-black/30 bg-white text-primary transition-all duration-600 ease-out hover:-translate-y-2 hover:shadow-2xl hover:bg-primary hover:text-white"
                                 >
                                     <div className="px-8 py-12 text-center space-y-6">
                                         <div className="mx-auto h-14 w-14 bg-secondary text-white flex items-center justify-center">
                                             {card.icon}
                                         </div>
                                         <h3 className="text-lg tracking-[0.2em]">{card.title}</h3>
-                                        <p className="text-sm leading-relaxed text-primary/70 group-hover:text-white/80 transition-colors duration-800">
+                                        <p className="text-sm leading-relaxed text-primary group-hover:text-white/80 transition-colors duration-800">
                                             {card.text}
                                         </p>
                                     </div>
@@ -226,10 +259,11 @@ export default function AboutClient() {
                         </div>
                     </div>
                 </section>
+
                 <section
                     className="relative bg-white overflow-hidden group"
                     style={{
-                        backgroundImage: "url('/images/otelBahce/resim11.jpeg')",
+                        backgroundImage: "url('/enneagram_banner.jpg')",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}
@@ -239,31 +273,40 @@ export default function AboutClient() {
 
                     <div className="relative z-10 max-w-[1400px] mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
                         <div className="text-white space-y-4">
-                            <p className="text-xs tracking-[0.35em] uppercase text-secondary transition-all duration-500 group-hover:text-white">
-                                REZERVASYON
+                            <p className="text-base tracking-[0.35em] uppercase text-secondary transition-all duration-500 group-hover:text-white">
+                                EĞİTİM & DANIŞMANLIK
                             </p>
                             <h2 className="text-4xl md:text-5xl tracking-wide leading-snug transition-transform duration-700 ease-out group-hover:-translate-y-0.5">
-                                ÖZEL TEKLİFLER İÇİN
+                                KURUMUNUZ İÇİN
                                 <br />
-                                DOĞRUDAN REZERVASYON
+                                ÜCRETSİZ KEŞİF GÖRÜŞMESİ
                             </h2>
-                            <p className="text-sm text-white/80 max-w-md transition-colors duration-500 group-hover:text-white/90">
-                                Doğrudan rezervasyonlarda daha iyi fiyat, öncelikli destek ve özel avantajlar sunuyoruz.
+                            <p className="text-sm text-white max-w-md transition-colors duration-500 group-hover:text-white/90">
+                                İhtiyacınızı birlikte netleştirelim; size en uygun eğitim/danışmanlık yol haritasını paylaşalım.
                             </p>
                         </div>
 
                         <div className="bg-white text-primary p-10 shadow-xl transition-all duration-700 ease-out hover:-translate-y-2 hover:shadow-2xl">
                             <div className="space-y-6">
                                 {[
-                                    { title: "En İyi Fiyat Garantisi", text: "Doğrudan rezervasyonlarda özel fiyat avantajı." },
-                                    { title: "Öncelikli Oda Yükseltme", text: "Uygunluk durumuna göre oda yükseltme ayrıcalığı." },
-                                    { title: "Yeme-İçme İndirimi", text: "Otel hizmetlerinde indirimli fiyatlar." },
+                                    {
+                                        title: "İhtiyaç Analizi",
+                                        text: "Hedef, ekip yapısı ve mevcut durumu hızlıca değerlendiririz.",
+                                    },
+                                    {
+                                        title: "Kişiye/Kuruma Özel Tasarım",
+                                        text: "Eğitim içeriğini ve akışı kurum kültürünüze göre kurgularız.",
+                                    },
+                                    {
+                                        title: "Ölçülebilir Kazanımlar",
+                                        text: "Süreç sonunda gelişimi takip edebileceğiniz net çıktılar sunarız.",
+                                    },
                                 ].map((item) => (
                                     <div
                                         key={item.title}
-                                        className="border-b border-black/10 pb-4 transition-all duration-500 hover:border-black/25"
+                                        className="border-b border-black/30 pb-4 transition-all duration-500 hover:border-black/45"
                                     >
-                                        <p className="text-lg tracking-wide text-primary font-[300] transition-transform duration-500 hover:translate-x-1">
+                                        <p className="text-lg tracking-wide font-semibold text-primary font-[200] transition-transform duration-500 hover:translate-x-1">
                                             {item.title}
                                         </p>
                                         <p className="text-sm text-primary font-[300] tracking-wide">
@@ -274,16 +317,17 @@ export default function AboutClient() {
                             </div>
 
                             <Link
-                                href="/reservation"
+                                href="/iletisim"
                                 prefetch={false}
                                 className="mt-6 inline-flex items-center justify-center border border-black/30 px-8 py-3 text-sm tracking-widest text-primary
-                                transition-all duration-500 hover:border-black hover:bg-[#1f2d34] hover:text-white hover:-translate-y-0.5"
+                transition-all duration-500 hover:border-secondary hover:bg-secondary hover:text-white hover:-translate-y-0.5"
                             >
-                                REZERVASYON YAP
+                                GÖRÜŞME PLANLA
                             </Link>
                         </div>
                     </div>
                 </section>
+
 
                 <section className="bg-white">
                     <div className="max-w-[1400px] mx-auto px-6 py-20">
@@ -296,7 +340,7 @@ export default function AboutClient() {
                             </p>
                             <div className="flex items-center justify-center gap-6 text-sm tracking-widest uppercase">
                                 <Link
-                                    href="https://www.instagram.com/urgupyildizhotel/"
+                                    href="https://www.instagram.com/enneagramegitim/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="underline underline-offset-4"
@@ -304,7 +348,7 @@ export default function AboutClient() {
                                     Instagram
                                 </Link>
                                 <Link
-                                    href="https://www.facebook.com/urgupyildizhotel/"
+                                    href="https://www.facebook.com/enneagramegitim/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="underline underline-offset-4"
@@ -317,10 +361,10 @@ export default function AboutClient() {
                         <div className="mt-12 bg-white p-10 w-full">
                             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                                 {[
-                                    '/images/room-106/106-4.jpeg',
-                                    '/images/otelBahce/resim2.jpg',
-                                    '/images/room-104/104-1.jpg',
-                                    '/images/otelBahce/resim4.jpg'
+                                    '/afis1.jpg',
+                                    '/afis2.jpg',
+                                    '/afis3.jpg',
+                                    '/afissonSite.png'
                                 ].map((src, index) => (
                                     <div key={index} className="relative aspect-square hover:scale-105 transition-all duration-300 overflow-hidden bg-white">
                                         <Image
@@ -336,7 +380,7 @@ export default function AboutClient() {
 
                             <div className="mt-10 flex justify-center">
                                 <Link
-                                    href="https://www.instagram.com/urgupyildizhotel/"
+                                    href="https://www.instagram.com/enneagramegitim/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 border border-black/40 px-8 py-3 text-sm tracking-widest text-primary transition-all duration-300 hover:border-black hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-lg"
