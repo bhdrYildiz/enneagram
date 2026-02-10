@@ -1,0 +1,12 @@
+:root {
+    /* COLORS */
+    --color-primary: #1f2732;
+    --color-secondary: #0794c7;
+    --color-hover: #06b79f;
+    --color-white: #ffffff;
+    --color-alt: #970818;
+  
+    /* FONT */
+    --font-base: var(--font-inter);
+  }
+  
