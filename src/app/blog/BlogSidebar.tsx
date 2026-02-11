@@ -58,14 +58,14 @@ export default function BlogSidebar(props: {
                     </p>
 
                     <div className="flex justify-center gap-4 mt-6 text-primary">
-                        <Link href="https://www.instagram.com/urgupyildizhotel/" aria-label="Instagram">
+                        <Link href="https://www.instagram.com/enneagramegitim/" aria-label="Instagram">
                             <FaInstagram className="hover:text-secondary transition" />
                         </Link>
-                        <Link href="https://www.instagram.com/urgupyildizhotel/" aria-label="Facebook">
+                        <Link href="https://www.instagram.com/enneagramegitim/" aria-label="Facebook">
                             <FaFacebookF className="hover:text-secondary transition" />
                         </Link>
                         <Link
-                            href="https://www.tripadvisor.com.tr/Hotel_Review-g297989-d3161070-Reviews-Yildiz_Hotel-Urgup_Cappadocia.html"
+                            href="https://www.instagram.com/enneagramegitim/"
                             aria-label="Tripadvisor"
                             target="_blank"
                             rel="noopener noreferrer"
