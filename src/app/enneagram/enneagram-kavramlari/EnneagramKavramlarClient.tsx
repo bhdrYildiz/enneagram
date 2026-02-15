@@ -7,13 +7,13 @@ import { staggerContainer, fadeUp, fadeInCard } from "@/app/lib/animations";
 import EnneagramSidebar from "../EnneagramSidebar"
 import { enneagramKavramlarContent } from "../_data/enneagram";
 
-const content = enneagramKavramlarContent;
-
 function TextBlock({ text }: { text: string }) {
     return <p className="whitespace-pre-line text-[15px] leading-relaxed text-primary/75">{text}</p>;
 }
 
 export default function EnneagramKavramlarClient() {
+    const content = enneagramKavramlarContent;
+
     return (
         <main className="flex flex-col font-cormorant bg-white">
             <PageHero

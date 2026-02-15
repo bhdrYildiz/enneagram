@@ -15,9 +15,9 @@ function TextBlock({ text }: { text: string }) {
     );
 }
 
-const content = enneagramPageContent;
-
 export default function EnneagramClient() {
+    const content = enneagramPageContent;
+
     return (
         <main className="flex flex-col whitespace-pre-line text-[15px] leading-relaxed text-gray-600 font-normal bg-white">
             <PageHero

@@ -16,19 +16,16 @@ export type EducationItem = {
   poster: string; 
   category: EducationCategory;
   href?: string;
-
-    intro?: string[];       
-    topicsTitle?: string;   
-    topicsIntro?: string;   
-    topics?: string[];     
-    audienceTitle?: string;
-    audience?: string;     
-    schedule?: string;      
-    durationText?: string;  
-    instructor?: string;   
-
-    comments?: EducationComment[];
-
+  intro?: string[];       
+  topicsTitle?: string;   
+  topicsIntro?: string;   
+  topics?: string[];     
+  audienceTitle?: string;
+  audience?: string;     
+  schedule?: string;      
+  durationText?: string;  
+  instructor?: string;   
+  comments?: EducationComment[];
 };
 
 export const CATEGORY_META: Record<
