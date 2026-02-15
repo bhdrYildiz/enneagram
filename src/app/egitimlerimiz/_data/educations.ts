@@ -5,7 +5,7 @@ export type EducationComment = {
   role?: string;
   rating: 1 | 2 | 3 | 4 | 5;
   text: string;
-  date?: string; // "2026-02-01"
+  date?: string; 
 };
 
 export type EducationItem = {
@@ -17,16 +17,15 @@ export type EducationItem = {
   category: EducationCategory;
   href?: string;
 
-    // Detay sayfası
-    intro?: string[];       // paragraf paragraf
-    topicsTitle?: string;   // "Bu Atölyede Hangi Konuları Çalışacağız?"
-    topicsIntro?: string;   // o başlığın altındaki kısa paragraf
-    topics?: string[];      // maddeler
-    audienceTitle?: string; // "Kimler Katılabilir?"
-    audience?: string;      // tek paragraf
-    schedule?: string;      // "19.30 – 22.30 online..."
-    durationText?: string;  // "36 saat"
-    instructor?: string;    // "İsmail Acarkan"
+    intro?: string[];       
+    topicsTitle?: string;   
+    topicsIntro?: string;   
+    topics?: string[];     
+    audienceTitle?: string;
+    audience?: string;     
+    schedule?: string;      
+    durationText?: string;  
+    instructor?: string;   
 
     comments?: EducationComment[];
 
