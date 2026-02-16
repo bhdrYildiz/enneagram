@@ -6,14 +6,14 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeInCard } from "@/app/lib/animations";
 import { mizacTipleri } from "./_data/mizac-tipleri";
-import type { MizacItem } from "./_data/mizac-tipleri";
+import { MizacItem } from "./_data/mizac-tipleri";
 
 
 function Card({ it }: { it: MizacItem }) {
     return (
         <motion.article variants={fadeInCard} className="group">
             <Link href={`/mizac-tipleri/${it.slug}`} className="block">
-                <div className="relative w-full aspect-[4/3] overflow-hidden rounded-md bg-white shadow-[0_16px_40px_rgba(0,0,0,0.08)] border border-black/10">
+                <div className="relative w-full aspect-4/3 overflow-hidden rounded-md bg-white shadow-[0_16px_40px_rgba(0,0,0,0.08)] border border-black/10">
                     <div className="relative w-full aspect-square overflow-hidden rounded-md bg-white shadow-[0_16px_40px_rgba(0,0,0,0.08)] border border-black/10">
                         <Image
                             src={it.image}
@@ -55,7 +55,7 @@ export default function MizacTipleriClient() {
             <PageHero
                 title="MİZAÇ TİPLERİ"
                 subtitle="- 9 TEMEL MİZAÇ -"
-                backgroundImage="/enneagram-slayder1.jpg"
+                backgroundImage="/enneagram_image_2.jpg"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },
                     { label: "MİZAÇ TİPLERİ" },

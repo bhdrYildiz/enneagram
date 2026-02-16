@@ -14,7 +14,6 @@ const ResponsiveNav = () => {
     const handleNavShow = () => setShowNav(true);
     const handleCloseNav = () => setShowNav(false);
 
-
     return (
         <div>
             <TopInfoBar />

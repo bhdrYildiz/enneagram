@@ -25,30 +25,30 @@ export default function Services() {
         {
             title: "Enoksis",
             desc: "Eğitime ‘mizaç merkezli’ perspektif sunan, yeni, özgün ve nitelikli bir eğitim yaklaşımıdır. Mizaçların farklılıklarını esas alır ve mizaç merkezli rehberlik süreçlerinden oluşur.",
-            href: "/hizmetlerimiz",
+            href: "/hizmetlerimiz/enoksis",
             icon: <FiUsers className="w-7 h-7" />,
-            image: "/hero-1.jpg",
+            image: "/enoksishero.png",
         },
         {
             title: "EnneagramİK",
             desc: "EnneagramİK raporlamaları ile, yönetim, işe alım, kariyer yönetimi, ekip oluşturma, eğitim planlama, personel ve müşteri ilişkileri yönetimi süreçlerinde şirket ve eğitim kurumlarına destek olur.",
-            href: "/egitimlerimiz",
+            href: "/hizmetlerimiz/enneagramik",
             icon: <FiBookOpen className="w-7 h-7" />,
-            image: "/hero-2.jpg",
+            image: "/enneagramikhero.jpeg",
         },
         {
             title: "Enrehet",
             desc: "Enrehet, Rehber Öğretmenler için tasarlanmış bireysel ya da grup halinde uygulanabilen, mizaçlar özelinde hazırlanmış Rehberlik Etkinlikleri'dir.",
-            href: "/mizac-tipleri",
+            href: "/hizmetlerimiz/enrehet",
             icon: <FiTarget className="w-7 h-7" />,
-            image: "/hero-3.jpg",
+            image: "/enherethero.jpg",
         },
         {
             title: "Enneagram Eğitimleri",
             desc: "Enneagram eğitimleri doğuştan sahip olduğumuz mizaç yapımızı bilmek, tanımak ve farkedebilmekte detaylı ve geniş bir bilgi edinmemizi sağlar.",
-            href: "/iletisim",
+            href: "/hizmetlerimiz/egitimler",
             icon: <FiHeart className="w-7 h-7" />,
-            image: "/hero-1.jpg",
+            image: "/enneagramhero.jpg",
         },
     ];
 
@@ -76,14 +76,17 @@ export default function Services() {
                     <div className="lg:row-start-2 lg:col-start-1">
                         <div className="relative w-full max-w-[660px] mt-8">
                             <div className="relative aspect-[4/4] w-full overflow-hidden border border-on-primary/15 bg-primary/20">
-                                <AnimatePresence mode="wait">
+                                <AnimatePresence mode="wait" initial={false}>
                                     <motion.div
                                         key={activeImage}
                                         className="absolute inset-0"
                                         initial={{ opacity: 0, scale: 1.03, filter: "blur(6px)" }}
                                         animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
                                         exit={{ opacity: 0, scale: 0.99, filter: "blur(6px)" }}
-                                        transition={{ duration: 0.1, ease: "easeOut" }}
+                                        transition={{
+                                            duration: 0.25,
+                                            ease: [0.4, 0.9, 0.4, 0.9],
+                                        }}
                                     >
                                         <Image
                                             src={activeImage}

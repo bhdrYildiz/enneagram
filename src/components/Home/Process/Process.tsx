@@ -18,7 +18,7 @@ export default function Process() {
             title: 'Okul',
             desc:
                 'Değişen dünya ve yeni arayışların eşiğinde özellikle eğitim alanında ‘iyileştirici’ ve ‘dönüştürücü’ sonuçlar için mizaç merkezli yaklaşımlar ve mizaca yönelik eğitim süreçleri ve rehberlik yaklaşımları geliştirilmelidir.',
-            image: '/hero-1.jpg',
+            image: '/enoksishero.png',
             accentClass: 'text-secondary',
         },
         {
@@ -26,7 +26,7 @@ export default function Process() {
             title: 'Kendini bil',
             desc:
                 'Her insan doğuştan getirdiği ve ömür boyu taşıyacağı mizacın kişisel gelişim aşamalarını, potansiyel kabiliyet ve imkanlarını tanımalı, enerji ve kaynaklarını daha verimli ve maksimum fayda ile kullanmalı.',
-            image: '/hero-2.jpg',
+            image: '/enherethero.jpg',
             accentClass: 'text-[#f2994a]',
         },
         {
@@ -34,7 +34,7 @@ export default function Process() {
             title: 'İş Hayatı',
             desc:
                 'Kalıcı’ ve ‘sürdürülebilir’ sonuçlar ve verimli üretim için iş ortamlarında kurulacak takım ve ekipler, organizasyon yapısına uygun mizaçlara sahip kişilerden oluşturulmalı. Bu ihtiyacın karşılanmasında enneagram bilgisi ve mizaç yaklaşımı insan kaynakları için önemli kolaylıklar sağlar.',
-            image: '/hero-3.jpg',
+            image: '/hakkimizda_1.jpg',
             accentClass: 'text-hover',
         },
         {
@@ -42,7 +42,7 @@ export default function Process() {
             title: 'Aile',
             desc:
                 'Aile fertleri birbirlerinin mizaç farklılıklarını fark etmeli, bu farklılıkları aile saadeti ve huzuru için olumlu yönde kullanma becerisi geliştirmeli. Enneagram bilgisi yardımıyla karı-koca ve çocuk-ebeveyn ilişkileri daha sağlıklı kurulabilir.',
-            image: '/hero-1.jpg',
+            image: '/enneagram_banner_2.jpg',
             accentClass: 'text-alt',
         },
     ]

@@ -1,6 +1,5 @@
 "use client"
 
-import { useEffect } from 'react'
 import Hero from './Hero/Hero'
 import About from './About/About'
 import Services from './Services/Services'
@@ -9,13 +8,7 @@ import OurTeam from './OurTeam/OurTeam'
 import EventsSection from './Events/EventsSections'
 import TestimonialsSection from './Testimonial/TestimonialsSection'
 import BlogSection from './BlogSection.tsx/BlogSection'
-/*import Hero from './Hero/Hero'
-import Destination from './Destination/Destination'
-import Hotel from './Hotel/Hotel'
-import WhyChoose from './WhyChoose/WhyChoose'
-import Review from './Review/Review'
-import News from './News/News'
-import NewsLetter from './NewsLetter/NewsLetter'
+/*
 import AOS from 'aos'; */
 /*import 'aos/dist/aos.css'; */
 

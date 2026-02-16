@@ -101,7 +101,6 @@ export default function BlogSidebar(props: {
                     </form>
                 </div>
 
-                {/* Kategoriler */}
                 <div className="p-6 border-b border-black/10">
                     <div className="bg-[#1c2c34] text-white px-5 py-4 font-light tracking-wide">
                         Kategoriler
@@ -123,7 +122,6 @@ export default function BlogSidebar(props: {
                     </div>
                 </div>
 
-                {/* Recent Posts */}
                 <div className="p-6 border-b border-black/10">
                     <div className="bg-[#1c2c34] text-white px-5 py-4 font-light tracking-wide">
                         Son Yazılar

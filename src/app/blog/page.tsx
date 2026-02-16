@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getAllBlogPosts } from "@/app/data/BlogPost";
+import { getAllBlogPosts } from "@/app/blog/data/BlogPost";
 import BlogSidebar from "@/app/blog/BlogSidebar";
 import PageHero from "@/components/ui/PageHero";
 
@@ -166,7 +166,7 @@ export default async function BlogPage({
                                                             />
                                                         </div>
 
-                                                        <div className="absolute left-6 top-6 w-[84px] h-[84px] bg-secondary text-white flex flex-col items-center justify-center">
+                                                        <div className="absolute left-6 top-6 w-[84px] h-[84px] bg-primary text-white flex flex-col items-center justify-center">
                                                             <div className="text-4xl font-light leading-none">
                                                                 {badge.day}
                                                             </div>

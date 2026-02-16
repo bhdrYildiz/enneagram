@@ -16,7 +16,7 @@ export type BlogPost = {
       title: "Enneagram yeni bir ruhsal yolculuk için, geçmişi uzun yıllara dayanan oldukça kullanışlı eski bir araçtır..",
       excerpt:
       "Enneagram yeni bir ruhsal yolculuk için, geçmişi uzun yıllara dayanan oldukça kullanışlı eski bir araçtır..",  
-      coverImage: "/hero-1.jpg",
+      coverImage: "/enneagram_banner_2.jpg",
       publishedAt: "2026-01-20",
       author: "Enneagram Eğitim & Danışmanlık",
       categories: ["Enneagram"],
@@ -49,7 +49,7 @@ export type BlogPost = {
       title: "Öyle bir harita düşünün ki, size giden yolu göstersin: Enneagram",
       excerpt:
         "Öyle bir harita düşünün ki, size giden yolu göstersin: Enneagram",
-      coverImage: "/hero-2.jpg",
+      coverImage: "/hakkimizda_1.jpg",
       publishedAt: "2025-12-11",
       author: "Enneagram Eğitim & Danışmanlık",
       categories: ["Enneagram"],
@@ -79,7 +79,7 @@ export type BlogPost = {
       title: "Mizaç ve Sınav Motivasyonu",
       excerpt:
         "Çocuklarımızı girecekleri sınav öncesinde rahatlatmak, onları motive etmek başarılarını artıracaktır.Her bir çocuk için rahatlatıcı yaklaşımlar  ve motive eden cümleler kendi mizaç yapılarına göre farklı olmalıdır.",
-      coverImage: "/hero-3.jpg",
+      coverImage: "/enneagram-slayder1.jpg",
       publishedAt: "2025-10-22",
       author: "Enneagram Eğiitm & Danışmanlık",
       categories: ["Enneagram ve Mizaç"],

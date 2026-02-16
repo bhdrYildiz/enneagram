@@ -9,10 +9,8 @@ export default function MizacDetaySidebar() {
 
     return (
         <aside className="lg:sticky lg:top-28 self-start space-y-8">
-            {/* ── Tüm mizaç tipleri listesi ── */}
             <div className="border border-black/10 bg-white p-6 shadow-[0_14px_40px_rgba(0,0,0,0.06)]">
                 <h3 className="text-xl tracking-wide text-primary mb-5">Mizaç Tipleri</h3>
-
                 <ul className="space-y-2">
                     {mizacTipleri.map((m) => {
                         const active = pathname === `/mizac-tipleri/${m.slug}`;
@@ -44,7 +42,7 @@ export default function MizacDetaySidebar() {
                                             ].join(" ")}
                                         />
                                         <span className="text-[18px] leading-none opacity-95">
-                                            {m.slug}
+                                            {m.title}
                                         </span>
                                     </span>
 
@@ -65,12 +63,11 @@ export default function MizacDetaySidebar() {
                 </ul>
             </div>
 
-            {/* ── CTA ── */}
             <div className="border border-black/10 bg-white p-8 text-center shadow-[0_14px_40px_rgba(0,0,0,0.06)]">
                 <p className="text-xs font-semibold tracking-[0.45em] uppercase text-secondary mb-3">
                     Mizacını Keşfet
                 </p>
-                <p className="text-xl font-[300] text-primary">Hangi Tiptens in?</p>
+                <p className="text-xl font-light text-primary">Hangi Tipsin?</p>
                 <p className="mt-2 text-base text-primary/70 leading-relaxed">
                     Kısa test ile mizaç tipini öğren.
                 </p>
@@ -83,7 +80,6 @@ export default function MizacDetaySidebar() {
                     </Link>
                 </div>
             </div>
-
         </aside>
     );
 }

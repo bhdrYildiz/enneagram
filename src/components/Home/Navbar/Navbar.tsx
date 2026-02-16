@@ -40,14 +40,16 @@ const Nav = ({ openNav, fixed = false, isHomePage = false }: Props) => {
                 } transition-all duration-300 h-[10vh] z-[1000] fixed w-full`}
         >
             <div className='flex items-center h-full justify-between w-[100%] xl:w-[100%] mx-auto'>
-                <div className="relative h-32 w-40">
+                <Link href="/" className="relative h-32 w-40 block">
                     <Image
                         src="/Logo.png"
                         alt="Logo"
                         fill
-                        className="object-contain transition-all duration-300"
+                        priority
+                        className="object-contain transition-all duration-300 hover:scale-105"
                     />
-                </div>
+                </Link>
+
                 <div className='hidden lg:flex items-center space-x-10'>
                     {navLinks.map((link) => (
                         <Link href={link.url} key={link.id}>

@@ -14,15 +14,15 @@ import PageHero from '@/components/ui/PageHero';
 export default function AboutClient() {
 
     const logos = [
-        { src: "/thy-logo.png", alt: "Logo 1" },
-        { src: "/dyson-logo.png", alt: "Logo 2" },
-        { src: "/maya-logo.png", alt: "Logo 3" },
-        { src: "/bilfen-logo.png", alt: "Logo 4" },
-        { src: "/vizyon-logo.png", alt: "Logo 5" },
-        { src: "/bilim-koleji-logo.png", alt: "Logo 6" },
-        { src: "/ago-logo.jpg", alt: "Logo 7" },
-        { src: "/armagan-logo.png", alt: "Logo 8" },
-        { src: "/yom-logo.png", alt: "Logo 9" },
+        { src: "/logo/thy-logo.png", alt: "Logo 1" },
+        { src: "/logo/dyson-logo.png", alt: "Logo 2" },
+        { src: "/logo/maya-logo.png", alt: "Logo 3" },
+        { src: "/logo/bilfen-logo.png", alt: "Logo 4" },
+        { src: "/logo/vizyon-logo.png", alt: "Logo 5" },
+        { src: "/logo/bilim-koleji-logo.png", alt: "Logo 6" },
+        { src: "/logo/ago-logo.jpg", alt: "Logo 7" },
+        { src: "/logo/armagan-logo.png", alt: "Logo 8" },
+        { src: "/logo/yom-logo.png", alt: "Logo 9" },
     ];
 
     return (
@@ -41,27 +41,29 @@ export default function AboutClient() {
                     <div className="max-w-[1400px] mx-auto px-6 py-20">
                         <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.1fr] gap-14 items-start">
                             <div className="grid grid-cols-2 gap-6 items-stretch">
-                                <div className="relative overflow-hidden">
-                                    <div className="relative h-[575px] mt-12 w-full overflow-hidden">
+                                <div className="relative mt-12 w-full overflow-hidden group">
+                                    <div className="relative h-[575px] w-full overflow-hidden">
                                         <Image
                                             src="/hakkimizda_1.jpg"
                                             alt="Enneagram Eğitim"
                                             fill
                                             sizes="(max-width: 1024px) 100vw, 520px"
-                                            className="object-cover"
+                                            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                         />
+                                        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/20" />
                                     </div>
                                 </div>
 
-                                <div className="relative overflow-hidden">
+                                <div className="relative overflow-hidden group">
                                     <div className="relative h-[520px] w-full overflow-hidden">
                                         <Image
                                             src="/enneagram_image_2.jpg"
                                             alt="Enneagram Eğitim"
                                             fill
                                             sizes="(max-width: 1024px) 100vw, 520px"
-                                            className="object-cover"
+                                            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                         />
+                                        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/20" />
                                     </div>
                                 </div>
                             </div>
@@ -268,7 +270,7 @@ export default function AboutClient() {
                         backgroundPosition: "center",
                     }}
                 >
-                    <div className="absolute inset-0 transition-transform duration-[1600ms] ease-out group-hover:scale-[1.03]" />
+                    <div className="absolute inset-0 transition-transform duration-1600 ease-out group-hover:scale-[1.03]" />
                     <div className="absolute inset-0 bg-black/50 transition-colors duration-700 group-hover:bg-black/60" />
 
                     <div className="relative z-10 max-w-[1400px] mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
@@ -306,10 +308,10 @@ export default function AboutClient() {
                                         key={item.title}
                                         className="border-b border-black/30 pb-4 transition-all duration-500 hover:border-black/45"
                                     >
-                                        <p className="text-lg tracking-wide font-semibold text-primary font-[200] transition-transform duration-500 hover:translate-x-1">
+                                        <p className="text-lg tracking-wide font-extralight text-primary transition-transform duration-500 hover:translate-x-1">
                                             {item.title}
                                         </p>
-                                        <p className="text-sm text-primary font-[300] tracking-wide">
+                                        <p className="text-sm text-primary font-light tracking-wide">
                                             {item.text}
                                         </p>
                                     </div>
@@ -361,10 +363,10 @@ export default function AboutClient() {
                         <div className="mt-12 bg-white p-10 w-full">
                             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                                 {[
-                                    '/afis1.jpg',
-                                    '/afis2.jpg',
-                                    '/afis3.jpg',
-                                    '/afissonSite.png'
+                                    '/egitimler/afis1.jpg',
+                                    '/egitimler/afis2.jpg',
+                                    '/egitimler/afis3.jpg',
+                                    '/egitimler/afissonSite.png'
                                 ].map((src, index) => (
                                     <div key={index} className="relative aspect-square hover:scale-105 transition-all duration-300 overflow-hidden bg-white">
                                         <Image

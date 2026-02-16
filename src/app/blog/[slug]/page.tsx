@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { Metadata } from "next";
-import { getAllBlogPosts, getBlogPostBySlug } from "@/app/data/BlogPost";
+import { getAllBlogPosts, getBlogPostBySlug } from "@/app/blog/data/BlogPost";
 import BlogSidebar from "@/app/blog/BlogSidebar";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import PageHero from "@/components/ui/PageHero";
@@ -294,7 +294,7 @@ export default async function BlogPostPage(
                                                 </div>
                                             </div>
 
-                                            <div className="mt-10 bg-primary/20 border border-black/10 p-6 md:p-8">
+                                            <div className="mt-10 bg-hover border border-black/10 p-6 md:p-8">
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                                                     <div className="flex items-center gap-5">
                                                         {previousPost ? (
@@ -317,16 +317,16 @@ export default async function BlogPostPage(
                                                                     className="min-w-0 group"
                                                                     aria-label={`Previous post: ${previousPost.title}`}
                                                                 >
-                                                                    <p className="text-xs uppercase tracking-[0.25em] text-alt">
+                                                                    <p className="text-xs uppercase tracking-[0.25em] text-primary">
                                                                         Önceki Yazı
                                                                     </p>
-                                                                    <div className="h-px w-16 bg-alt mt-2 group-hover:w-24 transition-all duration-300" />
+                                                                    <div className="h-px w-16 bg-primary mt-2 group-hover:w-24 transition-all duration-300" />
                                                                 </Link>
                                                             </>
                                                         ) : (
-                                                            <div className="text-xs text-alt tracking-[0.25em] uppercase">
+                                                            <div className="text-xs text-primary tracking-[0.25em] uppercase">
                                                                 Önceki Yazı
-                                                                <div className="h-px w-16 bg-alt mt-2" />
+                                                                <div className="h-px w-16 bg-primary mt-2" />
                                                             </div>
                                                         )}
                                                     </div>
@@ -338,15 +338,15 @@ export default async function BlogPostPage(
                                                                 className="min-w-0 text-left md:text-right group"
                                                                 aria-label={`Newer post: ${newerPost.title}`}
                                                             >
-                                                                <p className="text-xs uppercase tracking-[0.25em] text-alt">
+                                                                <p className="text-xs uppercase tracking-[0.25em] text-primary">
                                                                     Sonraki Yazı
                                                                 </p>
-                                                                <div className="h-px w-16 bg-alt mt-2 md:ml-auto group-hover:w-24 transition-all duration-300" />
+                                                                <div className="h-px w-16 bg-primary mt-2 md:ml-auto group-hover:w-24 transition-all duration-300" />
                                                             </Link>
                                                         ) : (
-                                                            <div className="text-xs text-gray-500 tracking-[0.25em] uppercase text-left md:text-right">
+                                                            <div className="text-xs primary tracking-[0.25em] uppercase text-left md:text-right">
                                                                 Sonraki Yazı
-                                                                <div className="h-px w-16 bg-alt mt-2 md:ml-auto" />
+                                                                <div className="h-px w-16 bg-primary mt-2 md:ml-auto" />
                                                             </div>
                                                         )}
                                                     </div>

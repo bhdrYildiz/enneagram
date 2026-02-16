@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { getAllBlogPosts } from "@/app/data/BlogPost";
+import { getAllBlogPosts } from "@/app/blog/data/BlogPost";
 
 function formatDateBadge(iso: string) {
     const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);

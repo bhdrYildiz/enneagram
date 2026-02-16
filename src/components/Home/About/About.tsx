@@ -35,8 +35,8 @@ const AboutSection = () => {
                             className="relative h-[400px] lg:h-[500px] z-10 overflow-hidden group"
                         >
                             <Image
-                                src="/hero-2.jpg"
-                                alt="Yıldız Otel Kapadokya"
+                                src="/hakkimizda_1.jpg"
+                                alt="hakkimizda"
                                 fill
                                 sizes="(max-width: 768px) 100vw, (max-width: 1400px) 90vw, 1400px"
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -51,8 +51,8 @@ const AboutSection = () => {
                             className="absolute -bottom-4 left-4 sm:left-6 lg:-left-8 w-52 h-48 lg:w-80 lg:h-56 z-20 overflow-hidden group shadow-2xl"
                         >
                             <Image
-                                src="/hero-1.jpg"
-                                alt="Yıldız Otel Odalar"
+                                src="/enneagram_image_2.jpg"
+                                alt="hakkimzida"
                                 fill
                                 sizes="(max-width: 768px) 100vw, (max-width: 1400px) 90vw, 1400px"
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"

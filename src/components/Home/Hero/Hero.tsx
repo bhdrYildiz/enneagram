@@ -18,34 +18,34 @@ export default function Hero() {
     const slides: Slide[] = useMemo(
         () => [
             {
-                id: 1,
-                pill: 'KENDİNİ KEŞFET',
-                title: 'Mizaç Tipini\nKeşfet.',
-                subtitle:
-                    'Kendini tanı, ilişkilerini ve kararlarını daha net yönet.',
-                ctaPrimary: { label: 'Mizaç Tipini Keşfet', href: '/mizac-tipleri' },
-                ctaSecondary: { label: 'Eğitimleri Gör', href: '/egitimlerimiz' },
-                image: '/hero-1.jpg',
-            },
-            {
-                id: 2,
+                id: 21,
                 pill: 'EĞİTİMLER',
-                title: 'Dönüşüm\nEğitimleri.',
+                title: 'Enneagram Eğitimleri Nelerdir ?',
                 subtitle:
                     'Kurumlara ve bireylere özel, uygulanabilir eğitim programları.',
                 ctaPrimary: { label: 'Eğitimlerimiz', href: '/egitimlerimiz' },
                 ctaSecondary: { label: 'İletişime Geç', href: '/iletisim' },
-                image: '/hero-2.jpg',
+                image: '/enneagram-slayder1.jpg',
+            },
+            {
+                id: 2,
+                pill: 'KENDİNİ KEŞFET',
+                title: 'Mizaç Tipini\nKeşfet',
+                subtitle:
+                    'Kendini tanı, ilişkilerini ve kararlarını daha net yönet.',
+                ctaPrimary: { label: 'Mizaç Tipini Keşfet', href: '/mizac-tipleri' },
+                ctaSecondary: { label: 'Eğitimleri Gör', href: '/egitimlerimiz' },
+                image: '/enneagram_banner_2.jpg',
             },
             {
                 id: 3,
-                pill: 'DANIŞMANLIK',
-                title: 'Bireysel\nDanışmanlık.',
+                pill: 'ENNEAGRAM OKUL SİSTEMİ',
+                title: 'Nedir ? Ne İşe Yarar ? Nasıl Uygulanır ?',
                 subtitle:
                     'Kişiye özel yol haritası ile sürdürülebilir gelişim.',
-                ctaPrimary: { label: 'Randevu Al', href: '/iletisim' },
+                ctaPrimary: { label: 'Detaylar', href: '/hizmetlerimiz/enoksis' },
                 ctaSecondary: { label: 'Hakkımızda', href: '/hakkimizda' },
-                image: '/hero-3.jpg',
+                image: '/hakkimizda_1.jpg',
             },
         ],
         []
@@ -53,7 +53,6 @@ export default function Hero() {
 
     const [active, setActive] = useState(0)
 
-    // Auto-play
     useEffect(() => {
         const t = setInterval(() => {
             setActive((p) => (p + 1) % slides.length)
@@ -66,16 +65,13 @@ export default function Hero() {
 
     return (
         <section className="relative w-full overflow-hidden">
-            {/* Slider container */}
             <div className="relative h-[calc(100vh-10vh-40px)] min-h-[520px] w-full">
-                {/* Slides */}
                 <div
                     className="absolute inset-0 flex transition-transform duration-700 ease-out"
                     style={{ transform: `translateX(-${active * 100}%)` }}
                 >
                     {slides.map((s) => (
-                        <div key={s.id} className="relative w-full flex-shrink-0">
-                            {/* Background image */}
+                        <div key={s.id} className="relative w-full shrink-0">
                             <Image
                                 src={s.image}
                                 alt={s.pill}
@@ -84,29 +80,27 @@ export default function Hero() {
                                 className="object-cover"
                             />
 
-                            {/* Soft overlay (readability) */}
                             <div className="absolute inset-0 bg-primary/45" />
 
-                            {/* Content */}
                             <div className="relative z-10 h-full">
                                 <div className="h-full w-[92%] xl:w-[80%] mx-auto flex items-center">
                                     <div className="max-w-[640px] text-on-primary">
-                                        <div className="inline-flex items-center rounded-md border border-on-primary/30 px-4 py-2 text-xs tracking-[0.2em] font-[300] bg-primary/25 backdrop-blur">
+                                        <div className="inline-flex items-center rounded-md border border-on-primary/30 px-4 py-2 text-xs tracking-[0.2em] font-light bg-primary/25 backdrop-blur">
                                             {s.pill}
                                         </div>
 
-                                        <h1 className="mt-5 text-4xl md:text-6xl leading-[1.05] font-[300] whitespace-pre-line">
+                                        <h1 className="mt-5 text-4xl md:text-6xl leading-[1.05] font-light whitespace-pre-line">
                                             {s.title}
                                         </h1>
 
-                                        <p className="mt-5 text-on-primary/90 font-[200] text-base md:text-lg">
+                                        <p className="mt-5 text-on-primary/90 font-extralight text-base md:text-lg">
                                             {s.subtitle}
                                         </p>
 
                                         <div className="mt-8 flex flex-wrap gap-4">
                                             <Link
                                                 href={s.ctaPrimary.href}
-                                                className="inline-flex items-center justify-center rounded-md px-6 py-3 bg-secondary hover:bg-hover text-on-primary font-[300] transition-colors"
+                                                className="inline-flex items-center justify-center rounded-md px-6 py-3 bg-secondary hover:bg-hover text-on-primary font-light transition-colors"
                                             >
                                                 {s.ctaPrimary.label}
                                             </Link>
@@ -114,7 +108,7 @@ export default function Hero() {
                                             {s.ctaSecondary && (
                                                 <Link
                                                     href={s.ctaSecondary.href}
-                                                    className="inline-flex items-center justify-center rounded-md px-6 py-3 border border-on-primary/35 hover:border-on-primary text-on-primary font-[300] transition-colors bg-primary/15 backdrop-blur-sm"
+                                                    className="inline-flex items-center justify-center rounded-md px-6 py-3 border border-on-primary/35 hover:border-on-primary text-on-primary font-light transition-colors bg-primary/15 backdrop-blur-sm"
                                                 >
                                                     {s.ctaSecondary.label}
                                                 </Link>
@@ -127,7 +121,6 @@ export default function Hero() {
                     ))}
                 </div>
 
-                {/* Arrows */}
                 <button
                     onClick={goPrev}
                     aria-label="Önceki"
@@ -143,7 +136,6 @@ export default function Hero() {
                     ›
                 </button>
 
-                {/* Dots */}
                 <div className="absolute left-1/2 -translate-x-1/2 bottom-6 z-20 flex gap-2">
                     {slides.map((_, i) => (
                         <button

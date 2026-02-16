@@ -13,7 +13,7 @@ export default function ServicesClient() {
             <PageHero
                 title="HİZMETLERİMİZ"
                 subtitle="- ENNEAGRAM EĞİTİM&apos;İ KEŞFEDİN -"
-                backgroundImage="/enneagram-slayder1.jpg"
+                backgroundImage="/enneagram_banner_2.jpg"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },
                     { label: "HİZMETLERİMİZ" },
@@ -44,7 +44,7 @@ export default function ServicesClient() {
                             Eğitim ve Danışmanlık
                         </motion.h1>
 
-                        <motion.div variants={fadeUp} className="mx-auto mb-8 h-[1px] w-24 bg-black/15" />
+                        <motion.div variants={fadeUp} className="mx-auto mb-8 h-1px w-24 bg-black/15" />
 
                         <motion.p
                             variants={fadeUp}
@@ -69,7 +69,6 @@ export default function ServicesClient() {
                                 variants={fadeInCard}
                                 className="relative group h-full"
                             >
-                                {/* DEKOR FRAME — KARTTAN TAŞIYOR */}
                                 <div className="hidden lg:block absolute -top-4 -right-4 w-full h-full border-2 border-secondary rounded-2xl z-0" />
 
                                 <div
@@ -96,7 +95,7 @@ export default function ServicesClient() {
                                             </div>
 
                                             <div className="hidden md:flex items-center gap-2 text-xs tracking-[0.25em] uppercase text-primary/60">
-                                                <span className="h-[1px] w-8 bg-black/15" />
+                                                <span className="h-px w-8 bg-black/15" />
                                                 Program
                                             </div>
                                         </div>
@@ -116,7 +115,7 @@ export default function ServicesClient() {
                                             >
                                                 <span className="relative">
                                                     Read more
-                                                    <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-black/20 transition-colors duration-500 group-hover:bg-black/50" />
+                                                    <span className="absolute left-0 -bottom-1 h-px w-full bg-black/20 transition-colors duration-500 group-hover:bg-black/50" />
                                                 </span>
                                                 <span className="transition-transform duration-500 group-hover:translate-x-1">
                                                     →

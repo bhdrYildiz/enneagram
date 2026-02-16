@@ -23,7 +23,7 @@ export default function EnneagramClient() {
             <PageHero
                 title="ENNEAGRAM NEDİR?"
                 subtitle="- ENNEAGRAM&apos;I KEŞFEDİN -"
-                backgroundImage="/enneagram-slayder1.jpg"
+                backgroundImage="/enneagram_banner.jpg"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },
                     { label: "ENNEAGRAM", href: "/enneagram" },
@@ -65,7 +65,7 @@ export default function EnneagramClient() {
                                             >
                                                 <span className="relative font-semibold">
                                                     Enneagram Kavramları
-                                                    <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-secondary transition-colors duration-500 group-hover:bg-secondary/20" />
+                                                    <span className="absolute left-0 -bottom-1 h-px w-full bg-secondary transition-colors duration-500 group-hover:bg-secondary/20" />
                                                 </span>
                                                 <span className="transition-transform duration-500 group-hover:translate-x-1">
                                                     →
@@ -104,7 +104,7 @@ export default function EnneagramClient() {
                                             >
                                                 <span className="relative font-semibold">
                                                     Mizaç Tipleri
-                                                    <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-secondary transition-colors duration-500 group-hover:bg-secondary/20" />
+                                                    <span className="absolute left-0 -bottom-1 h-px w-full bg-secondary transition-colors duration-500 group-hover:bg-secondary/20" />
                                                 </span>
                                                 <span className="transition-transform duration-500 group-hover:translate-x-1">
                                                     →

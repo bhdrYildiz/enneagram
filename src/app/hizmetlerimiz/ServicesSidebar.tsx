@@ -11,7 +11,6 @@ export default function ServicesSidebar({ services }: { services: Service[] }) {
 
     return (
         <aside className="space-y-8">
-            {/* Liste */}
             <div className="border border-black/10 bg-white p-6 shadow-[0_14px_40px_rgba(0,0,0,0.06)]">
                 <h3 className="text-xl tracking-wide text-primary mb-5">Diğer Hizmetler</h3>
 
@@ -93,7 +92,6 @@ export default function ServicesSidebar({ services }: { services: Service[] }) {
                     İletişime Geçin!
                 </p>
 
-                {/* Dikey Sosyal Alan */}
                 <div className="flex flex-row justify-center items-center gap-4 mt-6 text-primary">
                     <Link
                         href="https://www.instagram.com/enneagramegitim/"

@@ -463,10 +463,10 @@ export default function ContactClient() {
             <div className="mt-12 bg-white p-10 w-full">
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {[
-                  '/afis1.jpg',
-                  '/afis2.jpg',
-                  '/afis3.jpg',
-                  '/afissonSite.png'
+                  '/egitimler/afis1.jpg',
+                  '/egitimler/afis2.jpg',
+                  '/egitimler/afis3.jpg',
+                  '/egitimler/afissonSite.png'
                 ].map((src, index) => (
                   <div
                     key={index}
