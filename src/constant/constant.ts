@@ -71,13 +71,13 @@ export const testimonials = [
 ];
 
 export const logos = [
-  { src: "/thy-logo.png", alt: "Logo 1" },
-  { src: "/dyson-logo.png", alt: "Logo 2" },
-  { src: "/maya-logo.png", alt: "Logo 3" },
-  { src: "/bilfen-logo.png", alt: "Logo 4" },
-  { src: "/vizyon-logo.png", alt: "Logo 5" },
-  { src: "/bilim-koleji-logo.png", alt: "Logo 6" },
-  { src: "/ago-logo.jpg", alt: "Logo 7" },
-  { src: "/armagan-logo.png", alt: "Logo 8" },
-  { src: "/yom-logo.png", alt: "Logo 9" },
+  { src: "/logo/thy-logo.png", alt: "Logo 1" },
+  { src: "/logo/dyson-logo.png", alt: "Logo 2" },
+  { src: "/logo/maya-logo.png", alt: "Logo 3" },
+  { src: "/logo/bilfen-logo.png", alt: "Logo 4" },
+  { src: "/logo/vizyon-logo.png", alt: "Logo 5" },
+  { src: "/logo/bilim-koleji-logo.png", alt: "Logo 6" },
+  { src: "/logo/ago-logo.jpg", alt: "Logo 7" },
+  { src: "/logo/armagan-logo.png", alt: "Logo 8" },
+  { src: "/logo/yom-logo.png", alt: "Logo 9" },
 ];

@@ -55,7 +55,7 @@ export const educations: EducationItem[] = [
     slug: "enneagram-isiginda-donusum-atolyesi",
     title: "İsmail Acarkan’la Enneagram Işığında Dönüşüm Atölyesi",
     priceText: "₺6,000.00 – ₺7,000.00",
-    poster: "/enneagramisiginda.jpg",
+    poster: "/egitimler/enneagramisiginda.jpg",
     category: "enneagram-gelisim-atolyeleri",
     intro: [
       "Kendinizi daha derinlemesine tanımaya, içsel dönüşüm yolculuğunuzu başlatmaya hazır mısınız? 12 hafta sürecek olan bu özel atölye, haftada 1 gün, 3 saat boyunca, hayatınıza yeni bir perspektif kazandırmak ve içsel dünyanızı keşfetmenize yardımcı olmak için tasarlandı.",
@@ -104,7 +104,7 @@ export const educations: EducationItem[] = [
     slug: "temel-enneagram-egitimi",
     title: "Modül 1 – Temel Enneagram Eğitimi",
     priceText: "₺3,250.00 – ₺3,500.00",
-    poster: "/afis3.jpg",
+    poster: "/egitimler/afis3.jpg",
     category: "enneagram-egitimleri",
     intro:[
       "Enneagram Mizaç Merkezli Kişilik metodolojisinin temel kavramlarının, 9 mizaç yapısının anlatıldığı Enneagram’ın ilk basamak eğitimidir.",
@@ -151,7 +151,7 @@ export const educations: EducationItem[] = [
     slug: "2-seviye-enneagram-egitimi",
     title: "Modül 2 – 2. Seviye Enneagram Eğitimi",
     priceText: "₺5,000.00",
-    poster: "/2.seviye.jpg",
+    poster: "/egitimler2.seviye.jpg",
     category: "enneagram-egitimleri",
     intro:[
       "Temel Enneagram Eğitimini tamamlayıp öğrenilen Enneagram kavramları ve mizaçlar hakkında daha detaylı bilgiler edinmek, derinleşmek ve ilerlemek isteyenler için düzenlenen bir eğitimdir.",
@@ -225,7 +225,7 @@ export const educations: EducationItem[] = [
     slug: "enneagram-gelisim-seviyeleri-egitimi",
     title: 'Modül 3 – Gelişim Seviyeleri Eğitimi "Psikolojik Sağlık Seviyeleri Eğitimi"',
     priceText: "₺550.00 – ₺5,000.00",
-    poster: "/psikolojiksaglikseviyeleri.jpg",
+    poster: "/egitimler/psikolojiksaglikseviyeleri.jpg",
     category: "enneagram-egitimleri",
     intro:[
       "Temel Enneagram Eğitimlerimize katılıp Enneagram konusunda daha da derinleşmek ve ilerlemek isteyenler için Enneagram Gelişim Seviyeleri “Psikolojik Sağlık Seviyeleri Eğitimi” Gelişim Seviyeleri “Psikolojik Sağlık Seviyeleri”, Enneagram’ın dinamik bir yapı olmasını sağlayan en önemli unsurlarından biridir.",
@@ -269,7 +269,7 @@ export const educations: EducationItem[] = [
     slug: "enneagram-alt-tipler-egitimi",
     title: "Modül 4 – Alt Tipler Eğitimi",
     priceText: "₺550.00 – ₺5,000.00",
-    poster: "/afis2.jpg",
+    poster: "/egitimler/afis2.jpg",
     category: "enneagram-egitimleri",
     intro:[
       "Enneagram’ın insanın yapısını derinlemesine açıklayabilme kapasitesinin önemli bir kısmı da Alt Tiplerden ileri gelir. Temel Enneagram eğitiminde anlatılan dokuz kişilik tipinin kendi içerisinde tekrar üçe ayrılması ile ortaya çıkan 27 tipe Alt Tipler ya da İçgüdüsel Alt Tipler adı verilir.",
@@ -313,7 +313,7 @@ export const educations: EducationItem[] = [
     slug: "enneagram-iliskiler-egitimi",
     title: "Modül 5 – Enneagram İlişkiler Eğitimi",
     priceText: "₺550.00 – ₺6,000.00",
-    poster: "/enneagramiliskileregitimi.jpg",
+    poster: "/egitimler/enneagramiliskileregitimi.jpg",
     category: "enneagram-egitimleri",
     intro:[
       "İlişkilerde ortaya çıkan duygu, düşünce ve davranışlarımız doğuştan sahip olduğumuz mizaç yapımızdan kök alır. Bir diğeriyle ilişkideki uyumumuz, mizaçlarımıza bağlı olan imkân ve riskleri beraberinde taşır. Bu imkânları değerlendirmek ve risklerinden kaçınmak için sahip olduğumuz mizaç yapımızı bilmeye ve tanımaya ihtiyacımız vardır. Bu sayede bilinçli ve sağlıklı ilişkiler kurabilir ve geliştirebiliriz.",
@@ -386,7 +386,7 @@ export const educations: EducationItem[] = [
     slug: "uygulamali-enneagram-egitimleri-1-kur-enneagrama-ve-tiplere-giris",
     title: "Uygulamalı Enneagram Eğitimleri 1. Kur Enneagrama ve Tiplere Giriş",
     priceText: "₺10,000.00",
-    poster: "/enneagramavetipleregiris.png",
+    poster: "/egitimler/enneagramavetipleregiris.png",
     category: "enneagram-egitimleri",
     intro:[
       "Enneagramı sadece teorik olarak öğrenmek istemiyorsanız ve bunu hayatınızda gerçek bir dönüşüm aracı olarak kullanmak istiyorsanız, bu eğitim tam size göre.",
@@ -429,7 +429,7 @@ export const educations: EducationItem[] = [
     slug: "film-atolyesi",
     title: "Enneagram Film Atölyesi",
     priceText: "₺550.00 – ₺2,000.00",
-    poster: "/enneagramfilatolyesi.jpg",
+    poster: "/egitimler/enneagramfilatolyesi.jpg",
     category: "enneagram-gelisim-atolyeleri",
     intro:[
       "Çoklu alımlarda (4 Adet Atölye) İndirim! Banka Havalesi İle Yapılan Ödemelerde İLAVE Yüzde 10 İndirim!",
@@ -472,7 +472,7 @@ export const educations: EducationItem[] = [
     slug: "enneagram-ile-kisilik-analizi-atolyesi",
     title: "Enneagram ile Kişilik Analizi Atölyesi",
     priceText: "₺550.00 – ₺2,000.00",
-    poster: "/enneagramkisilikatolyesi.jpg",
+    poster: "/egitimler/enneagramkisilikatolyesi.jpg",
     category: "enneagram-gelisim-atolyeleri",
     intro:[
       "Ünlü isimlerin incelendiği “Enneagram Kişilik Analiz Atölyesi” Enneagram eğitimlerinde teorik olarak işlenen mizaç tiplerinin, kişilerin karakter analizinin yapılarak pekiştirilmesi, mizaç tipleri analizi konusunda katılımcıların bilgilerini sürekli güncellemeleri ve pratik hale getirmeleri için düzenlenir.",
@@ -516,7 +516,7 @@ export const educations: EducationItem[] = [
     slug: "cocuk-merkezli-enneagram-egitimi",
     title: "Çocuk Merkezli Enneagram Eğitimi",
     priceText: "₺3,250.00",
-    poster: "/cocukmerkezliegitim.jpg",
+    poster: "/egitimler/cocukmerkezliegitim.jpg",
     category: "enneagram-egitimleri",
     intro:[
       "Bu eğitim, 9 mizacın “Çocuk Merkezli” olarak ele alındığı ‘Enneagram Gelişim Modülü’ eğitimlerindendir.",
