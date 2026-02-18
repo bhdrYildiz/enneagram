@@ -47,7 +47,7 @@ export default async function EducationDetailPage({
                 ]}
             />
 
-            <section className="bg-[#f6f1ea]">
+            <section className="bg-white">
                 <div className="max-w-[1200px] mx-auto px-6 py-14">
                     <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-10 items-start">
                         <div className="rounded-md border border-black/10 bg-white p-6 md:p-8 shadow-[0_14px_40px_rgba(0,0,0,0.06)]">
@@ -93,7 +93,6 @@ export default async function EducationDetailPage({
                                 </div>
                             )}
 
-                            {/* Konular */}
                             {(education.topicsTitle || education.topics?.length) && (
                                 <div className="mt-12">
                                     <h2 className="text-2xl md:text-3xl text-primary tracking-wide font-semibold">
@@ -119,7 +118,6 @@ export default async function EducationDetailPage({
                                 </div>
                             )}
 
-                            {/* Kimler katılabilir */}
                             {(education.audienceTitle || education.audience) && (
                                 <div className="mt-12">
                                     <h2 className="text-2xl md:text-3xl text-primary tracking-wide font-semibold">

@@ -15,6 +15,10 @@ const siteUrl = "https://www.enneagramegitim.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
+  icons: {
+    icon: '/favicon.png',
+  },
+
   title: {
     default: "Enneagram Eğitim & Danışmanlık",
     template: "%s | Enneagram Eğitim & Danışmanlık",

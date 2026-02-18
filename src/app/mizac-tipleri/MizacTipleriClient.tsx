@@ -62,7 +62,7 @@ export default function MizacTipleriClient() {
                 ]}
             />
 
-            <section className="bg-[#f6f1ea]">
+            <section className="bg-white">
                 <div className="max-w-[1200px] mx-auto px-6 py-16">
                     <p className="text-sm tracking-widest uppercase text-primary/70">
                         {items.length} sonucun tümü gösteriliyor
