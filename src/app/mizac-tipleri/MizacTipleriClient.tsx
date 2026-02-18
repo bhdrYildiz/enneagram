@@ -23,7 +23,7 @@ function Card({ it }: { it: MizacItem }) {
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />
                     </div>
-                    <div className="absolute inset-0 bg-black/0 transition duration-500 group-hover:bg-black" />
+                    <div className="absolute inset-0 bg-black/10 transition duration-500 group-hover:bg-black/20" />
 
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="h-14 w-14 border  flex items-center justify-center opacity-0 scale-95 transition duration-500 group-hover:opacity-100 group-hover:scale-100">

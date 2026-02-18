@@ -6,8 +6,6 @@ import PageHero from "@/components/ui/PageHero";
 import type { EducationItem, EducationCategory } from "./_data/educations";
 import { CATEGORY_META } from "./_data/educations";
 
-const EXTERNAL_TARGET = "https://www.rehberimiz.com/egitim-ve-atolyeler/";
-
 function Card({ it }: { it: EducationItem }) {
     return (
         <article className="group">
