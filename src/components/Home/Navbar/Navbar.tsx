@@ -67,15 +67,17 @@ const Nav = ({ openNav, fixed = false, isHomePage = false }: Props) => {
                 </div>
                 <div className='flex items-center space-x-4'>
                     <Link
-                        href="/tatilini-tasarla"
+                        href="/mizac-tipleri"
                         className='rounded md:px-12 mp:py-2.5 px-8 py-2 text-on-primary text-base font-[300]
               bg-secondary hover:bg-hover transition-all duration-200 cursor-pointer'
                     >
                         Mizaç Tipini Keşfet
                     </Link>
-
                     <HiBars3BottomRight
-                        onClick={openNav}
+                        onClick={() => {
+                            console.log("Hamburger tıklandı!");
+                            openNav?.();
+                        }}
                         className='w-8 h-8 cursor-pointer text-on-primary lg:hidden hover:text-hover transition-colors duration-200'
                     />
                 </div>

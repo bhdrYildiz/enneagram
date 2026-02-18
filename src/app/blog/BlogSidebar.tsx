@@ -74,7 +74,7 @@ export default function BlogSidebar(props: {
                             <FaYoutube className="hover:text-secondary transition" />
                         </Link>
                         <Link
-                            href="https://wa.me/905303897163"
+                            href="https://wa.me/905557597345"
                             aria-label="Whatsapp"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -156,7 +156,6 @@ export default function BlogSidebar(props: {
                     </div>
                 </div>
 
-                {/* Tags */}
                 <div className="p-6 border-b border-black/10">
                     <div className="bg-[#1c2c34] text-white px-5 py-4 font-light tracking-wide">
                         Etiketler

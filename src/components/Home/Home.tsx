@@ -39,7 +39,7 @@ const Home = () => {
             <EventsSection />
             <TestimonialsSection />
             <BlogSection />
-        </div>
+        </div >
     )
 }
 

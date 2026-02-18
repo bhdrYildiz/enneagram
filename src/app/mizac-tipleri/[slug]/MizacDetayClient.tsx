@@ -2,7 +2,6 @@
 
 import PageHero from "@/components/ui/PageHero";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeInCard } from "@/app/lib/animations";
 import { mizacTipleri } from "../_data/mizac-tipleri";

@@ -45,18 +45,18 @@ export default function Footer() {
                                     href="tel:+903843414610"
                                     className="hover:underline font-[200]"
                                 >
-                                    0543 540 64 43
+                                    0555 759 73 45
                                 </a>
                             </p>
 
                             <p className="flex items-center justify-center md:justify-start gap-3">
                                 <FaWhatsapp className="text-secondary shrink-0" />
                                 <a
-                                    href="https://wa.me/905325645277"
+                                    href="https://wa.me/905557597345"
                                     target="_blank"
                                     className="hover:underline font-[200]"
                                 >
-                                    0543 540 64 43
+                                    0555 759 73 45
                                 </a>
                             </p>
                         </div>
@@ -74,13 +74,12 @@ export default function Footer() {
                             <a className="hover:text-hover transition-colors" href="https://www.youtube.com/@tv.enneagram" target="_blank">
                                 <FaYoutube />
                             </a>
-                            <a className="hover:text-hover transition-colors" href="https://wa.me/905435406443" target="_blank">
+                            <a className="hover:text-hover transition-colors" href="https://wa.me/905557597345" target="_blank">
                                 <FaWhatsapp />
                             </a>
                         </div>
                     </div>
 
-                    {/* Keşfet */}
                     <div className="space-y-4 flex flex-col items-center md:items-start">
                         <h3 className="text-2xl md:text-3xl font-[300] tracking-wide">
                             Keşfet
@@ -105,7 +104,6 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Logo + Buton */}
                     <div className="space-y-4 flex flex-col items-center md:items-start">
                         <h3 className="text-2xl md:text-3xl font-[300] tracking-wide">
                             Rezervasyon
@@ -121,7 +119,7 @@ export default function Footer() {
                             </p>
 
                             <Link
-                                href="/contact"
+                                href="/iletisim"
                                 className="mt-5 w-full text-center px-4 py-3 rounded
                   bg-secondary hover:bg-hover text-on-primary font-[300] transition-colors"
                             >

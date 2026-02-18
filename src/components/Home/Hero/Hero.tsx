@@ -124,14 +124,14 @@ export default function Hero() {
                 <button
                     onClick={goPrev}
                     aria-label="Önceki"
-                    className="absolute cursor-pointer left-4 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full bg-primary/35 hover:bg-primary/55 border border-on-primary/20 text-on-primary backdrop-blur-sm transition"
+                    className="hidden md:flex absolute cursor-pointer left-4 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full bg-primary/35 hover:bg-primary/55 border border-on-primary/20 text-on-primary backdrop-blur-sm transition items-center justify-center"
                 >
                     ‹
                 </button>
                 <button
                     onClick={goNext}
                     aria-label="Sonraki"
-                    className="absolute cursor-pointer right-4 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full bg-primary/35 hover:bg-primary/55 border border-on-primary/20 text-on-primary backdrop-blur-sm transition"
+                    className="hidden md:flex absolute cursor-pointer right-4 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full bg-primary/35 hover:bg-primary/55 border border-on-primary/20 text-on-primary backdrop-blur-sm transition items-center justify-center"
                 >
                     ›
                 </button>

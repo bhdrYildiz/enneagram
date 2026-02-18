@@ -65,18 +65,18 @@ export default function MizacDetaySidebar() {
 
             <div className="border border-black/10 bg-white p-8 text-center shadow-[0_14px_40px_rgba(0,0,0,0.06)]">
                 <p className="text-xs font-semibold tracking-[0.45em] uppercase text-secondary mb-3">
-                    Mizacını Keşfet
+                    Eğitimlerimiz
                 </p>
-                <p className="text-xl font-light text-primary">Hangi Tipsin?</p>
+                <p className="text-xl font-light text-primary">Enneagram Eğitim & Danışmanlık</p>
                 <p className="mt-2 text-base text-primary/70 leading-relaxed">
-                    Kısa test ile mizaç tipini öğren.
+                    Eğitimlerimize göz at
                 </p>
                 <div className="mt-6">
                     <Link
-                        href="/mizac-tipini-kesfet"
+                        href="/egitimlerimiz"
                         className="block px-6 py-3 bg-[#1c2c34] text-white text-sm tracking-[0.25em] uppercase hover:bg-secondary transition-colors duration-300"
                     >
-                        Testi Başlat
+                        Tüm Eğitimler
                     </Link>
                 </div>
             </div>

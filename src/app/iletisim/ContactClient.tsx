@@ -198,7 +198,7 @@ export default function ContactClient() {
                     </div>
                     <div>
                       <p className="text-base tracking-wide uppercase text-primary mb-1">İletişim</p>
-                      <p className="text-sm text-primary">0543 540 64 43</p>
+                      <p className="text-sm text-primary">0555 759 73 45</p>
                       <p className="text-sm text-primary">bilgi@enneagramegitim.com</p>
                     </div>
                   </div>
@@ -252,7 +252,7 @@ export default function ContactClient() {
                           <FaYoutube className="h-4 w-4" />
                         </Link>
                         <Link
-                          href="https://wa.me/905XXXXXXXXX"
+                          href="https://wa.me/9005557597345"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="h-10 w-10 rounded-full border border-black/10 flex items-center justify-center text-primary transition-colors hover:border-hover hover:text-secondary"

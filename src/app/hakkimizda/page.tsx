@@ -2,19 +2,18 @@ import type { Metadata } from "next";
 import AboutClient from "./AboutClient";
 
 export const metadata: Metadata = {
-    title:
-        "Hakkımızda | Yıldız Otel Kapadokya - Ürgüp’te Taş Oda ve Jakuzili Konaklama",
+    title: "Hakkımızda | Enneagram Eğitim & Danışmanlık",
     description:
-        "Yıldız Otel Kapadokya, Ürgüp merkezinde taş oda, jakuzili balayı odası...",
+        "Enneagram Eğitim & Danışmanlık hakkında bilgi alın. Yaklaşımımız, uzmanlık alanlarımız ve bireysel/kurumsal eğitim-danışmanlık süreçlerimizle kişisel ve kurumsal gelişimi destekliyoruz.",
     keywords: [
-        "kapadokya otel",
-        "ürgüp otelleri",
-        "nevşehir otelleri",
-        "balayı otelleri",
-        "yıldız otel kapadokya",
-        "yıldız otel ürgüp",
-        "kapadokya tatil",
-        "kapadokya otel önerisi",
+        "enneagram hakkımızda",
+        "enneagram eğitim",
+        "enneagram danışmanlık",
+        "mizaç temelli yaklaşım",
+        "kurumsal eğitim",
+        "liderlik gelişimi",
+        "ekip gelişimi",
+        "enneagram koçluk",
     ],
 
     robots: {
@@ -31,30 +30,33 @@ export const metadata: Metadata = {
     },
 
     alternates: {
-        canonical: "https://www.yildizhotelcappadocia.com/about",
+        canonical: "https://www.enneagramegitim.com/hakkimizda",
     },
 
     openGraph: {
-        title: "Hakkımızda | Yıldız Otel Kapadokya",
-        description: "Kapadokya’da konforlu ve otantik konaklama için Yıldız Otel...",
-        url: "https://www.yildizhotelcappadocia.com/about",
-        siteName: "Yıldız Otel Kapadokya",
+        title: "Hakkımızda | Enneagram Eğitim & Danışmanlık",
+        description:
+            "Yaklaşımımızı, uzmanlık alanlarımızı ve eğitim-danışmanlık süreçlerimizi keşfedin.",
+        url: "https://www.enneagramegitim.com/hakkimizda",
+        siteName: "Enneagram Eğitim & Danışmanlık",
         images: [
             {
-                url: "https://www.yildizhotelcappadocia.com/images/logo.png",
-                width: 800,
-                height: 600,
-                alt: "Yıldız Otel Kapadokya Taş Oda",
+                url: "https://www.enneagramegitim.com/egitimler/afis1.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Enneagram Eğitim & Danışmanlık - Hakkımızda",
             },
         ],
         locale: "tr_TR",
         type: "website",
     },
+
     twitter: {
         card: "summary_large_image",
-        title: "Hakkımızda | Yıldız Otel Kapadokya",
-        description: "Kapadokya’da konforlu ve otantik konaklama için Yıldız Otel...",
-        images: ["https://www.yildizhotelcappadocia.com/images/logo.png"],
+        title: "Hakkımızda | Enneagram Eğitim & Danışmanlık",
+        description:
+            "Enneagram Eğitim & Danışmanlık yaklaşımı ve hizmet alanları hakkında bilgi alın.",
+        images: ["https://www.enneagramegitim.com/egitimler/afis1.jpg"],
     },
 };
 

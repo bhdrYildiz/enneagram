@@ -7,16 +7,20 @@ import PageHero from "@/components/ui/PageHero";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Blog | Yıldız Otel Kapadokya - Ürgüp ve Kapadokya Rehberi",
+    title: "Blog | Enneagram Eğitim & Danışmanlık",
     description:
-        "Kapadokya ve Ürgüp’te gezi önerileri, aktiviteler ve konaklama ipuçları. Yıldız Otel Kapadokya blog yazılarını keşfedin.",
+        "Enneagram, mizaç, kişisel gelişim, ilişki dinamikleri ve kurumsal ekip gelişimi üzerine yazılar. Enneagram Eğitim & Danışmanlık blog içeriklerini keşfedin.",
     keywords: [
-        "kapadokya blog",
-        "ürgüp gezi rehberi",
-        "kapadokya aktiviteler",
-        "kapadokya otel önerileri",
-        "yıldız otel blog",
+        "enneagram blog",
+        "enneagram yazıları",
+        "mizaç blog",
+        "enneagram mizaç tipleri",
+        "kişisel gelişim enneagram",
+        "ilişki dinamikleri enneagram",
+        "kurumsal gelişim",
+        "ekip iletişimi enneagram",
     ],
+
     robots: {
         index: true,
         follow: true,
@@ -29,31 +33,35 @@ export const metadata: Metadata = {
             "max-video-preview": -1,
         },
     },
+
     alternates: {
-        canonical: "https://www.yildizhotelcappadocia.com/blog",
+        canonical: "https://www.enneagramegitim.com/blog",
     },
+
     openGraph: {
-        title: "Blog | Yıldız Otel Kapadokya",
+        title: "Blog | Enneagram Eğitim & Danışmanlık",
         description:
-            "Kapadokya ve Ürgüp hakkında blog yazıları: gezi, aktiviteler ve konaklama önerileri.",
-        url: "https://www.yildizhotelcappadocia.com/blog",
-        siteName: "Yıldız Otel Kapadokya",
+            "Enneagram ve mizaç temelli içerikler: kişisel gelişim, ilişkiler, liderlik ve ekip dinamikleri.",
+        url: "https://www.enneagramegitim.com/blog",
+        siteName: "Enneagram Eğitim & Danışmanlık",
         images: [
             {
-                url: "https://www.yildizhotelcappadocia.com/images/turlar/balon3.jpg",
+                url: "https://www.enneagramegitim.com/egitimler/afis1.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Yıldız Otel Kapadokya Blog",
+                alt: "Enneagram Eğitim & Danışmanlık Blog",
             },
         ],
         locale: "tr_TR",
         type: "website",
     },
+
     twitter: {
         card: "summary_large_image",
-        title: "Blog | Yıldız Otel Kapadokya",
-        description: "Kapadokya ve Ürgüp blog yazıları.",
-        images: ["https://www.yildizhotelcappadocia.com/images/turlar/balon3.jpg"],
+        title: "Blog | Enneagram Eğitim & Danışmanlık",
+        description:
+            "Enneagram ve mizaç üzerine blog yazıları: kişisel gelişim, ilişkiler, liderlik ve ekip dinamikleri.",
+        images: ["https://www.enneagramegitim.com/egitimler/afis1.jpg"],
     },
 };
 

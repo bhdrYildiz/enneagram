@@ -2,20 +2,18 @@ import type { Metadata } from "next";
 import ContactClient from "./ContactClient";
 
 export const metadata: Metadata = {
-    title:
-        "İletişim | Yıldız Otel Kapadokya - Ürgüp’te Rezervasyon ve Bilgi",
+    title: "İletişim | Enneagram Eğitim & Danışmanlık - Bilgi ve Başvuru",
     description:
-        "Yıldız Otel Kapadokya ile iletişime geçin. Ürgüp’teki konumumuz, telefon ve e-posta bilgilerimizle hızlıca ulaşın; rezervasyon ve bilgi talepleriniz için bize yazın.",
+        "Enneagram Eğitim & Danışmanlık ile iletişime geçin. Eğitimler, danışmanlık, kurumsal çözümler ve başvuru süreçleri için bize yazın; telefon ve e-posta üzerinden hızlıca ulaşın.",
     keywords: [
-        "kapadokya otel iletişim",
-        "ürgüp otel iletişim",
-        "ürgüp otel adres",
-        "nevşehir otel telefon",
-        "kapadokya otel rezervasyon",
-        "yıldız otel kapadokya",
-        "yıldız otel ürgüp",
+        "enneagram iletişim",
+        "enneagram eğitim iletişim",
+        "enneagram danışmanlık iletişim",
+        "kurumsal enneagram eğitim",
+        "enneagram koçluk",
+        "enneagram danışmanlık başvuru",
+        "enneagram eğitim ve danışmanlık",
     ],
-
     robots: {
         index: true,
         follow: true,
@@ -28,35 +26,30 @@ export const metadata: Metadata = {
             "max-video-preview": -1,
         },
     },
-
     alternates: {
-        canonical: "https://www.yildizhotelcappadocia.com/contact",
+        canonical: "https://www.enneagramegitim.com/iletisim",
     },
-
     openGraph: {
-        title: "İletişim | Yıldız Otel Kapadokya",
-        description:
-            "Telefon, e-posta ve harita bilgileri ile Yıldız Otel’e kolayca ulaşın. Ürgüp merkezde konum ve hızlı iletişim.",
-        url: "https://www.yildizhotelcappadocia.com/contact",
-        siteName: "Yıldız Otel Kapadokya",
+        title: "İletişim | Enneagram Eğitim & Danışmanlık",
+        description: "Eğitim ve danışmanlık hakkında bilgi alın.",
+        url: "https://www.enneagramegitim.com/iletisim",
+        siteName: "Enneagram Eğitim & Danışmanlık",
         images: [
             {
-                url: "https://www.yildizhotelcappadocia.com/images/otelBahce/resim12.jpeg",
+                url: "https://www.enneagramegitim.com/egitimler/afis1.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Yıldız Otel Kapadokya - İletişim",
+                alt: "Enneagram Eğitim Afişi",
             },
         ],
         locale: "tr_TR",
         type: "website",
     },
-
     twitter: {
         card: "summary_large_image",
-        title: "İletişim | Yıldız Otel Kapadokya",
-        description:
-            "Yıldız Otel Kapadokya ile iletişime geçin: telefon, e-posta, konum ve rezervasyon.",
-        images: ["https://www.yildizhotelcappadocia.com/images/otelBahce/resim12.jpeg"],
+        title: "İletişim | Enneagram Eğitim & Danışmanlık",
+        description: "Eğitim ve danışmanlık için iletişime geçin.",
+        images: ["https://www.enneagramegitim.com/egitimler/afis1.jpg"],
     },
 };
 

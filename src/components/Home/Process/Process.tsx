@@ -74,8 +74,8 @@ function StepRow({ step, index }: { step: Step; index: number }) {
         ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
       `}
         >
-            <div className="grid grid-cols-1 lg:grid-cols-[180px_1fr_240px] gap-4 lg:gap-6 items-center">
-                <div className="flex items-center gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[180px_1fr_240px] gap-4 lg:gap-6 items-center text-center lg:text-left">
+                <div className="flex items-center gap-6 justify-center lg:justify-start">
                     <div className={`text-7xl md:text-8xl font-[300] leading-none ${step.accentClass}`}>
                         {step.no}
                     </div>
@@ -84,13 +84,13 @@ function StepRow({ step, index }: { step: Step; index: number }) {
                     </div>
                 </div>
 
-                <div className="flex justify-start lg:justify-center">
+                <div className="flex justify-center lg:justify-center">
                     <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border border-primary bg-primary">
                         <Image src={step.image} alt={step.title} fill className="object-cover" />
                     </div>
                 </div>
 
-                <div className="text-primary font-[300] leading-relaxed w-[280px] tracking-wide">
+                <div className="text-primary font-[300] leading-relaxed w-[280px] tracking-wide mx-auto lg:mx-0">
                     {step.desc}
                 </div>
             </div>

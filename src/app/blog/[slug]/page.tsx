@@ -9,7 +9,7 @@ import BlogSidebar from "@/app/blog/BlogSidebar";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import PageHero from "@/components/ui/PageHero";
 
-const BASE_URL = "https://www.yildizhotelcappadocia.com";
+const BASE_URL = "https://www.enneagramegitim.com";
 
 type PageParams = { slug: string };
 
@@ -44,7 +44,7 @@ export async function generateMetadata(
     );
 
     return {
-        title: `${post.title} | Yıldız Otel Kapadokya`,
+        title: `${post.title} | Enneagram Eğitim`,
         description: post.excerpt,
         keywords,
 
@@ -64,22 +64,22 @@ export async function generateMetadata(
         alternates: { canonical: url },
 
         openGraph: {
-            title: `${post.title} | Yıldız Otel Kapadokya`,
+            title: `${post.title} | Enneagram Eğitim`,
             description: post.excerpt,
             url,
-            siteName: "Yıldız Otel Kapadokya",
+            siteName: "Enneagram Eğitim",
             images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
             locale: "tr_TR",
             type: "article",
             publishedTime: post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined,
-            authors: post.author ? [post.author] : ["Yıldız Otel Kapadokya"],
+            authors: post.author ? [post.author] : ["Enneagram Eğitim"],
             section: (post.categories && post.categories[0]) ? post.categories[0] : undefined,
             tags: post.tags ?? undefined,
         },
 
         twitter: {
             card: "summary_large_image",
-            title: `${post.title} | Yıldız Otel Kapadokya`,
+            title: `${post.title} | Enneagram Eğitim`,
             description: post.excerpt,
             images: [ogImage],
         },

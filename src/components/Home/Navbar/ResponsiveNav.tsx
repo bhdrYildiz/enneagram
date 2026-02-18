@@ -1,8 +1,8 @@
 'use client'
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import { usePathname } from 'next/navigation'
 import MobileNav from './MobileNav'
-import TopInfoBar from './TopInfoBar'
+import TopInfoBar from './TopInfobar'
 import Navbar from './Navbar'
 
 const ResponsiveNav = () => {
@@ -11,8 +11,8 @@ const ResponsiveNav = () => {
     const pathname = usePathname();
     const isHomePage = pathname === '/';
 
-    const handleNavShow = () => setShowNav(true);
-    const handleCloseNav = () => setShowNav(false);
+    const handleNavShow = useCallback(() => setShowNav(true), []);
+    const handleCloseNav = useCallback(() => setShowNav(false), []);
 
     return (
         <div>
