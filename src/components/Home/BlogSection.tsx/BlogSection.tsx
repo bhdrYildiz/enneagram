@@ -13,8 +13,8 @@ function formatDateBadge(iso: string) {
     if (!m) return { day: "--", monthYear: "--" };
 
     const year = m[1].slice(-2);
-    const month = m[2]; // "10"
-    const day = m[3];   // "22"
+    const month = m[2]; 
+    const day = m[3]; 
 
     return { day, monthYear: `${month} / ${year}` };
 }

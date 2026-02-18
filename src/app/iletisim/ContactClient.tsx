@@ -1,12 +1,7 @@
 'use client';
 
-import {
-  MapPin,
-  Phone,
-  Navigation,
-  ChevronDown
-} from 'lucide-react';
-import { FaFacebook, FaWhatsapp, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
+
+import { FaFacebook, FaWhatsapp, FaTwitter, FaYoutube, FaInstagram, FaMapMarkerAlt, FaPhone, FaCompass, FaChevronDown } from "react-icons/fa";
 import { useState } from 'react';
 import Link from 'next/link';
 import PageHero from '@/components/ui/PageHero';
@@ -15,7 +10,7 @@ import Image from 'next/image';
 export default function ContactClient() {
 
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const [isSending, setIsSending] = useState(false);
+  const [isSending, setIsSending] = useState(false);  
   const [status, setStatus] = useState<null | { type: "ok" | "error"; msg: string }>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -174,7 +169,7 @@ export default function ContactClient() {
                 <div className="space-y-6 text-primary">
                   <div className="flex items-start gap-4">
                     <div className="h-12 w-12 rounded-full border border-black/10 flex items-center justify-center text-primary transition-colors duration-200 hover:border-hover hover:text-secondary">
-                      <MapPin className="h-5 w-5" />
+                      <FaMapMarkerAlt className="h-5 w-5" />
                     </div>
                     <div>
                       <p className="text-base tracking-wide uppercase text-primary mb-1">Konum</p>
@@ -194,7 +189,7 @@ export default function ContactClient() {
 
                   <div className="flex items-start gap-4">
                     <div className="h-12 w-12 rounded-full border border-black/10 flex items-center justify-center text-primary transition-colors duration-200 hover:border-hover hover:text-secondary">
-                      <Phone className="h-5 w-5" />
+                      <FaPhone className="h-5 w-5" />
                     </div>
                     <div>
                       <p className="text-base tracking-wide uppercase text-primary mb-1">İletişim</p>
@@ -205,7 +200,7 @@ export default function ContactClient() {
 
                   <div className="flex items-start gap-4">
                     <div className="h-12 w-12 rounded-full border border-black/10 flex items-center justify-center text-primary transition-colors duration-200 hover:border-hover hover:text-secondary">
-                      <Navigation className="h-5 w-5" />
+                      <FaCompass className="h-5 w-5" />
                     </div>
                     <div>
                       <p className="text-base tracking-wide uppercase text-primary mb-1">Sosyal</p>
@@ -297,7 +292,7 @@ export default function ContactClient() {
                       <span className="text-lg md:text-xl tracking-wide text-primary font-[300]">
                         {faq.question}
                       </span>
-                      <ChevronDown
+                      <FaChevronDown
                         className={`h-5 w-5 transition-transform duration-600 ${isOpen ? 'rotate-180' : ''
                           }`}
                       />

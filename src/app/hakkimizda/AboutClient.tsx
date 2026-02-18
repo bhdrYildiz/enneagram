@@ -1,11 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import {
-    ShieldCheck,
-    KeyRound,
-    School
-} from 'lucide-react';
+import { FaShieldAlt, FaKey, FaSchool } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { fadeInRight, fadeUp, stagger } from '@/app/lib/animations';
@@ -228,19 +224,19 @@ export default function AboutClient() {
                                     title: "KÖKLÜ UZMANLIK",
                                     text:
                                         "Enneagram alanında Türkiye’de öncü yaklaşım ve yıllara yayılan saha deneyimiyle, güvenilir bir eğitim ve danışmanlık sunuyoruz.",
-                                    icon: <ShieldCheck className="h-6 w-6" />,
+                                    icon: <FaShieldAlt className="h-6 w-6" />,
                                 },
                                 {
                                     title: "UYGULAMALI GELİŞİM",
                                     text:
                                         "Kişi ve ekip dinamiklerini anlayan, pratiğe dönük içeriklerle farkındalığı davranışa dönüştüren programlar tasarlıyoruz.",
-                                    icon: <KeyRound className="h-6 w-6" />,
+                                    icon: <FaKey className="h-6 w-6" />,
                                 },
                                 {
                                     title: "KURUMA ÖZEL ÇÖZÜMLER",
                                     text:
                                         "İhtiyaç analiziyle başlayan; iletişim, liderlik ve kurum kültürüne özel tasarlanan eğitim ve danışmanlık süreçleri yürütüyoruz.",
-                                    icon: <School className="h-6 w-6" />,
+                                    icon: <FaSchool className="h-6 w-6" />,
                                 },
                             ].map((card) => (
                                 <div

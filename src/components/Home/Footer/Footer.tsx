@@ -5,7 +5,6 @@ import {
     FaEnvelope,
     FaFacebookF,
     FaInstagram,
-    FaTripadvisor,
     FaWhatsapp,
     FaYoutube,
     FaTwitter,
