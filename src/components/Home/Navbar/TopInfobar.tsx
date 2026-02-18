@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaYoutube, FaTripadvisor, FaFacebookF, FaTwitter, FaWhatsapp, } from 'react-icons/fa'
+import { FaPhone, FaEnvelope, FaInstagram, FaYoutube, FaFacebookF, FaTwitter, FaWhatsapp, } from 'react-icons/fa'
 import { FaLocationPin } from 'react-icons/fa6';
 
 const TopInfoBar = () => {
