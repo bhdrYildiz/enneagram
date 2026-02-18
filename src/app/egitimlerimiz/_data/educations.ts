@@ -151,7 +151,7 @@ export const educations: EducationItem[] = [
     slug: "2-seviye-enneagram-egitimi",
     title: "Modül 2 – 2. Seviye Enneagram Eğitimi",
     priceText: "₺5,000.00",
-    poster: "/egitimler/egitimler2.seviye.jpg",
+    poster: "/egitimler/2.seviye.jpg",
     category: "enneagram-egitimleri",
     intro:[
       "Temel Enneagram Eğitimini tamamlayıp öğrenilen Enneagram kavramları ve mizaçlar hakkında daha detaylı bilgiler edinmek, derinleşmek ve ilerlemek isteyenler için düzenlenen bir eğitimdir.",
