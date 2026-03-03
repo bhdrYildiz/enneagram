@@ -13,20 +13,17 @@ function Card({ it }: { it: MizacItem }) {
     return (
         <motion.article variants={fadeInCard} className="group">
             <Link href={`/mizac-tipleri/${it.slug}`} className="block">
-                <div className="relative w-full aspect-4/3 overflow-hidden rounded-md bg-white shadow-[0_16px_40px_rgba(0,0,0,0.08)] border border-black/10">
-                    <div className="relative w-full aspect-square overflow-hidden rounded-md bg-white shadow-[0_16px_40px_rgba(0,0,0,0.08)] border border-black/10">
-                        <Image
-                            src={it.image}
-                            alt={it.title}
-                            fill
-                            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        />
-                    </div>
+                <div className="relative w-full aspect-square overflow-hidden rounded-md bg-white shadow-[0_16px_40px_rgba(0,0,0,0.08)] border border-black/10">
+                    <Image
+                        src={it.image}
+                        alt={it.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                     <div className="absolute inset-0 bg-black/10 transition duration-500 group-hover:bg-black/20" />
-
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="h-14 w-14 border  flex items-center justify-center opacity-0 scale-95 transition duration-500 group-hover:opacity-100 group-hover:scale-100">
+                        <div className="h-14 w-14 border flex items-center justify-center opacity-0 scale-95 transition duration-500 group-hover:opacity-100 group-hover:scale-100">
                             <span className="text-white text-2xl leading-none">+</span>
                         </div>
                     </div>

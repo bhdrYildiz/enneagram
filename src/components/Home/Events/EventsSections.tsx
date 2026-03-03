@@ -39,7 +39,7 @@ const events: EventItem[] = [
         time: "19.30 – 22.30",
         dateText: "Video Kayıt",
         location: "Online",
-        href: "/https://www.rehberimiz.com/temel-enneagram-egitimi/",
+        href: "https://www.rehberimiz.com/temel-enneagram-egitimi/",
     },
     {
         id: "3",

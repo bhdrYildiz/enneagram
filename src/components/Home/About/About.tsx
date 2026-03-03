@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
+import VideoLightbox from '@/app/lib/VideoLightbox';
 
 const AboutSection = () => {
     return (
@@ -26,41 +26,19 @@ const AboutSection = () => {
                 </motion.div>
 
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                    <div className="relative lg:pr-12 lg:pb-12">
+                    <div className="relative lg:pr-4 lg:pb-8">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                             viewport={{ once: true }}
-                            className="relative h-[400px] lg:h-[500px] z-10 overflow-hidden group"
                         >
-                            <Image
-                                src="/hakkimizda_1.jpg"
-                                alt="hakkimizda"
-                                fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1400px) 90vw, 1400px"
-                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            <VideoLightbox
+                                src="/videos/enneagramvideo-1.mp4"
+                                poster="/videos/videoDeneme-0.png"
+                                alt="Enneagram tanıtım videosu"
                             />
                         </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.4 }}
-                            viewport={{ once: true }}
-                            className="absolute -bottom-4 left-4 sm:left-6 lg:-left-8 w-52 h-48 lg:w-80 lg:h-56 z-20 overflow-hidden group shadow-2xl"
-                        >
-                            <Image
-                                src="/enneagram_image_2.jpg"
-                                alt="hakkimzida"
-                                fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1400px) 90vw, 1400px"
-                                className="object-cover transition-transform duration-700 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 border-4 border-white pointer-events-none"></div>
-                        </motion.div>
-
-                        <div className="hidden lg:block absolute top-6 right-6 w-[calc(100%-3rem)] h-[calc(100%-3rem)] border-2 border-secondary pointer-events-none z-0"></div>
                     </div>
 
                     <motion.div
@@ -71,7 +49,7 @@ const AboutSection = () => {
                         className="space-y-8"
                     >
                         <div>
-                            <p className="text-lg text-primary leading-relaxed mb-6 tracking-wide">
+                            <p className="text-lg text-primary leading-relaxed mb-16 tracking-wide">
                                 Enneagram Eğitimleri yanında mizaç merkezli çalışmalar yapar. Bu çerçevede eğitim kurumlarına ENOKSİS (Enneagram Okul Sistemi) hizmetiyle mizacı merkeze aldığı eğitim yaklaşımını uygular.
                                 Yine eğitim kurumları için alanında tek ve özgün çalışma olan ENREHET (Enneagram Rehberlik Etkinlikleri) ile rehberlik desteği sağlar. Geliştirdiği Enneagram Testleri ile mizaç tespitleri
                                 yapar ve mizaçlara uygun rapor hazırlar.

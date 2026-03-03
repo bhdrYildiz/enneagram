@@ -8,6 +8,7 @@ import OurTeam from './OurTeam/OurTeam'
 import EventsSection from './Events/EventsSections'
 import TestimonialsSection from './Testimonial/TestimonialsSection'
 import BlogSection from './BlogSection.tsx/BlogSection'
+import HomeVideosSection from './HomeVideosSection'
 /*
 import AOS from 'aos'; */
 /*import 'aos/dist/aos.css'; */
@@ -35,6 +36,7 @@ const Home = () => {
             <About />
             <Services />
             <Process />
+            <HomeVideosSection />
             <OurTeam />
             <EventsSection />
             <TestimonialsSection />

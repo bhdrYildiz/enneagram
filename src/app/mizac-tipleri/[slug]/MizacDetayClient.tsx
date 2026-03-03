@@ -54,7 +54,6 @@ export default function MizacDetayClient({ slug }: { slug: string }) {
                                             className="object-contain transition-transform duration-700 group-hover:scale-[1.03]"
                                             sizes="(max-width: 1024px) 100vw, 65vw"
                                         />
-                                        <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
                                     </div>
 
                                     <div className="p-10 md:p-12">
@@ -98,8 +97,7 @@ export default function MizacDetayClient({ slug }: { slug: string }) {
                                                 {traits.map((t) => (
                                                     <span
                                                         key={t}
-                                                        className="border border-secondary bg-secondary hover:scale-105 text-white text-xs tracking-[0.15em] uppercase px-4 py-4 mx-auto"
-                                                    >
+                                                        className="border border-secondary bg-secondary hover:scale-105 text-white text-xs tracking-[0.15em] uppercase px-4 py-4"                                                    >
                                                         {t}
                                                     </span>
                                                 ))}

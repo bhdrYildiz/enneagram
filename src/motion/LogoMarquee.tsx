@@ -42,7 +42,7 @@ function LogoSet() {
             {logos.map((logo) => (
                 <div
                     key={logo.src}
-                    className="relative h-10 w-[120px] opacity-80 hover:opacity-100 transition"
+                    className="relative h-12 w-[120px] opacity-80 hover:opacity-100 transition"
                 >
                     <Image
                         src={logo.src}
