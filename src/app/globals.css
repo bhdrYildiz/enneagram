@@ -6,8 +6,8 @@
   --hover: #06b79f;
   --alt: #970818;
 
-  --background: #ffffff; 
-  --foreground: #1f2732; 
+  --background: #ffffff;
+  --foreground: #1f2732;
 
   --on-primary: #ffffff;
 }
@@ -22,7 +22,7 @@
   --color-foreground: var(--foreground);
 
   --color-on-primary: var(--on-primary);
-  
+
   --font-sans: var(--font-inter);
 }
 
@@ -36,5 +36,30 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family:
+    var(--font-inter),
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+}
+.testimonials .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+}
+
+.testimonials .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d1d5db;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.testimonials .swiper-pagination-bullet-active {
+  width: 34px;
+  border-radius: 999px;
+  background: #0794c7;
 }

@@ -10,7 +10,7 @@ const videos = [
         poster: '/videos/videoDeneme-2.png',
     },
     {
-        title: 'Çocuğunuzu yeterince tanıyor musunuz? ',
+        title: 'Çocuğunuzu yeterince tanıyor musunuz?',
         src: '/videos/video2.mp4',
         poster: '/videos/videoDeneme-1.png',
     },
@@ -26,72 +26,108 @@ const videos = [
     },
 ];
 
-const HomeVideosSection = () => {
+export default function HomeVideosSection() {
     return (
-        <section className="relative py-16 bg-white font-cormorant">
-            <div className="max-w-[1380px] mx-auto px-6 lg:px-12">
+        <section className="py-24 bg-gradient-to-b from-white to-slate-50">
+            <div className="max-w-7xl mx-auto px-6">
+
+                {/* Başlık */}
+
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: .7 }}
                     viewport={{ once: true }}
-                    className="text-center mb-12"
+                    className="text-center mb-16"
                 >
-                    <div className="inline-block">
-                        <p className="text-base text-secondary font-semibold uppercase tracking-[0.3em] mb-3">
-                            Enneagram Eğitim & Danışmanlık
-                        </p>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#1c2c34] mb-6 mt-4">
-                            Videolarımız
-                        </h2>
-                    </div>
+
+                    <span className="uppercase tracking-[0.35em] text-secondary font-semibold text-sm">
+                        Enneagram Eğitim & Danışmanlık
+                    </span>
+
+                    <h2 className="text-4xl lg:text-6xl font-light text-primary mt-4">
+                        Videolarımız
+                    </h2>
+
+                    <p className="max-w-3xl mx-auto mt-6 text-gray-600 leading-8 text-lg">
+                        Enneagram, aile, çocuk gelişimi ve kişisel farkındalık üzerine
+                        uzmanlarımızın hazırladığı kısa videoları keşfedin.
+                    </p>
+
                 </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-12 items-start">
-                    <motion.div
-                        style={{ transformStyle: 'flat' }}
-                        initial={{ opacity: 0, x: -40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
-                    >
-                        <VideoLightbox
-                            src={videos[0].src}
-                            poster={videos[0].poster}
-                            alt={videos[0].title}
-                            className="rounded-md shadow-lg mt-4"
-                        />
-                    </motion.div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: .7 }}
+                >
+                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-                    <motion.div
-                        initial={{ opacity: 0, x: 40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="space-y-10"
-                    >
                         {videos.slice(1).map((video, index) => (
-                            <div key={index} className="flex gap-4 items-center">
-                                <div className="w-44 h-48 flex-shrink-0 rounded-md overflow-hidden shadow-md">
+
+                            <motion.div
+                                key={index}
+                                whileHover={{ y: -8 }}
+                                transition={{ duration: .25 }}
+                                className="group rounded-2xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
+                            >
+
+                                <div className="overflow-hidden">
+
                                     <VideoLightbox
                                         src={video.src}
                                         poster={video.poster}
                                         alt={video.title}
                                         variant="thumbnail"
-                                        className="rounded-md shadow-none"
+                                        className="aspect-[9/16] cursor-pointer"
                                     />
+
                                 </div>
 
-                                <h3 className="text-xl md:text-2xl font-semibold text-primary leading-snug">
-                                    {video.title}
-                                </h3>
-                            </div>
+                                <div className="p-6">
+
+                                    <h4 className="text-xl font-semibold text-primary leading-8 group-hover:text-secondary transition-colors">
+
+                                        {video.title}
+
+                                    </h4>
+
+                                    <button
+                                        className="
+                                        mt-6 inline-flex items-center gap-2 font-semibold text-secondary group-hover:gap-4 transition-all"
+                                    >
+
+                                        Videoyu İzle
+
+                                        <svg
+                                            width="18"
+                                            height="18"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                d="M5 12H19M19 12L13 6M19 12L13 18"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
+
+                                    </button>
+
+                                </div>
+
+                            </motion.div>
+
                         ))}
-                    </motion.div>
-                </div>
+
+                    </div>
+
+                </motion.div>
+
             </div>
         </section>
     );
-};
-
-export default HomeVideosSection;
+}
