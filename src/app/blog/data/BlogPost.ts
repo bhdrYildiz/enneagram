@@ -13,7 +13,7 @@ export type BlogPost = {
   export const blogPosts: BlogPost[] = [
     {
       slug: "enneagram-yeni-bir-ruhsal-yolculuk-icin-gecmisi-uzun-yillara-dayanan-oldukca-kullanisli-eski-bir-aracti",
-      title: "Enneagram yeni bir ruhsal yolculuk için, geçmişi uzun yıllara dayanan oldukça kullanışlı eski bir araçtır..",
+      title: "Enneagram yeni bir ruhsal yolculuk için oldukça kullanışlı  bir araçtır...",
       excerpt:
       "Enneagram yeni bir ruhsal yolculuk için, geçmişi uzun yıllara dayanan oldukça kullanışlı eski bir araçtır..",  
       coverImage: "/enneagram_banner_2.jpg",

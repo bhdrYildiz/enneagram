@@ -1,7 +1,6 @@
 'use client'
 
 import LogoMarquee from "@/motion/LogoMarquee";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import {
@@ -51,9 +50,6 @@ export default function Services() {
             image: "/enneagramhero.jpg",
         },
     ];
-
-    const defaultImage = items[0]?.image ?? "/hero-1.jpg";
-    const [activeImage, setActiveImage] = useState<string>(defaultImage);
 
     return (
         <section className="relative py-24 bg-primary text-on-primary overflow-hidden">
@@ -112,36 +108,21 @@ export default function Services() {
                                             {item.icon}
 
                                         </div>
-
                                     </div>
-
                                     <h3 className="mt-10 text-3xl font-light">
-
                                         {item.title}
-
                                     </h3>
-
                                     <p className="mt-5 leading-8 text-on-primary/70">
-
                                         {item.desc}
-
                                     </p>
-
                                 </div>
-
                                 <div className="mt-12 flex items-center gap-3 text-secondary opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                                     <span>İncele</span>
-
                                     <FiArrowUpRight />
-
                                 </div>
-
                             </Link>
-
                         </motion.div>
-
                     ))}
-
                 </div>
 
                 <div className="mt-16 text-center">

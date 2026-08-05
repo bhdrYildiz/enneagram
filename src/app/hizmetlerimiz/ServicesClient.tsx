@@ -25,110 +25,200 @@ export default function ServicesClient() {
                         variants={staggerContainer}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.2 }}
-                        className="max-w-full mb-16 text-center"
+                        viewport={{ once: true }}
+                        className="max-w-5xl mx-auto text-center"
                     >
                         <motion.p
                             variants={fadeUp}
-                            className="text-xs tracking-[0.45em] uppercase text-secondary mb-4"
+                            className="uppercase tracking-[0.45em] text-secondary text-xs mb-5"
                         >
-                            Hizmetlerimiz
+                            ENNEAGRAM EĞİTİM & DANIŞMANLIK
                         </motion.p>
 
                         <motion.h1
                             variants={fadeUp}
-                            className="text-4xl md:text-5xl text-primary tracking-wide mb-6"
+                            className="text-5xl md:text-6xl text-primary leading-tight"
                         >
-                            Mizaç Merkezli
+                            İnsan Odaklı
                             <br />
-                            Eğitim ve Danışmanlık
+                            Gelişim Çözümleri
                         </motion.h1>
 
-                        <motion.div variants={fadeUp} className="mx-auto mb-8 h-1px w-24 bg-black/15" />
+                        <motion.div
+                            variants={fadeUp}
+                            className="w-28 h-px bg-secondary mx-auto my-8"
+                        />
 
                         <motion.p
                             variants={fadeUp}
-                            className="text-lg md:text-xl text-primary/80 leading-relaxed"
+                            className="text-xl text-primary/75 leading-9 max-w-4xl mx-auto"
                         >
-                            Enneagram temelli yaklaşımımızla; birey, aile, okul ve kurumlara{" "}
-                            <br className="hidden md:block" />
-                            özel olarak tasarlanan, derinlikli ve sürdürülebilir çözümler sunuyoruz.
+                            Enneagram temelli yaklaşımımızla bireylerin,
+                            ailelerin, eğitim kurumlarının ve organizasyonların
+                            gelişimine katkı sağlayan eğitim,
+                            danışmanlık ve dönüşüm programları sunuyoruz.
                         </motion.p>
                     </motion.div>
-
                     <motion.div
                         variants={staggerContainer}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.15 }}
-                        className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 items-stretch"
+                        viewport={{ once: true }}
+                        className="grid md:grid-cols-3 gap-8 mt-20"
                     >
-                        {services.map((service) => (
+                        {[
+                            {
+                                number: "30+",
+                                title: "Yıllık Deneyim",
+                            },
+                            {
+                                number: "100.000+",
+                                title: "Katılımcı",
+                            },
+                            {
+                                number: "500+",
+                                title: "Kurum",
+                            },
+                        ].map((item) => (
+                            <motion.div
+                                key={item.title}
+                                variants={fadeUp}
+                                className="text-center border border-black/10 rounded-2xl py-10"
+                            >
+                                <div className="text-5xl text-secondary">
+                                    {item.number}
+                                </div>
+
+                                <div className="mt-4 uppercase tracking-[0.25em] text-sm text-primary/70">
+                                    {item.title}
+                                </div>
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                    <motion.div
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="mt-24 space-y-16"
+                    >
+                        {services.map((service, index) => (
                             <motion.article
                                 key={service.slug}
                                 variants={fadeInCard}
-                                className="relative group h-full"
+                                className="
+                               group
+                               overflow-hidden
+                               rounded-3xl
+                               border border-black/10
+                               bg-white
+                               transition-all
+                               duration-500
+                               hover:border-secondary/40
+                               hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)]
+                           "
                             >
-                                <div className="hidden lg:block absolute -top-4 -right-4 w-full h-full border-2 border-secondary rounded-2xl z-0" />
+                                <div className="flex h-full flex-col p-8">
 
-                                <div
-                                    className="relative z-10 flex flex-col h-full
-                              rounded-2xl border border-black/10 bg-white
-                              shadow-[0_14px_40px_rgba(0,0,0,0.06)]
-                              transition-all duration-500
-                              group-hover:-translate-y-1
-                              group-hover:shadow-[0_22px_60px_rgba(0,0,0,0.10)]"
-                                >
-                                    <div className="relative p-10 md:p-12 flex flex-col h-full">
-                                        <div className="mb-8 flex items-center gap-4">
-                                            <div className="relative h-14 w-40">
-                                                <div className="absolute inset-0 rounded-xl border border-black/10 bg-white shadow-sm" />
-                                                <div className="relative h-full w-full flex items-center justify-center px-4">
-                                                    <Image
-                                                        src={service.logo}
-                                                        alt={service.title}
-                                                        width={140}
-                                                        height={60}
-                                                        className="object-contain opacity-95"
-                                                    />
-                                                </div>
-                                            </div>
+                                    <div className="mt-2 flex items-start justify-between gap-8">
 
-                                            <div className="hidden md:flex items-center gap-2 text-xs tracking-[0.25em] uppercase text-primary/60">
-                                                <span className="h-px w-8 bg-black/15" />
-                                                Program
-                                            </div>
+                                        <div className="flex-1">
+
+                                            <h3
+                                                className="
+                                               text-[30px]
+                                               leading-tight
+                                               text-primary
+                                               transition-colors
+                                               duration-300
+                                               group-hover:text-secondary
+                                           "
+                                            >
+                                                {service.title}
+                                            </h3>
+
+                                            <p
+                                                className="
+                                               mt-5
+                                               line-clamp-3
+                                               text-[16px]
+                                               leading-8
+                                               text-primary/70
+                                           "
+                                            >
+                                                {service.description}
+                                            </p>
+
                                         </div>
 
-                                        <h3 className="text-2xl md:text-[28px] leading-tight tracking-wide text-primary mb-4">
-                                            {service.title}
-                                        </h3>
-
-                                        <p className="text-[15px] leading-relaxed text-primary/75 mb-10 line-clamp-3">
-                                            {service.description}
-                                        </p>
-
-                                        <div className="mt-auto">
-                                            <Link
-                                                href={`/hizmetlerimiz/${service.slug}`}
-                                                className="inline-flex items-center gap-3 text-sm tracking-[0.28em] uppercase text-primary"
-                                            >
-                                                <span className="relative">
-                                                    Read more
-                                                    <span className="absolute left-0 -bottom-1 h-px w-full bg-black/20 transition-colors duration-500 group-hover:bg-black/50" />
-                                                </span>
-                                                <span className="transition-transform duration-500 group-hover:translate-x-1">
-                                                    →
-                                                </span>
-                                            </Link>
+                                        <div
+                                            className="
+                                           relative
+                                           h-28
+                                           w-28
+                                           shrink-0
+                                           overflow-hidden
+                                           rounded-2xl
+                                           bg-gray-100
+                                       "
+                                        >
+                                            <Image
+                                                src={service.heroImage}
+                                                alt={service.title}
+                                                fill
+                                                className="
+                                               object-cover
+                                               transition-transform
+                                               duration-700
+                                               group-hover:scale-110
+                                           "
+                                            />
                                         </div>
 
                                     </div>
+
+                                    <div className="mt-auto pt-8">
+
+                                        <div className="border-t border-black/10 pt-6">
+
+                                            <Link
+                                                href={`/hizmetlerimiz/${service.slug}`}
+                                                className="
+                                               inline-flex
+                                               items-center
+                                               gap-2
+                                               text-sm
+                                               font-medium
+                                               tracking-[0.18em]
+                                               uppercase
+                                               text-primary
+                                               transition-all
+                                               duration-300
+                                               group-hover:gap-4
+                                           "
+                                            >
+                                                Detayları İncele
+
+                                                <span
+                                                    className="
+                                                   transition-transform
+                                                   duration-300
+                                                   group-hover:translate-x-1
+                                               "
+                                                >
+                                                    →
+                                                </span>
+
+                                            </Link>
+
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </motion.article>
                         ))}
                     </motion.div>
-
                 </div>
             </section>
         </main>

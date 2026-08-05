@@ -1,30 +1,18 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { } from 'react'
 import { FaPhone, FaEnvelope, FaInstagram, FaYoutube, FaFacebookF, FaTwitter, FaWhatsapp, } from 'react-icons/fa'
 import { FaLocationPin } from 'react-icons/fa6';
 
-const TopInfoBar = () => {
-    const [isVisible, setIsVisible] = useState(true);
+type Props = {
+    visible: boolean;
+}
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY >= 90) {
-                setIsVisible(false);
-            } else {
-                setIsVisible(true);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
+const TopInfoBar = ({ visible }: Props) => {
     return (
         <div
             className={`hidden md:block bg-secondary/70 h-10 fixed top-0 left-0 right-0 z-[1100]
-                    transition-all duration-300
-    ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}
+    ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}
         >
             <div className="flex items-center justify-between w-[90%] xl:w-[80%] mx-auto h-full">
                 <div className="flex items-center space-x-6 text-on-primary text-xs">

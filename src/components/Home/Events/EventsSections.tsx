@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import TextMarquee from "@/motion/TextMarquee";
 import { FiClock, FiMapPin, FiArrowUpRight } from "react-icons/fi";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 
 type EventItem = {
@@ -16,6 +18,7 @@ type EventItem = {
     dateText: string;
     location: string;
     href: string;
+    image: string;
 };
 
 const events: EventItem[] = [
@@ -29,6 +32,7 @@ const events: EventItem[] = [
         dateText: "23 Mart 2026",
         location: "Online",
         href: "https://www.rehberimiz.com/uygulamali-enneagram-egitimleri-1-kur-enneagrama-ve-tiplere-giris/",
+        image: "/egitimler/enneagramavetipleregiris.png",
     },
     {
         id: "2",
@@ -40,6 +44,7 @@ const events: EventItem[] = [
         dateText: "Video Kayıt",
         location: "Online",
         href: "https://www.rehberimiz.com/temel-enneagram-egitimi/",
+        image: "/egitimler/temelenneagram.png",
     },
     {
         id: "3",
@@ -51,10 +56,14 @@ const events: EventItem[] = [
         dateText: "Video Kayıt",
         location: "Online",
         href: "https://www.rehberimiz.com/cocuk-merkezli-enneagram-egitimi/",
+        image: "/egitimler/cocukmerkezli.png",
     },
 ];
 
 export default function EventsSection() {
+
+    const [activeImage, setActiveImage] = useState(events[0].image);
+
     return (
         <section className="relative py-20 bg-on-primary font-[300] text-on-primary">
             <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -76,7 +85,15 @@ export default function EventsSection() {
 
                                 <div className="mt-10 space-y-8">
                                     {events.map((e, idx) => (
-                                        <div key={e.id} className="relative">
+                                        <div
+                                            key={e.id}
+                                            onMouseEnter={() => setActiveImage(e.image)}
+                                            onClick={() => setActiveImage(e.image)}
+                                            className={`relative cursor-pointer rounded-xl p-2 transition-all duration-300 ${activeImage === e.image
+                                                ? "bg-white/10"
+                                                : "hover:bg-white/5"
+                                                }`}
+                                        >
                                             <div className="flex items-start gap-5">
                                                 <div className="shrink-0">
                                                     <div className="w-[84px] overflow-hidden rounded-md bg-white text-[#234b43] shadow-sm">
@@ -132,13 +149,27 @@ export default function EventsSection() {
                     <div className="relative">
                         <div className="pointer-events-none absolute -inset-2 rounded-md border-2 border-primary" />
                         <div className="relative min-h-[320px] overflow-hidden rounded-md bg-zinc-200 shadow-sm md:min-h-full">
-                            <Image
-                                src="/egitimler/enneagramavetipleregiris.png"
-                                alt="Etkinlik görseli"
-                                fill
-                                className="object-cover"
-                                priority={false}
-                            />
+                            <AnimatePresence mode="wait">
+
+                                <motion.div
+                                    key={activeImage}
+                                    className="absolute inset-0"
+                                    initial={{ opacity: 0, scale: 1.04 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    exit={{ opacity: 0, scale: 0.98 }}
+                                    transition={{ duration: 0.35 }}
+                                >
+
+                                    <Image
+                                        src={activeImage}
+                                        alt="Etkinlik"
+                                        fill
+                                        className="object-cover"
+                                    />
+
+                                </motion.div>
+
+                            </AnimatePresence>
                             <div className="absolute inset-0 bg-gradient-to-l from-black/0 to-black/10" />
                         </div>
                     </div>
@@ -147,7 +178,7 @@ export default function EventsSection() {
                     <TextMarquee />
                 </div>
             </div>
-        </section>
+        </section >
     );
 
 }

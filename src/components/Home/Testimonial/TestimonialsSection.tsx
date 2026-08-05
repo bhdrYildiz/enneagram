@@ -7,9 +7,6 @@ import { testimonials } from '@/constant/constant';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 export default function TestimonialsSection() {
     return (
         <section className="testimonials relative py-24 bg-gradient-to-b from-slate-50 to-white overflow-hidden">

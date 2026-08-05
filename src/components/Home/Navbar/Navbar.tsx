@@ -2,88 +2,113 @@
 
 import { navLinks } from '@/constant/constant'
 import Link from 'next/link'
-import Image from "next/image";
-import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
 type Props = {
-    openNav?: () => void;
-    fixed?: boolean;
-    isHomePage?: boolean;
+    openNav?: () => void
+    isHomePage?: boolean
+    showTopBar: boolean
 }
 
-const Nav = ({ openNav, fixed = false, isHomePage = false }: Props) => {
-    const [navBg, setNavBg] = useState(false);
+export default function Navbar({
+    openNav,
+    isHomePage,
+    showTopBar,
+}: Props) {
 
-    useEffect(() => {
-        if (fixed) {
-            setNavBg(true);
-            return;
-        }
-
-        const handler = () => {
-            if (window.scrollY >= 90) setNavBg(true);
-            else setNavBg(false);
-        };
-
-        window.addEventListener("scroll", handler);
-        return () => window.removeEventListener("scroll", handler);
-    }, [fixed]);
+    const transparent = isHomePage && showTopBar
 
     return (
-        <div
-            className={`${navBg
-                ? 'bg-primary/90 backdrop-blur-sm shadow-md top-0'
-                : isHomePage
-                    ? 'bg-primary top-10'
-                    : 'bg-primary/80 backdrop-blur-sm top-10'
-                } transition-all duration-300 h-[10vh] z-[1000] fixed w-full`}
+
+        <header
+            className={`fixed left-0 right-0 z-[1000] transition-all duration-500 ${showTopBar ? "top-10" : "top-0"
+                }`}
         >
-            <div className='flex items-center h-full justify-between w-[100%] xl:w-[100%] mx-auto'>
-                <Link href="/" className="relative h-32 w-40 block">
+
+            <div
+                className={`mx-auto flex h-[88px] max-w-[1500px] items-center justify-between px-8 transition-all duration-500 ${transparent
+                    ? "bg-transparent"
+                    : "rounded-b-md bg-primary/85 backdrop-blur-md shadow-md"
+                    }`}
+            >
+
+                {/* LOGO */}
+
+                <Link
+                    href="/"
+                    className="relative h-20 w-56 shrink-0 transition hover:scale-[1.03]"
+                >
+
                     <Image
-                        src="/Logo.png"
-                        alt="Logo"
+                        src="/Logo.png.png"
+                        alt="Enneagram"
                         fill
                         priority
-                        className="object-contain transition-all duration-300 hover:scale-105"
+                        className="object-contain"
                     />
+
                 </Link>
 
-                <div className='hidden lg:flex items-center space-x-10'>
+                {/* DESKTOP MENU */}
+
+                <nav className="hidden lg:flex items-center gap-12">
+
                     {navLinks.map((link) => (
-                        <Link href={link.url} key={link.id}>
-                            <p
-                                className='relative text-on-primary text-base font-[300] w-fit block
-                  after:block after:content-[""] after:absolute after:h-[3px]
-                  after:bg-secondary after:w-full after:scale-x-0 hover:after:scale-x-100
-                  after:transition duration-300 after:origin-right
-                  hover:text-hover'
-                            >
-                                {link.label}
-                            </p>
+
+                        <Link
+                            key={link.id}
+                            href={link.url}
+                            className="group relative text-[16px] font-light tracking-[0.03em] text-white transition-colors duration-300 hover:text-secondary"
+                        >
+
+                            {link.label}
+
+                            <span className="absolute -bottom-2 left-1/2 h-[2px] w-0 -translate-x-1/2 rounded-full bg-secondary transition-all duration-300 group-hover:w-8" />
+
                         </Link>
+
                     ))}
-                </div>
-                <div className='flex items-center space-x-4'>
+
+                </nav>
+
+                {/* RIGHT */}
+
+                <div className="flex items-center gap-5">
+
                     <Link
                         href="/mizac-tipleri"
-                        className='rounded md:px-12 mp:py-2.5 px-8 py-2 text-on-primary text-base font-[300]
-              bg-secondary hover:bg-hover transition-all duration-200 cursor-pointer'
+                        className="hidden lg:inline-flex items-center gap-3 rounded-full bg-secondary px-7 py-3 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-hover hover:shadow-xl"
                     >
+
                         Mizaç Tipini Keşfet
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                        >
+
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+
+                        </svg>
+
                     </Link>
+
                     <HiBars3BottomRight
-                        onClick={() => {
-                            console.log("Hamburger tıklandı!");
-                            openNav?.();
-                        }}
-                        className='w-8 h-8 cursor-pointer text-on-primary lg:hidden hover:text-hover transition-colors duration-200'
+                        onClick={openNav}
+                        className="h-8 w-8 cursor-pointer text-white transition hover:text-secondary lg:hidden"
                     />
+
                 </div>
+
             </div>
-        </div>
+        </header>
+
     )
 }
-
-export default Nav

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import VideoLightbox from '@/app/lib/VideoLightbox';
+import Image from 'next/image';
 
 const AboutSection = () => {
     return (
@@ -26,20 +26,119 @@ const AboutSection = () => {
                 </motion.div>
 
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                    <div className="relative lg:pr-4 lg:pb-8">
-                        <motion.div
-                            initial={{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.8, delay: 0.2 }}
-                            viewport={{ once: true }}
-                        >
-                            <VideoLightbox
-                                src="/videos/enneagramvideo-1.mp4"
-                                poster="/videos/videoDeneme-0.png"
-                                alt="Enneagram tanıtım videosu"
-                            />
-                        </motion.div>
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: .7 }}
+                        viewport={{ once: true }}
+                    >
+
+                        <div className="grid grid-cols-12 gap-5">
+
+                            {/* Büyük Fotoğraf */}
+
+                            <div className="col-span-12">
+
+                                <div className="group relative overflow-hidden rounded-3xl h-[430px]">
+
+                                    <Image
+                                        src="/enherethero.jpg"
+                                        alt="Enneagram Eğitim"
+                                        fill
+                                        className="object-cover transition duration-700 group-hover:scale-105"
+                                    />
+
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+
+                                    <div className="absolute left-6 bottom-6 rounded-2xl bg-white/90 backdrop-blur-md px-5 py-4">
+
+                                        <p className="text-3xl font-light text-primary">
+
+                                            15+
+
+                                        </p>
+
+                                        <p className="text-sm uppercase tracking-widest text-gray-600">
+
+                                            Yıllık Deneyim
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            {/* Küçük Fotoğraf */}
+
+                            <div className="col-span-6">
+
+                                <div className="group relative overflow-hidden rounded-3xl h-[220px]">
+
+                                    <Image
+                                        src="/enneagramhero.jpg"
+                                        alt="Kurumsal Eğitim"
+                                        fill
+                                        className="object-cover transition duration-700 group-hover:scale-105"
+                                    />
+
+                                    <div className="absolute inset-0 bg-black/20" />
+
+                                    <div className="absolute left-6 bottom-6 rounded-2xl bg-white/90 backdrop-blur-md px-5 py-4">
+
+                                        <h4 className="text-3xl font-light text-primary">
+
+                                            100+
+
+                                        </h4>
+
+                                        <p className="uppercase tracking-widest text-xs text-gray-600">
+
+                                            Eğitim
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div className="col-span-6">
+
+                                <div className="group relative overflow-hidden rounded-3xl h-[220px]">
+
+                                    <Image
+                                        src="/enneagram-slayder1.jpg"
+                                        alt="Danışmanlık"
+                                        fill
+                                        className="object-cover transition duration-700 group-hover:scale-105"
+                                    />
+
+                                    <div className="absolute inset-0 bg-black/20" />
+
+                                    <div className="absolute left-6 bottom-6 rounded-2xl bg-white/90 backdrop-blur-md px-5 py-4">
+
+                                        <h4 className="text-3xl font-light text-primary">
+                                            100%
+                                        </h4>
+
+                                        <p className="uppercase tracking-widest text-xs text-gray-600">
+
+                                            Memnuniyet
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </motion.div>
 
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
@@ -58,26 +157,6 @@ const AboutSection = () => {
                                 Enneagram Eğitim & Danışmanlık
                             </p>
                         </div>
-
-                        <div className="grid grid-cols-2 gap-6">
-                            <div className="border-l-2 border-secondary pl-4">
-                                <h3 className="text-3xl font-light text-[#1c2c34] mb-1">100+</h3>
-                                <p className="text-sm text-primary uppercase tracking-wider">Eğitim</p>
-                            </div>
-                            <div className="border-l-2 border-secondary pl-4">
-                                <h3 className="text-3xl font-light text-[#1c2c34] mb-1">15+</h3>
-                                <p className="text-sm text-primary uppercase tracking-wider">Yıllık Deneyim</p>
-                            </div>
-                            <div className="border-l-2 border-secondary pl-4">
-                                <h3 className="text-3xl font-light text-[#1c2c34] mb-1">100%</h3>
-                                <p className="text-sm text-primary uppercase tracking-wider">Öğrenci Memnuniyeti</p>
-                            </div>
-                            <div className="border-l-2 border-secondary pl-4">
-                                <h3 className="text-3xl font-light text-[#1c2c34] mb-1">24/7</h3>
-                                <p className="text-sm text-primary uppercase tracking-wider">Hizmet</p>
-                            </div>
-                        </div>
-
                         <div className="flex flex-wrap gap-4 pt-4">
                             <Link
                                 href="/hakkimizda"

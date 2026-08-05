@@ -8,17 +8,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { getAllBlogPosts } from "@/app/blog/data/BlogPost";
 
-function formatDateBadge(iso: string) {
-    const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
-    if (!m) return { day: "--", monthYear: "--" };
-
-    const year = m[1].slice(-2);
-    const month = m[2]; 
-    const day = m[3]; 
-
-    return { day, monthYear: `${month} / ${year}` };
-}
-
 export default function BlogSection() {
     const posts = getAllBlogPosts().slice(0, 6);
 
@@ -71,48 +60,78 @@ export default function BlogSection() {
                             768: { slidesPerView: 2 },
                             1024: { slidesPerView: 3 },
                         }}
-                        className="blog-swiper"
+                        className="blog-swiper !pb-4"
                     >
-                        {posts.map((post) => {
-                            const badge = formatDateBadge(post.publishedAt);
-                            return (
-                                <SwiperSlide key={post.slug}>
-                                    <article>
-                                        <Link href={`/blog/${post.slug}`} className="block group" prefetch={false}>
-                                            <div className="relative overflow-hidden">
-                                                <div className="relative h-[320px] md:h-[420px] overflow-hidden shadow-lg">
-                                                    <Image
-                                                        src={post.coverImage}
-                                                        alt={post.title}
-                                                        fill
-                                                        sizes="(max-width: 768px) 100vw, 520px"
-                                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                                    />
-                                                </div>
+                        {posts.map((post) => (
+                            <SwiperSlide key={post.slug} className="flex h-auto">
+                                <article className="flex h-full w-full">
+                                    <Link
+                                        href={`/blog/${post.slug}`}
+                                        prefetch={false}
+                                        className="group flex h-full w-full flex-col rounded-[30px] border border-slate-200 bg-white transition-all duration-500 hover:-translate-y-2 hover:border-secondary/40 hover:shadow-[0_25px_60px_rgba(0,0,0,.12)]"
+                                    >
+                                        {/* IMAGE */}
 
-                                                <div className="absolute left-5 top-5 h-[86px] w-[86px] bg-[#1c2c34] text-white flex flex-col items-center justify-center shadow-lg">
-                                                    <div className="text-4xl font-light leading-none">
-                                                        {badge.day}
-                                                    </div>
-                                                    <div className="text-xs tracking-wider mt-1 opacity-90">
-                                                        {badge.monthYear}
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div className="relative aspect-[5/4] overflow-hidden bg-slate-100">
+                                            <Image
+                                                src={post.coverImage}
+                                                alt={post.title}
+                                                fill
+                                                sizes="(max-width:768px)100vw,520px"
+                                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                            />
 
-                                            <div className="pt-7">
-                                                <h3 className="text-2xl md:text-3xl font-[300] text-primary leading-snug mb-3">
-                                                    {post.title}
-                                                </h3>
-                                                <p className="text-primary font-[300] leading-relaxed text-base tracking-light line-clamp-3">
-                                                    {post.excerpt}
-                                                </p>
+                                            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+
+                                            <div className="absolute bottom-6 left-6">
+                                                <span className="rounded-full bg-white/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-primary backdrop-blur-xl">
+                                                    Enneagram
+                                                </span>
                                             </div>
-                                        </Link>
-                                    </article>
-                                </SwiperSlide>
-                            );
-                        })}
+                                        </div>
+
+                                        {/* CONTENT */}
+
+                                        <div className="flex flex-1 flex-col p-8">
+                                            <h3 className="line-clamp-2 min-h-[64px] text-2xl font-light leading-snug text-primary transition-colors group-hover:text-secondary">
+                                                {post.title}
+                                            </h3>
+
+                                            <p className="mt-5 flex-1 line-clamp-3 text-gray-600 leading-8">
+                                                {post.excerpt}
+                                            </p>
+
+                                            <div className="mt-8 border-t border-slate-200 pt-6 flex items-center justify-between">
+                                                <span className="text-sm text-gray-500">
+                                                    {new Date(post.publishedAt).toLocaleDateString("tr-TR", {
+                                                        day: "numeric",
+                                                        month: "long",
+                                                        year: "numeric",
+                                                    })}
+                                                </span>
+
+                                                <span className="inline-flex items-center gap-2 font-semibold text-secondary transition-all duration-300 group-hover:gap-4">
+                                                    Oku
+
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="18"
+                                                        height="18"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                    >
+                                                        <path d="M5 12h14" />
+                                                        <path d="m12 5 7 7-7 7" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </article>
+                            </SwiperSlide>
+                        ))}
                     </Swiper>
                 </div>
 
