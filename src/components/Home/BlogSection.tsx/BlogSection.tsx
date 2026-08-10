@@ -68,10 +68,8 @@ export default function BlogSection() {
                                     <Link
                                         href={`/blog/${post.slug}`}
                                         prefetch={false}
-                                        className="group flex h-full w-full flex-col rounded-[30px] border border-slate-200 bg-white transition-all duration-500 hover:-translate-y-2 hover:border-secondary/40 hover:shadow-[0_25px_60px_rgba(0,0,0,.12)]"
+                                        className="group flex h-full w-full flex-col rounded-[30px] border border-slate-200 bg-white transition-all duration-500 hover:-translate-y-2"
                                     >
-                                        {/* IMAGE */}
-
                                         <div className="relative aspect-[5/4] overflow-hidden bg-slate-100">
                                             <Image
                                                 src={post.coverImage}
@@ -89,9 +87,6 @@ export default function BlogSection() {
                                                 </span>
                                             </div>
                                         </div>
-
-                                        {/* CONTENT */}
-
                                         <div className="flex flex-1 flex-col p-8">
                                             <h3 className="line-clamp-2 min-h-[64px] text-2xl font-light leading-snug text-primary transition-colors group-hover:text-secondary">
                                                 {post.title}
@@ -112,7 +107,6 @@ export default function BlogSection() {
 
                                                 <span className="inline-flex items-center gap-2 font-semibold text-secondary transition-all duration-300 group-hover:gap-4">
                                                     Oku
-
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="18"

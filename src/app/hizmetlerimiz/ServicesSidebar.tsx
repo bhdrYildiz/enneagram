@@ -11,126 +11,104 @@ export default function ServicesSidebar({ services }: { services: Service[] }) {
 
     return (
         <aside className="space-y-8">
-            <div className="border border-black/10 bg-white p-6 shadow-[0_14px_40px_rgba(0,0,0,0.06)]">
-                <h3 className="text-xl tracking-wide text-primary mb-5">Diğer Hizmetler</h3>
 
-                <ul className="space-y-2">
-                    {services.map((s) => {
-                        const href = `/hizmetlerimiz/${s.slug}`;
-                        const active = pathname === href;
+            {/* HİZMETLER MENÜSÜ */}
 
-                        return (
-                            <li key={s.slug}>
-                                <Link
-                                    href={href}
-                                    className={[
-                                        "group relative flex items-center justify-between",
-                                        "rounded-full px-5 py-3",
-                                        "border border-transparent",
-                                        "transition-colors duration-300",
-                                        active ? "text-white" : "text-primary",
-                                    ].join(" ")}
-                                >
-                                    <span
-                                        className={[
-                                            "absolute inset-0 rounded-full",
-                                            "bg-secondary",
-                                            "origin-left scale-x-0",
-                                            "transition-transform duration-900 ease-out",
-                                            active ? "scale-x-100" : "group-hover:scale-x-100",
-                                        ].join(" ")}
-                                    />
+            <div className="border-t border-black/10 pt-6">
 
-                                    <span className="relative flex items-center gap-3">
-                                        <span
-                                            className={[
-                                                "h-2 w-2 rounded-full",
-                                                active ? "bg-white/90" : "bg-primary/70 group-hover:bg-white/90",
-                                            ].join(" ")}
-                                        />
-                                        <span className={["text-[18px] leading-none", active ? "opacity-100" : "opacity-95"].join(" ")}>
+                <div className="mb-7">
+                    <span className="text-[10px] uppercase tracking-[0.3em] text-secondary">
+                        HİZMETLERİMİZ
+                    </span>
+
+                    <h3 className="mt-2 text-2xl text-primary">
+                        Diğer Çalışmalarımız
+                    </h3>
+                </div>
+
+                <nav>
+                    <ul>
+                        {services.map((s, index) => {
+                            const href = `/hizmetlerimiz/${s.slug}`;
+                            const active = pathname === href;
+
+                            return (
+                                <li key={s.slug} className="border-b border-black/10 last:border-b-0">
+                                    <Link href={href} className={`group relative flex items-center gap-4 py-4 transition-all duration-300 ${active ? "text-secondary" : "text-primary hover:text-secondary"}`}>
+
+                                        <span className={`absolute left-0 top-1/2 -translate-y-1/2 w-[2px] h-0 bg-secondary transition-all duration-300 ${active ? "h-7" : "group-hover:h-5"}`} />
+
+                                        <span className={`flex-1 text-[17px] leading-tight transition-all duration-300 ${active ? "translate-x-1" : "group-hover:translate-x-1"}`}>
                                             {s.title}
                                         </span>
-                                    </span>
 
-                                    <span
-                                        className={[
-                                            "relative text-lg",
-                                            "transition-transform duration-300",
-                                            active ? "translate-x-0" : "group-hover:translate-x-1",
-                                            active ? "opacity-100" : "opacity-80 group-hover:opacity-100",
-                                        ].join(" ")}
-                                        aria-hidden
-                                    >
-                                        ↗
-                                    </span>
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
+                                        <span className={`text-base transition-all duration-300 ${active ? "translate-x-0 opacity-100" : "opacity-30 group-hover:translate-x-1 group-hover:opacity-100"}`}>
+                                            ↗
+                                        </span>
+
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </nav>
+
             </div>
 
-            <div className="p-8 text-center border border-black/10 shadow-[0_14px_40px_rgba(0,0,0,0.06)]">
-                <div className="flex justify-center">
-                    <div className="relative w-[110px] h-[110px] rounded-full overflow-hidden border border-black/10">
-                        <Image
-                            src="/Logo.png"
-                            alt="enneagram egitim"
-                            fill
-                            sizes="110px"
-                            className="object-contain rounded-full bg-primary/20"
-                        />
+
+            {/* İLETİŞİM KARTI */}
+
+            <div className="relative overflow-hidden border border-black/10 bg-primary p-8 text-center">
+
+                <div className="absolute -right-16 -top-16 w-40 h-40 rounded-full border border-secondary/10" />
+
+                <div className="absolute -left-20 -bottom-20 w-44 h-44 rounded-full border border-secondary/10" />
+
+                <div className="relative z-10">
+
+                    <div className="flex justify-center">
+                        <div className="relative w-24 h-24 rounded-full overflow-hidden border border-white/10 bg-white">
+                            <Image src="/Logo.png" alt="Enneagram Eğitim & Danışmanlık" fill sizes="96px" className="object-contain" />
+                        </div>
                     </div>
+
+                    <p className="mt-6 text-xl text-white leading-tight">
+                        Enneagram Eğitim
+                        <br />
+                        <span className="text-secondary">& Danışmanlık</span>
+                    </p>
+
+                    <p className="mt-4 text-sm leading-6 text-white/55">
+                        Mizaç merkezli eğitim ve danışmanlık çalışmalarımız hakkında bilgi almak için bizimle iletişime geçebilirsiniz.
+                    </p>
+
+                    <Link href="/iletisim" className="mt-6 inline-flex items-center gap-3 border-b border-white/20 pb-2 text-[10px] uppercase tracking-[0.2em] text-white transition-all duration-300 hover:gap-5 hover:border-secondary hover:text-secondary">
+                        İletişime Geçin
+                        <span className="text-sm">↗</span>
+                    </Link>
+
+                    <div className="mt-7 pt-6 border-t border-white/10 flex justify-center items-center gap-5 text-white/60">
+
+                        <Link href="https://www.instagram.com/enneagramegitim/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors hover:text-secondary">
+                            <FaInstagram size={18} />
+                        </Link>
+
+                        <Link href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition-colors hover:text-secondary">
+                            <FaFacebookF size={17} />
+                        </Link>
+
+                        <Link href="https://www.youtube.com/enneagramegitim/" target="_blank" rel="noopener noreferrer" aria-label="Youtube" className="transition-colors hover:text-secondary">
+                            <FaYoutube size={19} />
+                        </Link>
+
+                        <Link href="https://wa.me/905303897163" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp" className="transition-colors hover:text-secondary">
+                            <FaWhatsapp size={19} />
+                        </Link>
+
+                    </div>
+
                 </div>
 
-                <p className="mt-5 text-xl font-[300] text-primary">
-                    Enneagram Eğitim & Danışmanlık
-                </p>
-
-                <p className="mt-2 text-base text-primary leading-relaxed">
-                    İletişime Geçin!
-                </p>
-
-                <div className="flex flex-row justify-center items-center gap-4 mt-6 text-primary">
-                    <Link
-                        href="https://www.instagram.com/enneagramegitim/"
-                        aria-label="Instagram"
-                        className="hover:text-secondary transition"
-                    >
-                        <FaInstagram size={20} />
-                    </Link>
-
-                    <Link
-                        href="https://www.instagram.com/enneagramegitim/"
-                        aria-label="Facebook"
-                        className="hover:text-secondary transition"
-                    >
-                        <FaFacebookF size={20} />
-                    </Link>
-
-                    <Link
-                        href="https://www.youtube.com/enneagramegitim/"
-                        aria-label="Youtube"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        prefetch={false}
-                        className="hover:text-secondary transition"
-                    >
-                        <FaYoutube size={20} />
-                    </Link>
-
-                    <Link
-                        href="https://wa.me/905303897163"
-                        aria-label="Whatsapp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        prefetch={false}
-                        className="hover:text-secondary transition"
-                    >
-                        <FaWhatsapp size={20} />
-                    </Link>
-                </div>
             </div>
 
         </aside>

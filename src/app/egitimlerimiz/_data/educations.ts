@@ -1,11 +1,9 @@
-export type EducationCategory = "enneagram-egitimleri" | "enneagram-gelisim-atolyeleri";
-
 export type EducationComment = {
   name: string;
   role?: string;
   rating: 1 | 2 | 3 | 4 | 5;
   text: string;
-  date?: string; 
+  date?: string;
 };
 
 export type EducationItem = {
@@ -13,41 +11,21 @@ export type EducationItem = {
   slug: string;
   title: string;
   priceText: string;
-  poster: string; 
-  category: EducationCategory;
+  poster: string;
   href?: string;
-  intro?: string[];       
-  topicsTitle?: string;   
-  topicsIntro?: string;   
-  topics?: string[];     
+  intro?: string[];
+  topicsTitle?: string;
+  topicsIntro?: string;
+  topics?: string[];
   audienceTitle?: string;
-  audience?: string;     
-  schedule?: string;      
-  durationText?: string;  
-  instructor?: string;   
+  audience?: string;
+  schedule?: string;
+  durationText?: string;
+  instructor?: string;
   comments?: EducationComment[];
 };
 
-export const CATEGORY_META: Record<
-  EducationCategory,
-  { title: string; description: string }
-> = {
-  "enneagram-egitimleri": {
-    title: "Enneagram Eğitimleri",
-    description: `Enneagram eğitimleri doğuştan sahip olduğumuz mizaç yapımızı bilmek, tanımak ve fark edebilmekte detaylı ve geniş bir bilgi edinmemizi sağlar. Enneagram eğitimleri ile kişi potansiyel imkân ve kabiliyetlerinin farkına varır. Bu potansiyellerini geliştirebilme ve risklerini iyileştirebilme imkânına sahip olur.
-
-Enneagram eğitimleri ile temelde kişinin kendinin farkına varması ve kendi dışındakini anlayabilmesi amaçlanır.`,
-  },
-  "enneagram-gelisim-atolyeleri": {
-    title: "Enneagram Gelişim Atölyeleri",
-    description: `Enneagram eğitimleri doğuştan sahip olduğumuz mizaç yapımızı bilmek, tanımak ve fark edebilmekte detaylı ve geniş bir bilgi edinmemizi sağlar. Enneagram eğitimleri ile kişi potansiyel imkân ve kabiliyetlerinin farkına varır. Bu potansiyellerini geliştirebilme ve risklerini iyileştirebilme imkânına sahip olur.
-
-Enneagram eğitimleri ile temelde kişinin kendinin farkına varması ve kendi dışındakini anlayabilmesi amaçlanır.`,
-  },
-};
-
 export const WHATSAPP_URL = "https://wa.me/905435406443";
-
 
 export const educations: EducationItem[] = [
   {
@@ -56,7 +34,6 @@ export const educations: EducationItem[] = [
     title: "İsmail Acarkan’la Enneagram Işığında Dönüşüm Atölyesi",
     priceText: "₺6,000.00 – ₺7,000.00",
     poster: "/egitimler/enneagramisiginda.jpg",
-    category: "enneagram-gelisim-atolyeleri",
     intro: [
       "Kendinizi daha derinlemesine tanımaya, içsel dönüşüm yolculuğunuzu başlatmaya hazır mısınız? 12 hafta sürecek olan bu özel atölye, haftada 1 gün, 3 saat boyunca, hayatınıza yeni bir perspektif kazandırmak ve içsel dünyanızı keşfetmenize yardımcı olmak için tasarlandı.",
       "Atölye boyunca, Enneagram’ın derin bilgeliğini kullanarak kendilik kavramını yeniden tanımlamayı ve hayatınıza yeni bir anlayışla yaklaşmayı öğrenme fırsatı bulacaksınız.",
@@ -105,14 +82,14 @@ export const educations: EducationItem[] = [
     title: "Modül 1 – Temel Enneagram Eğitimi",
     priceText: "₺3,250.00 – ₺3,500.00",
     poster: "/egitimler/afis3.jpg",
-    category: "enneagram-egitimleri",
-    intro:[
+    intro: [
       "Enneagram Mizaç Merkezli Kişilik metodolojisinin temel kavramlarının, 9 mizaç yapısının anlatıldığı Enneagram’ın ilk basamak eğitimidir.",
       "Eğitim sonunda Katılım Belgesi verilmektedir.",
-      "Eğitim 19.30 – 22.30 saatlerinde, online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır."
+      "Eğitim 19.30 – 22.30 saatlerinde, online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır.",
     ],
     topicsTitle: "Eğitim İçeriği",
-    topicsIntro: "Eğitim, kendini tanıma ve başkalarını anlamaya dair bir farkındalık kazanılmasını amaçlar. Güçlü yönlerin keşfi, potansiyel riskleri anlama, hayatında tekrarlayan sorunların kökenini fark etme, verimli ve anlamlı bir hayat yaşayabilme adına mizaç zemini üzerine oluşan ve gelişen kişilik tipleri hakkında bilgi sahibi olup, bu bilgiyi hayatın tüm alanlarında kullanabilmeyi hedefler.",
+    topicsIntro:
+      "Eğitim, kendini tanıma ve başkalarını anlamaya dair bir farkındalık kazanılmasını amaçlar. Güçlü yönlerin keşfi, potansiyel riskleri anlama, hayatında tekrarlayan sorunların kökenini fark etme, verimli ve anlamlı bir hayat yaşayabilme adına mizaç zemini üzerine oluşan ve gelişen kişilik tipleri hakkında bilgi sahibi olup, bu bilgiyi hayatın tüm alanlarında kullanabilmeyi hedefler.",
     topics: [
       "İnsana bütüncül yaklaşım",
       "Mizaç ve kişiliğin kökeni",
@@ -125,10 +102,12 @@ export const educations: EducationItem[] = [
       "Mizaçların stres ve rahat hatları.",
     ],
     audienceTitle: "Kimler Katılabilir ?",
-    audience: "Öğretmenler, rehber öğretmenler, anne-babalar, psikologlar, ekip yöneticileri, koçlar, mentorlar, girişimciler, okul yöneticileri, insan kaynakları profesyonelleri, senaryo-hikâye yazarları, reklamcılar, kendini tanımak ve başkalarını anlamak isteyen herkes katılabilir.",
+    audience:
+      "Öğretmenler, rehber öğretmenler, anne-babalar, psikologlar, ekip yöneticileri, koçlar, mentorlar, girişimciler, okul yöneticileri, insan kaynakları profesyonelleri, senaryo-hikâye yazarları, reklamcılar, kendini tanımak ve başkalarını anlamak isteyen herkes katılabilir.",
     durationText: "12 saat",
     instructor: "İsmail Acarkan",
-    schedule: "19.30 – 22.30 saatlerinde online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce WhatsApp grubuna ekleneceksiniz.",
+    schedule:
+      "19.30 – 22.30 saatlerinde online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce WhatsApp grubuna ekleneceksiniz.",
     comments: [
       {
         name: "S.B.E",
@@ -152,15 +131,15 @@ export const educations: EducationItem[] = [
     title: "Modül 2 – 2. Seviye Enneagram Eğitimi",
     priceText: "₺5,000.00",
     poster: "/egitimler/2.seviye.jpg",
-    category: "enneagram-egitimleri",
-    intro:[
+    intro: [
       "Temel Enneagram Eğitimini tamamlayıp öğrenilen Enneagram kavramları ve mizaçlar hakkında daha detaylı bilgiler edinmek, derinleşmek ve ilerlemek isteyenler için düzenlenen bir eğitimdir.",
       "Bu Eğitimimiz Online’dır.",
       "Eğitim sonunda Katılım Belgesi verilmektedir.",
       "Eğitim 19.30 – 22.30 saatlerinde, online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır.",
     ],
     topicsTitle: "Eğitim İçeriği",
-    topicsIntro: "Temel Enneagram Eğitimini tamamlayıp öğrenilen Enneagram kavramları ve mizaçlar hakkında daha detaylı bilgiler edinmek, derinleşmek ve ilerlemek isteyenler için düzenlenen bir eğitimdir.",
+    topicsIntro:
+      "Temel Enneagram Eğitimini tamamlayıp öğrenilen Enneagram kavramları ve mizaçlar hakkında daha detaylı bilgiler edinmek, derinleşmek ve ilerlemek isteyenler için düzenlenen bir eğitimdir.",
     topics: [
       "Psikolojik boyutun merkezleri ve bölümleri",
       "Mizaçların duygusal takılmaları",
@@ -199,10 +178,12 @@ export const educations: EducationItem[] = [
       "Her mizaç tipi için gelişim önerileri",
     ],
     audienceTitle: "Kimler Katılabilir ?",
-    audience: "Temel Enneagram Eğitimini tamamlamış, Enneagram konusunda derinleşmek isteyen herkes katılabilir.",
+    audience:
+      "Temel Enneagram Eğitimini tamamlamış, Enneagram konusunda derinleşmek isteyen herkes katılabilir.",
     durationText: "24 saat",
     instructor: "İsmail Acarkan",
-    schedule: "19.30 – 22.30 saatlerinde online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce WhatsApp grubuna ekleneceksiniz.",
+    schedule:
+      "19.30 – 22.30 saatlerinde online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce WhatsApp grubuna ekleneceksiniz.",
     comments: [
       {
         name: "Gülay ÖZMENLİKAN",
@@ -221,108 +202,20 @@ export const educations: EducationItem[] = [
     ],
   },
   {
-    id: "modul-3-gelisim-seviyeleri",
-    slug: "enneagram-gelisim-seviyeleri-egitimi",
-    title: 'Modül 3 – Gelişim Seviyeleri Eğitimi "Psikolojik Sağlık Seviyeleri Eğitimi"',
-    priceText: "₺550.00 – ₺5,000.00",
-    poster: "/egitimler/psikolojiksaglikseviyeleri.jpg",
-    category: "enneagram-egitimleri",
-    intro:[
-      "Temel Enneagram Eğitimlerimize katılıp Enneagram konusunda daha da derinleşmek ve ilerlemek isteyenler için Enneagram Gelişim Seviyeleri “Psikolojik Sağlık Seviyeleri Eğitimi” Gelişim Seviyeleri “Psikolojik Sağlık Seviyeleri”, Enneagram’ın dinamik bir yapı olmasını sağlayan en önemli unsurlarından biridir.",
-      "Eğitimimiz Online’dır. Eğitim süresi toplam 10 gün/30 saattir.",
-      "Eğitim sonunda Katılım Belgesi verilmektedir.",
-      "Eğitim 20.00 – 23.00 saatlerinde, online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır."
-    ],
-    topicsTitle: "Eğitim İçeriği",
-    topicsIntro: "Kişilik tipleri sabit yapılar değildir; birey, hayatı algılama biçiminde kendi mizaç tipinin temel endişesine ne ölçüde teslim olduğu ya da bu endişeden ne ölçüde özgürleştiğine bağlı olarak bir skala üzerinde hareket eder.Enneagram sistemine göre her mizaç tipi, sabit bir kalıptan ziyade, psikolojik sağlık seviyesine bağlı olarak değişen dokuz farklı sağlık seviyesinde kendini gösterir. Kişi bu seviyeler arasında yer değiştirdikçe, aynı mizaç yapısı içinde çok farklı tepkiler, düşünme biçimleri ve ilişki kurma tarzları sergileyebilir.",
-    topics: [
-      "Gelişim Seviyeleri ve işlevleri nelerdir?",
-      "Sağlıklı Seviyelerin özellikleri",
-      "Ortalama Seviyelerin özellikleri",
-      "Sağlıksız Seviyelerin özellikleri",
-      "Her bir mizaç tipinin 9 sağlık seviyesi üzerinden incelenmesi",
-    ],
-    audienceTitle: "Kimler Katılabilir ?",
-    audience: "12 saatlik Temel Enneagram Eğitimini tamamlamış olan herkes katılabilir.",
-    durationText: "30 saat",
-    instructor: "Abdullah Alçiçek",
-    schedule: "20.00 – 23.00 saatlerinde online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce WhatsApp grubuna ekleneceksiniz.",
-    comments: [
-      {
-        name: "Betül Gülçimen",
-        role: "Öğrenci", 
-        rating: 5,
-        text: "Her üst katmandaki eğitim Enneagramı daha iyi anlamama ve bir mizacı, bir insanı anlayabilmek için sorularımın cevaplarını aldığım dersler oldu. Kendim hakkında başkalarıyla çok kıyaslama yapmam nedeniyle bir sürü soru vardı aklımda, bir çoğunun nedenini anlayıp bir yere oturtmama sebep oldu. Enneagram en kısa yoldan kestirmeli pskiloji okulu diyebilirim…",
-        date: "2024-06-28",
-      },
-      {
-        name: "Kübra Zümrüt Orhan",
-        role: "Akademisyen",
-        rating: 5,
-        text: "Özellikle gelişim seviyeleri eğitimi beni çok etkiledi. İnsanın psikolojik sağlık bakımından ne kadar yükselebileceğini ve ne kadar düşebileceğini görmek çok çarpıcıydı. İnsanın mizacını, alt tipini ve gelişim seviyesini bilmesi kendisine yapabileceği en büyük iyilik diye düşünüyorum. Enneagramla ilgilenenlere bu eğitimi muhakkak tavsiye ederim.",
-        date: "2024-02-08",
-      },
-    ],
-  },
-  {
-    id: "modul-4-alt-tipler",
-    slug: "enneagram-alt-tipler-egitimi",
-    title: "Modül 4 – Alt Tipler Eğitimi",
-    priceText: "₺550.00 – ₺5,000.00",
-    poster: "/egitimler/afis2.jpg",
-    category: "enneagram-egitimleri",
-    intro:[
-      "Enneagram’ın insanın yapısını derinlemesine açıklayabilme kapasitesinin önemli bir kısmı da Alt Tiplerden ileri gelir. Temel Enneagram eğitiminde anlatılan dokuz kişilik tipinin kendi içerisinde tekrar üçe ayrılması ile ortaya çıkan 27 tipe Alt Tipler ya da İçgüdüsel Alt Tipler adı verilir.",
-      "Alt Tipler aynı tip içerisindeki kişilerin bazen nasıl olup da birbirlerinden bu derece farklı olabildiklerini anlamamızda son derece açıklayıcı bir araçtır.",
-      "Eğitimimiz Online’dır. Eğitim süresi toplam 10 gün/30 saattir.",
-      "Eğitim sonunda Katılım Belgesi verilmektedir.",
-      "Eğitim 20.00 – 23.00 saatlerinde, online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır."
-    ],
-    topicsTitle: "Eğitim İçeriği",
-    topicsIntro: "Her bir tip için Kendini Koruma, Yakın İlişki Kurma ve Sosyalleşme içgüdülerinin o tipte birbirinden çok farklı üç tipi nasıl ortaya çıkardığını katılımcılara anlatmak bu eğitimin temel amacıdır.",
-    topics: [
-      "İçgüdü merkezleri ve işlevleri nelerdir?",
-      "Alt Tip Nedir? Mizaç ve kişiliği nasıl etkiler?",
-      "Alt Tip kavramları nelerdir?",
-      "Her bir mizaç tipinin 3 alt tip üzerinden incelenmesi",
-    ],
-    audienceTitle: "Kimler Katılabilir ?",
-    audience: "12 saatlik Temel Enneagram Eğitimini tamamlamış olan herkes katılabilir.",
-    durationText: "30 saat",
-    instructor: "Abdullah Alçiçek",
-    schedule: "20.00 – 23.00  saatlerinde online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce WhatsApp grubuna ekleneceksiniz.",
-    comments: [
-      {
-        name: "E.A",
-        role: "Yazılımcı/Analist",
-        rating: 5,
-        text: "Bugüne kadar aynı mizaca sahip olup çok farklı davranışlar gösteren kişiler arasındaki farklılıkların temel sebeplerini bu ders ile öğrenmiş oldum. Derste aktarılan “Alt tipleri bilmeden yapılan ana mizaç tespitlerinin yarısı hatalıdır.” sözünün gerçek hayattaki karşılığını da görmüş olduk. Derslerde gösterilen örnekler, filmler üzerinden alt tip analizlerinin yapılması derse olan iştiyakımın artmasına sebep oldu ve dersi daha eğlenceli ve anlaşılır kıldı. Bu format için Abdullah hocamıza teşekkür ediyorum.",
-        date: "2025-05-02",
-      },
-      {
-        name: "A.D",
-        role: "Profesyonel Koç",
-        rating: 5,
-        text: "Enneagram eğitimlerime altı yıl önce başladım. Temel enneagram, uzmanlık eğitimi, çocuk, ilişkiler şeklinde farklı kurumlardan eğitimler almıştım. Fakat enneagrama dair ben de eksik bir taraf vardı. Bu eğitim yapbozun en büyük parçasını yerine oturttu diyebilirim. Abdullah beyin derinlemesine anlatım biçiminin benim mizacıma göre daha tatmin edici ve akılda kalıcı olduğunu fark etmiş olmam enneagram hakkında yapacağım çalışmalarda ilerleyeceğim tekniği belirlemede çok etkili olduğunu söyleyebilirim. Teşekkür ederim.",
-        date: "2024-01-10",
-      },
-    ],
-  },
-  {
     id: "modul-5-iliskiler",
     slug: "enneagram-iliskiler-egitimi",
     title: "Modül 5 – Enneagram İlişkiler Eğitimi",
     priceText: "₺550.00 – ₺6,000.00",
     poster: "/egitimler/enneagramiliskileregitimi.jpg",
-    category: "enneagram-egitimleri",
-    intro:[
+    intro: [
       "İlişkilerde ortaya çıkan duygu, düşünce ve davranışlarımız doğuştan sahip olduğumuz mizaç yapımızdan kök alır. Bir diğeriyle ilişkideki uyumumuz, mizaçlarımıza bağlı olan imkân ve riskleri beraberinde taşır. Bu imkânları değerlendirmek ve risklerinden kaçınmak için sahip olduğumuz mizaç yapımızı bilmeye ve tanımaya ihtiyacımız vardır. Bu sayede bilinçli ve sağlıklı ilişkiler kurabilir ve geliştirebiliriz.",
       "Eğitimin ilk günü İlişkilere Giriş, sonraki her gün bir mizacın ilişkileri ele alınır. Kendi mizacınızın olduğu güne müstakil olarak katılmanız mümkündür. Tarih kısmında katılmak isteğiniz mizacı seçerek satın alma işlemini gerçekleştirebilirsiniz.",
       "Eğitimimiz Online’dır. Eğitim sonunda eğitimin tümüne katılanlara Katılım Belgesi verilmektedir.",
       "Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır.",
     ],
     topicsTitle: "Eğitim İçeriği",
-    topicsIntro: "İlişkilerde ortaya çıkan duygu, düşünce ve davranışlarımız doğuştan sahip olduğumuz mizaç yapımızdan kök alır. Bir diğeri yle ilişkideki uyumumuz, mizaçlarımıza bağlı olan imkân ve riskleri beraberinde taşır. Bu imkânları değerlendirmek ve risklerinden kaçınmak için sahip olduğumuz mizaç yapımızı bilmeye ve tanımaya ihtiyacımız vardır. Bu sayede bilinçli ve sağlıklı ilişkiler kurabilir ve geliştirebiliriz.",
+    topicsIntro:
+      "İlişkilerde ortaya çıkan duygu, düşünce ve davranışlarımız doğuştan sahip olduğumuz mizaç yapımızdan kök alır. Bir diğeri yle ilişkideki uyumumuz, mizaçlarımıza bağlı olan imkân ve riskleri beraberinde taşır. Bu imkânları değerlendirmek ve risklerinden kaçınmak için sahip olduğumuz mizaç yapımızı bilmeye ve tanımaya ihtiyacımız vardır. Bu sayede bilinçli ve sağlıklı ilişkiler kurabilir ve geliştirebiliriz.",
     topics: [
       "İlişkilerde problemler",
       "Mizaç bilgisinin ilişkilere katkısı",
@@ -355,15 +248,15 @@ export const educations: EducationItem[] = [
       "Her bir mizacın ilişkilerinde kaçınması gerekenler",
       "Her bir mizacın ilişkilerinde yapmaya çalışması gerekenler",
       "Her bir mizacın diğer mizaçlarla muhtemel sorunları ve anlaşma noktaları",
-      "Mizaçlar ilişkilerde potansiyel risklerini nasıl yönetmeli?"
+      "Mizaçlar ilişkilerde potansiyel risklerini nasıl yönetmeli?",
     ],
     audienceTitle: "Kimler Katılabilir?",
     audience:
       "12 saatlik Temel Enneagram Eğitimini tamamlamış olan herkes katılabilir. Eğitimin tamamına veya her bir mizacın ilişki dinamiklerinin işleneceği günlerde müstakil olarak katılmak mümkündür.",
     durationText: "25 saat",
-    instructor: "Abdullah Alçiçek",
+    instructor: "İsmail Acarkan",
     schedule:
-      "Online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce WhatsApp grubuna ekleneceksiniz ve giriş linki bu grup üzerinden paylaşılacaktır.",    
+      "Online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce WhatsApp grubuna ekleneceksiniz ve giriş linki bu grup üzerinden paylaşılacaktır.",
     comments: [
       {
         name: "E.E",
@@ -382,150 +275,20 @@ export const educations: EducationItem[] = [
     ],
   },
   {
-    id: "uygulamali-enneagram-1-kur",
-    slug: "uygulamali-enneagram-egitimleri-1-kur-enneagrama-ve-tiplere-giris",
-    title: "Uygulamalı Enneagram Eğitimleri 1. Kur Enneagrama ve Tiplere Giriş",
-    priceText: "₺10,000.00",
-    poster: "/egitimler/enneagramavetipleregiris.png",
-    category: "enneagram-egitimleri",
-    intro:[
-      "Enneagramı sadece teorik olarak öğrenmek istemiyorsanız ve bunu hayatınızda gerçek bir dönüşüm aracı olarak kullanmak istiyorsanız, bu eğitim tam size göre.",
-      "Eğitimimiz Online’dır. Eğitim süresi toplam 11 hafta/44 saattir.",
-      "Eğitim sonunda “Uygulayıcı Enneagram Eğitimcisi” Belgesi verilmektedir.",
-      "Eğitim 19.00 – 23.00 saatlerinde, online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır.",
-    ],
-    topicsTitle: "Eğitim İçeriği",
-    topicsIntro: "Bu programda Enneagram’ı kitap bilgisi olarak değil, gerçek hayat örnekleriyle çalışan bir yetkinlik olarak öğreneceksiniz. Gerçek vaka örnekleri, ilişki senaryoları, hayat hikayeleri ve iş dünyasından alınan somut durumlarla tiplerin davranışlarını, motivasyonlarını ve kendilerini ifade ediş biçimlerini derinlemesine analiz edeceğiz. Bol miktarda uygulama ve pratik çalışma ile öğrendiğiniz her kavramın günlük hayattaki karşılığını net ve somut bir şekilde göreceksiniz.",
-    topics: [
-      "Enneagram’ı sadece hafızanızda kalan bir bilgi olmaktan çıkarıp, koçlukta, terapide, liderlikte ve ilişkilerde kullanabileceğiniz güçlü bir araç haline getirmek.",
-      "Enneagramı sadece teorik olarak öğrenmek istemiyorsanız ve bunu hayatınızda gerçek bir dönüşüm aracı olarak kullanmak istiyorsanız, bu eğitim tam size göre.",
-    ],
-    audienceTitle: "Kimler Katılabilir?",
-    audience:
-      "Koçlar, terapistler, eğitimciler, psikologlar ve danışmanlar İK profesyonelleri, liderler ve yöneticiler, kişisel gelişim alanında derinleşmek isteyen herkes Enneagram’ı bilip pratikte kullanmakta zorlananlar Enneagram’a sıfırdan başlamak isteyen herkes katılabilir.",
-    durationText: "44 saat",
-    instructor: "Abdullah Alçiçek",
-    schedule:
-      "Online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce WhatsApp grubuna ekleneceksiniz ve giriş linki bu grup üzerinden paylaşılacaktır.",    
-    comments: [
-      {
-        name: "",
-        role: "",
-        rating: 5,
-        text: "",
-        date: "",
-      },
-      {
-        name: "",
-        role: "",
-        rating: 5,
-        text: "",
-        date: "",
-      },
-    ],
-  },
-  {
-    id: "film-atolyesi",
-    slug: "film-atolyesi",
-    title: "Enneagram Film Atölyesi",
-    priceText: "₺550.00 – ₺2,000.00",
-    poster: "/egitimler/enneagramfilatolyesi.jpg",
-    category: "enneagram-gelisim-atolyeleri",
-    intro:[
-      "Çoklu alımlarda (4 Adet Atölye) İndirim! Banka Havalesi İle Yapılan Ödemelerde İLAVE Yüzde 10 İndirim!",
-      "( Tarih seçerken ‘Çoklu Alım’ seçeneğini seçtiğinizde indirimli fiyat görüntülenmektedir.)",
-      "Güncel film instagram.com/enneagramegitim hesabımızda yayınlanmaktadır.",
-      "Atölyemiz online’dır.",
-    ],
-    topicsTitle: "Eğitim İçeriği",
-    topicsIntro: "Bu atölyeler Enneagram eğitimlerinde teorik olarak işlenen mizaç tiplerinin film karakteri analizi yapılarak pekiştirilmesi, mizaç tipleri analizi konusunda katılımcıların bilgilerini sürekli güncellemeleri ve pratik hale getirmeleri için düzenlenir.",
-    topics: [
-      "Her hafta duyurulan film, atölye öncesinde katılımcılarca izlenerek filmdeki ana karakterlerin Enneagram mizaç tiplerinin tespiti/tahmini yapılır. ",
-      "Atölye içerisinde filmdeki ana karakterler, Ana Mizaç, Kanat Mizaç, Alt Tip ve Gelişim Seviyeleri bakımından irdelenir. Duygu, düşünce ve davranış motivasyonları üzerinde durulur.",
-      "Tutarlı bir şekilde kurgulanmış film karakterlerinin Enneagram mizaç tiplerini incelemek ve karakterlerin birbirleri ile ilişkilerini, bu ilişkilerdeki davranışlarını, tepkilerini ve motivasyonları analiz ederek Enneagram mizaç tiplerini görmektir.",
-      "Teorik bilgilerin pratiğe aktarılması amaçlanır.",
-    ],
-    audienceTitle: "Kimler Katılabilir ?",
-    audience: "Enneagram Film Atölyeleri programı herkese açıktır. Temel Seviye Enneagram bilgisi olması yeterlidir.",
-    durationText: "2+ saat",
-    instructor: "Abdullah Alçiçek",
-    schedule: "Güncel film instagram.com/enneagramegitim hesabımızda yayınlanmaktadır.",
-    comments: [
-      {
-        name: "G.B",
-        role: "",
-        rating: 5,
-        text: "1 seneyi geçti, günlük yaşamımızda karşılaşma ihtimalimizin zor olduğu tipleri her halleri ile görebiliyoruz, bana en önemli katkısı hayatımda sağlıksız olarak mevcut olan bazı mizaç tiplerinden uzak duruyorken en sağlıklı hallerini görüp bu tiplere olan saygımın artmasıdır. Abdullah hocamız zaten kendi alanında son derece yetkin, her geri bildirimi özenle dinleyip üzerine düşünen bir eğitmen. Beyin fırtınası havasında geçen film atölyelerine katılmanızı tavsiye ederim",
-        date: "2022-07-01",
-      },
-      {
-        name: "S. A. D",
-        role: "",
-        rating: 5,
-        text: "ilm atolyelerine Ekim ayindan beri duzenli katiliyorum imkani olan herkese cok cok tavsiye ediyorum. Butun bu egitimlerde ogrendigimiz herseyin hem saglamasi hem de uygulama alani. Ogrendim anladim saniyor insan ama ben kendi adima cogu zaman filmdeki karakterleri dogru analiz edemiyorum. Mizaci dogru tuttursam kanat ya da alt tipden illa bir fire veriyorum, oyleki kendi mizac tipim 9’un oldugu filmde bile dogru teshis yapamadim 😅Abdullah Hoca cok guzel ornekler seciyor, cok ince ayrintilarina kadar farklari anlatiyor. Kendi adima her atolyede yeni birseyler ogreniyorum. Kendime bir hedef koydum, ne zaman artik istikrarli bir sekilde filmdeki karakterleri dogru tespit etmeye baslarsam iste o zaman ben enneagrami ogrendim diyebilecegim 😅insallah",
-        date: "2022-07-01",
-      },
-    ],
-  },
-  {
-    id: "kisilik-analizi-atolyesi",
-    slug: "enneagram-ile-kisilik-analizi-atolyesi",
-    title: "Enneagram ile Kişilik Analizi Atölyesi",
-    priceText: "₺550.00 – ₺2,000.00",
-    poster: "/egitimler/enneagramkisilikatolyesi.jpg",
-    category: "enneagram-gelisim-atolyeleri",
-    intro:[
-      "Ünlü isimlerin incelendiği “Enneagram Kişilik Analiz Atölyesi” Enneagram eğitimlerinde teorik olarak işlenen mizaç tiplerinin, kişilerin karakter analizinin yapılarak pekiştirilmesi, mizaç tipleri analizi konusunda katılımcıların bilgilerini sürekli güncellemeleri ve pratik hale getirmeleri için düzenlenir.",
-      "Çoklu alımlarda (4 Adet Atölye) İndirim! Banka Havalesi İle Yapılan Ödemelerde İLAVE Yüzde 10 İndirim!",
-      "( Tarih seçerken ‘Çoklu Alım’ seçeneğini seçtiğinizde indirimli fiyat görüntülenmektedir. )",
-      "Güncel ünlü isim instagram.com/enneagramegitim hesabımızda yayınlanmaktadır.",
-      "Atölyemiz online’dır."
-    ],
-    topicsTitle: "Eğitim İçeriği",
-    topicsIntro: "Her hafta duyurulan tanınmış bir kişi, atölye öncesinde katılımcılarca sosyal platformlardan izlenerek, karakterin Enneagram mizaç tiplerinin tespiti/tahmini yapılır. Ana Mizaç, Kanat Mizaç, Alt Tip ve Gelişim Seviyeleri bakımından irdelenir. Duygu, düşünce ve davranış motivasyonları üzerinde durulur.",
-    topics: [
-      "Her hafta duyurulan film, atölye öncesinde katılımcılarca izlenerek filmdeki ana karakterlerin Enneagram mizaç tiplerinin tespiti/tahmini yapılır. ",
-      "Atölye içerisinde filmdeki ana karakterler, Ana Mizaç, Kanat Mizaç, Alt Tip ve Gelişim Seviyeleri bakımından irdelenir. Duygu, düşünce ve davranış motivasyonları üzerinde durulur.",
-      "Tutarlı bir şekilde kurgulanmış film karakterlerinin Enneagram mizaç tiplerini incelemek ve karakterlerin birbirleri ile ilişkilerini, bu ilişkilerdeki davranışlarını, tepkilerini ve motivasyonları analiz ederek Enneagram mizaç tiplerini görmektir.",
-      "Teorik bilgilerin pratiğe aktarılması amaçlanır.",
-    ],
-    audienceTitle: "Kimler Katılabilir ?",
-    audience: "“Enneagram Kişilik Analiz Atölyeleri” programı herkese açıktır. Temel Seviye Enneagram bilgisi olması yeterlidir.",
-    durationText: "2+ saat",
-    instructor: "Abdullah Alçiçek",
-    schedule: "Güncel film instagram.com/enneagramegitim hesabımızda yayınlanmaktadır.",
-    comments: [
-      {
-        name: "",
-        role: "",
-        rating: 5,
-        text: "",
-        date: "",
-      },
-      {
-        name: "",
-        role: "",
-        rating: 5,
-        text: "",
-        date: "",
-      },
-    ],
-  },
-  {
     id: "cocuk-merkezli-enneagram",
     slug: "cocuk-merkezli-enneagram-egitimi",
     title: "Çocuk Merkezli Enneagram Eğitimi",
     priceText: "₺3,250.00",
     poster: "/egitimler/cocukmerkezliegitim.jpg",
-    category: "enneagram-egitimleri",
-    intro:[
+    intro: [
       "Bu eğitim, 9 mizacın “Çocuk Merkezli” olarak ele alındığı ‘Enneagram Gelişim Modülü’ eğitimlerindendir.",
       "Eğitimimiz Online’dır.",
       "Eğitim sonunda Katılım Belgesi verilmektedir.",
       "Eğitim 19.30 – 22.30 saatlerinde, online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır.",
     ],
     topicsTitle: "Eğitim İçeriği",
-    topicsIntro: "Bu eğitim ile çocuklarla çalışan uzmanların ve ebeveynlerin onları daha yakından tanıyarak, çocukların sağlıklı kişilik gelişimlerine eşlik edebilmeleri için yetişkinlere farkındalık kazandırma ve temel bilgileri verme amaçlanır.",
+    topicsIntro:
+      "Bu eğitim ile çocuklarla çalışan uzmanların ve ebeveynlerin onları daha yakından tanıyarak, çocukların sağlıklı kişilik gelişimlerine eşlik edebilmeleri için yetişkinlere farkındalık kazandırma ve temel bilgileri verme amaçlanır.",
     topics: [
       "İnsana bütüncül yaklaşım",
       "Mizaç ve kişiliğin kökeni",
@@ -546,10 +309,12 @@ export const educations: EducationItem[] = [
       "Mizaçların stres ve rahat hatları",
     ],
     audienceTitle: "Kimler Katılabilir ?",
-    audience: "Öğretmenler, rehber öğretmenler, anne-babalar, psikologlar, okul/kurs yönetici ve çalışanları, eğitim koçları, aile danışmanları ve çocuklardaki mizaç farklılıklarını öğrenmek isteyen herkes bu eğitime katılabilir.",
+    audience:
+      "Öğretmenler, rehber öğretmenler, anne-babalar, psikologlar, okul/kurs yönetici ve çalışanları, eğitim koçları, aile danışmanları ve çocuklardaki mizaç farklılıklarını öğrenmek isteyen herkes bu eğitime katılabilir.",
     durationText: "12 saat",
     instructor: "Muammer Küçükyazıcı",
-    schedule: "Eğitim 19.30 – 22.30 saatlerinde, online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır.",
+    schedule:
+      "Eğitim 19.30 – 22.30 saatlerinde, online olarak yapılmaktadır. Eğitim tarihinden 1 gün önce eğitimin WhatsApp grubuna ekleneceksiniz ve online eğitim için giriş linki ve diğer bilgiler bu gruptan sizinle paylaşılacaktır.",
     comments: [
       {
         name: "H.K",
@@ -566,5 +331,95 @@ export const educations: EducationItem[] = [
         date: "2024-09-16",
       },
     ],
+  },
+  {
+    id: "profesyonel-kocluk-egitimi",
+    slug: "profesyonel-kocluk-egitimi-60-saat",
+    title: "PROFESYONEL KOÇLUK EĞİTİMİ (60 Saat)",
+    priceText: "₺15,000.00",
+    poster: "/egitimler/profesyonelkoc.jpg",
+
+    intro: [
+      "Bu eğitimde amaç kişilerin koçluk zihin yapısına sahip olmalarını sağlamak ve “koçvari yaklaşım” pratiklerinin yaşam biçimi hâline gelmesine vesile olarak iletişim süreçlerini güçlendirmektir.",
+      "Eğitim 10.00 – 16.00 saatlerinde, online olarak yapılmaktadır.",
+      "Eğitim tarihinden 1 gün önce katılımcılar eğitim WhatsApp grubuna eklenir. Online eğitim giriş linki ve diğer bilgiler bu grup üzerinden paylaşılır.",
+      "Banka havalesi ile yapılan ödemelerde %10 indirim uygulanmaktadır. Ödeme sayfasında banka havalesi seçildiğinde sistem indirimi otomatik olarak uygular.",
+    ],
+
+    topicsTitle: "Eğitimin İçeriği",
+    topicsIntro:
+      "Profesyonel Koçluk Eğitimi kapsamında koçluk zihin yapısı, koçvari yaklaşım ve temel koçluk uygulamalarına yönelik kapsamlı bir eğitim süreci yürütülmektedir.",
+
+    topics: [
+      "ÇSGB – MYK Koç (Seviye 6) Ulusal Meslek Standardı",
+      "Ulusal Yeterlilik",
+      "Koçluk temel kavramları",
+      "4 koçluk aracı",
+    ],
+
+    audienceTitle: "Kimler Katılabilir?",
+
+    audience: `İçsel Dönüşüm ve Farkındalık Arayışındakiler: Öz potansiyelini keşfetmeyi, sınırlarını aşmayı ve hayatını daha anlamlı bir vizyonla yeniden şekillendirmeyi arzulayan bireyler.
+
+İletişim Sanatında Ustalaşmak İsteyenler: Derinlemesine dinleme ve stratejik soru sorma becerileri kazanarak hem özel hem de iş hayatındaki insan ilişkilerini nitelikli bir seviyeye taşımak isteyenler.
+
+Vizyoner Liderler ve Yöneticiler: Yönetim becerilerini koçluk yetkinlikleriyle harmanlayarak, ekiplerinin performansını ve motivasyonunu maksimize etmeyi amaçlayan üst düzey profesyoneller.
+
+İnsan Odaklı Meslek Mensupları: Eğitimciler, İK profesyonelleri, psikolojik danışmanlar ve rehberlik uzmanları gibi mevcut uzmanlıklarını koçluk araçlarıyla güçlendirmek isteyenler.
+
+Yaşam Standartlarını ve Esenliğini Yükseltmeyi Hedefleyenler: Günlük hayatın karmaşasında denge kurmak, iç huzura ulaşmak ve daha doyumlu bir yaşam sürmek için köklü bir değişim arayanlar.`,
+
+    schedule: "Eylül – Ekim 2026",
+    durationText: "60 Saat",
+    instructor: "Ekrem Özden, PCC, MYK Belgeli Profesyonel Koç, Mentör",
+
+    comments: [
+      {
+        name: "Guner KULMAÇ",
+        text: "Bu egitimde kocluk zihin yapisina sahip oldum kocluk yolculugum icin benim icin harika bir baslangic oldu bu egitim de hem teorik hem pratik bir egitim sureci oldu, ogrendik uyguladik egitimi tamamladik, basda ekrem hocamiza ve emegi gecen herkese tesekkurler.",
+        rating: 5,
+      },
+      {
+        name: "Mervenur",
+        text: "Profesyonel koçluk eğitimi, aldığım en doğru kararmış, eğitimin her aşamasında bir farkındalık geliştirmek, her geçen gün o zihin yapısına biraz daha yaklaştığını gözlemlemek, eğitime olan motivasyonumu hep dinç tuttu. Daha önce koçluk alanında eğitin almamış olmak, ilk olarak Ekrem hocamızla başlamak benim en büyük şansım oldu. İyiki",
+        rating: 5,
+      },
+    ],
+  },
+  {
+    id: "enneagram-ile-kocluk",
+    slug: "enneagram-ile-kocluk",
+    title:
+      "Enneagram ile Koçluk: İnsanın Özüne Yolculuk ve Profesyonel Dönüşüm",
+    priceText: "₺6,000.00",
+    poster: "/egitimler/enneagramilekocluk.jpg",
+
+    intro: [
+      "Bu eğitim, koçlara sadece bir kişilik modeli sunmakla kalmaz; aynı zamanda insanın bütünlüğüne dair derin bir bakış açısı kazandırır.",
+      "Enneagram ile koçluk; koçların müşterilerinin ihtiyaçlarını daha hızlı belirlemesine, her mizaç tipine özel gelişim yolları oluşturmasına ve daha derin, kalıcı sonuçlar elde etmesine yardımcı olur.",
+      "Eğitim 20.00 – 23.00 saatlerinde, Zoom platformu üzerinden online olarak yapılmaktadır.",
+      "Eğitim tarihinden 1 gün önce katılımcılar eğitim WhatsApp grubuna eklenir. Online eğitim giriş linki ve diğer bilgiler bu grup üzerinden paylaşılır.",
+      "Banka havalesi ile yapılan ödemelerde %10 indirim uygulanmaktadır. Ödeme sayfasında banka havalesi seçildiğinde sistem indirimi otomatik olarak uygular.",
+    ],
+
+    topicsTitle: "Eğitim Kazançları",
+    topicsIntro:
+      "Enneagram ile Koçluk eğitimi sonunda katılımcıların koçluk süreçlerinde kullanabilecekleri temel kazanımlar:",
+
+    topics: [
+      "Müşterinizin temel motivasyonlarını ve sınırlayıcı inançlarını hızlıca analiz etme yetisi.",
+      "9 farklı mizaç tipine özgü, sonuç odaklı eylem planları geliştirme becerisi.",
+      "Müşterinizin stres ve rahatlama hatlarını takip ederek gelişimini profesyonel olarak destekleme.",
+      "Kendi kör noktalarınızı keşfederek koçluk performansınızı en üst seviyeye çıkarma.",
+    ],
+
+    audienceTitle: "Kimler Katılabilir?",
+
+    audience: `Bu modül, koçluk görüşmelerinde daha derin dönüşümler hedefleyen, temel koçluk eğitimi almış ve müşterisinin mizaç yapısına uygun “özel” bir yol arkadaşlığı sunmak isteyen tüm profesyonel koçlar için tasarlanmıştır.
+
+Siz de profesyonel koçluk sanatınızı Enneagram’ın binlerce yıllık bilgeliği ve modern psikolojinin verileriyle taçlandırabilirsiniz.`,
+    schedule: "AĞUSTOS 2026",
+    durationText: "15 Saat",
+    instructor: "Ekrem Özden, PCC / Muammer Küçükyazıcı",
   },
 ];
