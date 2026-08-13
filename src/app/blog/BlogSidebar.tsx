@@ -47,7 +47,7 @@ export default function BlogSidebar(props: {
                                 alt="enneagram egitim"
                                 fill
                                 sizes="110px"
-                                className="object-contain rounded-full bg-primary/20"
+                                className="object-contain rounded-full"
                             />
                         </div>
                     </div>
