@@ -24,14 +24,14 @@ export default function PageHero({
 
     return (
         <section
-            className="relative h-[320px] bg-cover bg-center"
+            className="relative h-[420px] bg-cover bg-center"
             style={{ backgroundImage: `url('${backgroundImage}')` }}
         >
 
             {/* İçerik */}
-            <div className="relative z-10 h-full max-w-7xl mx-auto px-8 lg:px-16 flex items-center">
+            <div className="relative z-10 h-full max-w-7xl mx-auto px-2 lg:px-4 flex items-center">
 
-                <div className="text-left text-white max-w-xl">
+                <div className="text-left text-white max-w-2xl">
 
                     <h1 className="text-4xl md:text-5xl font-light tracking-[0.15em] mb-4">
                         {title}

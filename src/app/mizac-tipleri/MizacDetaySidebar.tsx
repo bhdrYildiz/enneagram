@@ -6,80 +6,124 @@ import { mizacTipleri } from "./_data/mizac-tipleri";
 
 export default function MizacDetaySidebar() {
     const pathname = usePathname();
-
     return (
-        <aside className="lg:sticky lg:top-28 self-start space-y-8">
-            <div className="border border-black/10 bg-white p-6 shadow-[0_14px_40px_rgba(0,0,0,0.06)]">
-                <h3 className="text-xl tracking-wide text-primary mb-5">Mizaç Tipleri</h3>
-                <ul className="space-y-2">
-                    {mizacTipleri.map((m) => {
-                        const active = pathname === `/mizac-tipleri/${m.slug}`;
-                        return (
-                            <li key={m.slug}>
-                                <Link
-                                    href={`/mizac-tipleri/${m.slug}`}
-                                    className={[
-                                        "group relative flex items-center justify-between",
-                                        "rounded-full px-5 py-3",
-                                        "transition-colors duration-300",
-                                        active ? "text-white" : "text-primary",
-                                    ].join(" ")}
-                                >
-                                    <span
-                                        className={[
-                                            "absolute inset-0 rounded-full bg-secondary",
-                                            "origin-left scale-x-0",
-                                            "transition-transform duration-900 ease-out",
-                                            active ? "scale-x-100" : "group-hover:scale-x-100",
-                                        ].join(" ")}
-                                    />
+        <aside className="lg:sticky lg:top-28 self-start">
+            <div className="border-t border-primary/15">
 
-                                    <span className="relative flex items-center gap-3">
+                <div className="py-6 border-b border-primary/10">
+                    <p className="text-xs font-semibold tracking-[0.35em] uppercase text-secondary">
+                        Bölüm
+                    </p>
+                    <h3 className="mt-2 text-2xl font-light tracking-wide text-primary">
+                        Mizaç Tipleri
+                    </h3>
+                </div>
+
+                <nav aria-label="Mizaç Tipleri menüsü">
+                    <ul>
+                        {mizacTipleri.map((m, index) => {
+                            const active =
+                                pathname === `/mizac-tipleri/${m.slug}`;
+
+                            return (
+                                <li key={m.slug}>
+                                    <Link
+                                        href={`/mizac-tipleri/${m.slug}`}
+                                        className={[
+                                            "group relative flex items-center gap-5 py-5",
+                                            "border-b border-primary/10",
+                                            "transition-all duration-300",
+                                            active
+                                                ? "text-primary"
+                                                : "text-primary/65 hover:text-primary",
+                                        ].join(" ")}
+                                    >
+
+                                        {/* NUMBER */}
                                         <span
                                             className={[
-                                                "h-2 w-2 rounded-full",
-                                                active ? "bg-white/90" : "bg-primary/70 group-hover:bg-white/90",
+                                                "text-xs tracking-[0.15em] font-semibold",
+                                                "transition-colors duration-300",
+                                                active
+                                                    ? "text-secondary"
+                                                    : "text-primary/35 group-hover:text-secondary",
+                                            ].join(" ")}
+                                        >
+                                            {String(index + 1).padStart(2, "0")}
+                                        </span>
+
+                                        {/* ACTIVE INDICATOR */}
+                                        <span
+                                            className={[
+                                                "absolute left-0 bottom-0 h-[2px]",
+                                                "bg-secondary transition-all duration-300",
+                                                active
+                                                    ? "w-10"
+                                                    : "w-0 group-hover:w-6",
                                             ].join(" ")}
                                         />
-                                        <span className="text-[18px] leading-none opacity-95">
+
+                                        {/* TITLE */}
+                                        <span className="flex-1 text-[16px] leading-tight">
                                             {m.title}
                                         </span>
-                                    </span>
 
-                                    <span
-                                        className={[
-                                            "relative text-lg transition-transform duration-300",
-                                            active ? "translate-x-0" : "group-hover:translate-x-1",
-                                            active ? "opacity-100" : "opacity-80 group-hover:opacity-100",
-                                        ].join(" ")}
-                                        aria-hidden
-                                    >
-                                        ↗
-                                    </span>
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
+                                        {/* ARROW */}
+                                        <span
+                                            className={[
+                                                "text-base transition-all duration-300",
+                                                active
+                                                    ? "text-secondary translate-x-0"
+                                                    : "text-primary/35 group-hover:text-secondary group-hover:translate-x-1",
+                                            ].join(" ")}
+                                            aria-hidden="true"
+                                        >
+                                            →
+                                        </span>
+
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </nav>
+
             </div>
 
-            <div className="border border-black/10 bg-white p-8 text-center shadow-[0_14px_40px_rgba(0,0,0,0.06)]">
-                <p className="text-xs font-semibold tracking-[0.45em] uppercase text-secondary mb-3">
-                    Eğitimlerimiz
+
+            {/* CTA */}
+            <div className="mt-12 border border-primary/10 p-7">
+
+                <p className="text-[10px] font-semibold tracking-[0.35em] uppercase text-secondary">
+                    ENNEAGRAM EĞİTİMLERİ
                 </p>
-                <p className="text-xl font-light text-primary">Enneagram Eğitim & Danışmanlık</p>
-                <p className="mt-2 text-base text-primary/70 leading-relaxed">
-                    Eğitimlerimize göz at
+
+                <h4 className="mt-4 text-xl font-light leading-snug text-primary">
+                    Enneagram yolculuğunuzu
+                    <br />
+                    derinleştirin.
+                </h4>
+
+                <p className="mt-4 text-sm leading-relaxed text-primary/60">
+                    Eğitim programlarımızı ve içeriklerimizi keşfedin.
                 </p>
-                <div className="mt-6">
-                    <Link
-                        href="/egitimlerimiz"
-                        className="block px-6 py-3 bg-[#1c2c34] text-white text-sm tracking-[0.25em] uppercase hover:bg-secondary transition-colors duration-300"
-                    >
-                        Tüm Eğitimler
-                    </Link>
-                </div>
+
+                <Link
+                    href="/egitimlerimiz"
+                    className="group mt-6 inline-flex items-center gap-3 text-xs font-semibold tracking-[0.2em] uppercase text-primary"
+                >
+                    <span className="relative">
+                        Eğitimleri İncele
+                        <span className="absolute left-0 -bottom-2 h-px w-full bg-secondary transition-all duration-300 group-hover:w-1/2" />
+                    </span>
+
+                    <span className="text-base transition-transform duration-300 group-hover:translate-x-1">
+                        →
+                    </span>
+                </Link>
+
             </div>
+
         </aside>
     );
 }

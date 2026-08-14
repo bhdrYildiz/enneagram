@@ -50,8 +50,8 @@ export default function EducationClient({ items }: { items: EducationItem[] }) {
 
             <PageHero
                 title="EĞİTİM VE ATÖLYELER"
-                subtitle="- EĞİTİMLERİMİZİ KEŞFEDİN -"
-                backgroundImage="/enneagram-slayder1.jpg"
+                subtitle="EĞİTİMLERİMİZİ KEŞFEDİN"
+                backgroundImage="/banner4.png"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },
                     { label: "EĞİTİMLERİMİZ" },

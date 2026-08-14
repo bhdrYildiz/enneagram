@@ -14,7 +14,7 @@ export default function ServicesClient() {
             <PageHero
                 title="HİZMETLERİMİZ"
                 subtitle="İNSANI ANLAMAYA ODAKLANAN BİR YOLCULUK"
-                backgroundImage="/hakkimizda.jpg"
+                backgroundImage="/banner4.png"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },
                     { label: "HİZMETLERİMİZ" },
