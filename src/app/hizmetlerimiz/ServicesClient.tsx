@@ -13,8 +13,8 @@ export default function ServicesClient() {
 
             <PageHero
                 title="HİZMETLERİMİZ"
-                subtitle="- ENNEAGRAM EĞİTİM'İ KEŞFEDİN -"
-                backgroundImage="/enneagram_banner_2.jpg"
+                subtitle="İNSANI ANLAMAYA ODAKLANAN BİR YOLCULUK"
+                backgroundImage="/hakkimizda.jpg"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },
                     { label: "HİZMETLERİMİZ" },
@@ -22,9 +22,6 @@ export default function ServicesClient() {
             />
 
             <section className="px-6 py-20 md:py-28">
-
-                {/* GİRİŞ */}
-
                 <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="max-w-6xl mx-auto text-center">
 
                     <motion.div variants={fadeUp} className="flex items-center justify-center gap-4 mb-6">
@@ -97,17 +94,12 @@ export default function ServicesClient() {
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
 
-                                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-primary/10 to-transparent" />
+                                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-primary/5 to-transparent" />
 
                                     <div className="absolute top-6 left-6 flex items-center gap-3">
                                         <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-black/10 text-xs text-white backdrop-blur-sm">{String(index + 1).padStart(2, "0")}</span>
-                                        <span className="text-[10px] uppercase tracking-[0.2em] text-white/80">ENNEAGRAM EĞİTİM</span>
+                                        <h6 className="text-2xl md:text-3xl text-white leading-tight">{service.title}</h6>
                                     </div>
-
-                                    <div className="absolute bottom-0 left-0 right-0 p-7 md:p-9">
-                                        <h3 className="text-3xl md:text-4xl text-white leading-tight">{service.title}</h3>
-                                    </div>
-
                                 </div>
 
 

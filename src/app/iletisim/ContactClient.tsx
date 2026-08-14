@@ -201,7 +201,7 @@ export default function ContactClient() {
                 Size nasıl yardımcı olabiliriz?
               </h2>
 
-              <p className="mt-6 text-base md:text-lg leading-relaxed text-primary/70 max-w-2xl">
+              <p className="mt-6 text-base md:text-lg leading-relaxed text-primary/90 max-w-2xl">
                 Eğitimlerimiz, danışmanlık süreçlerimiz ve kurumsal
                 çalışmalarımız hakkında bilgi almak için bizimle iletişime
                 geçebilirsiniz.
@@ -490,7 +490,7 @@ export default function ContactClient() {
 
                   {/* AD SOYAD */}
                   <label className="block">
-                    <span className="text-xs tracking-[0.2em] uppercase text-primary/60">
+                    <span className="text-xs tracking-[0.2em] uppercase text-primary/80">
                       Ad Soyad
                     </span>
 
@@ -565,7 +565,7 @@ export default function ContactClient() {
                   haberdar olun.
                 </h2>
 
-                <p className="mt-6 text-sm md:text-base leading-relaxed text-primary/60 max-w-xl">
+                <p className="mt-6 text-sm md:text-base leading-relaxed text-primary max-w-xl">
                   Eğitimlerimizden, etkinliklerimizden ve Enneagram üzerine
                   hazırladığımız güncel içeriklerden haberdar olmak için
                   sosyal medya hesaplarımızı takip edin.
@@ -586,7 +586,7 @@ export default function ContactClient() {
                 </Link>
 
                 <Link
-                  href="https://www.youtube.com/"
+                  href="https://www.youtube.com/@tv.enneagram"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-3 border border-black/15 px-5 py-3 text-xs tracking-[0.15em] uppercase text-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
@@ -596,7 +596,7 @@ export default function ContactClient() {
                 </Link>
 
                 <Link
-                  href="https://www.linkedin.com/"
+                  href="https://tr.linkedin.com/company/enneagramegitim"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-3 border border-black/15 px-5 py-3 text-xs tracking-[0.15em] uppercase text-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
@@ -629,7 +629,7 @@ export default function ContactClient() {
 
                   <a
                     href="mailto:bilgi@enneagramegitim.com"
-                    className="text-xs tracking-[0.15em] uppercase text-primary/60 hover:text-primary transition-colors"
+                    className="text-xs tracking-[0.15em] text-primary/60 hover:text-primary transition-colors"
                   >
                     bilgi@enneagramegitim.com
                   </a>

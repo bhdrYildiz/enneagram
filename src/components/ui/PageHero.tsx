@@ -23,45 +23,60 @@ export default function PageHero({
     const lastIndex = Math.max(0, breadcrumbs.length - 1);
 
     return (
-        <div
-            className="relative h-[400px] flex items-end justify-around bg-cover bg-center"
+        <section
+            className="relative h-[320px] bg-cover bg-center"
             style={{ backgroundImage: `url('${backgroundImage}')` }}
         >
-            <div className="absolute inset-0 bg-black/60" />
 
-            <div className="relative z-10 text-center text-white mb-24">
-                <h1 className="text-3xl md:text-5xl mb-4 tracking-wider">{title}</h1>
-                <p className="text-base md:text-base tracking-widest text-gray-100">
-                    {subtitle}
-                </p>
+            {/* İçerik */}
+            <div className="relative z-10 h-full max-w-7xl mx-auto px-8 lg:px-16 flex items-center">
 
-                <nav
-                    className="mt-32 flex justify-center gap-2 text-sm tracking-wider"
-                    aria-label="Breadcrumb"
-                >
-                    {breadcrumbs.map((item, idx) => {
-                        const isLast = idx === lastIndex;
-                        const content =
-                            item.href && !isLast ? (
-                                <Link
-                                    href={item.href}
-                                    className="hover:text-secondary transition-colors hover:underline"
+                <div className="text-left text-white max-w-xl">
+
+                    <h1 className="text-4xl md:text-5xl font-light tracking-[0.15em] mb-4">
+                        {title}
+                    </h1>
+
+                    <p className="text-sm md:text-base tracking-[0.2em] text-gray-100">
+                        {subtitle}
+                    </p>
+
+                    <nav
+                        className="mt-8 flex justify-start gap-2 text-xs md:text-sm tracking-wider"
+                        aria-label="Breadcrumb"
+                    >
+                        {breadcrumbs.map((item, idx) => {
+                            const isLast = idx === lastIndex;
+
+                            const content =
+                                item.href && !isLast ? (
+                                    <Link
+                                        href={item.href}
+                                        className="hover:text-secondary transition-colors hover:underline"
+                                    >
+                                        {item.label}
+                                    </Link>
+                                ) : (
+                                    <span>{item.label}</span>
+                                );
+
+                            return (
+                                <span
+                                    key={`${item.label}-${idx}`}
+                                    className="inline-flex gap-2"
                                 >
-                                    {item.label}
-                                </Link>
-                            ) : (
-                                <span>{item.label}</span>
-                            );
+                                    {content}
 
-                        return (
-                            <span key={`${item.label}-${idx}`} className="inline-flex gap-2">
-                                {content}
-                                {!isLast ? <span aria-hidden="true">•</span> : null}
-                            </span>
-                        );
-                    })}
-                </nav>
+                                    {!isLast && (
+                                        <span aria-hidden="true">•</span>
+                                    )}
+                                </span>
+                            );
+                        })}
+                    </nav>
+
+                </div>
             </div>
-        </div>
+        </section>
     );
 }
