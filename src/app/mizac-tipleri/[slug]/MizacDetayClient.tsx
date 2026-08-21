@@ -24,11 +24,9 @@ export default function MizacDetayClient({ slug }: { slug: string }) {
 
     return (
         <main className="flex flex-col bg-white text-primary">
-
-            {/* PAGE HERO */}
             <PageHero
-                title={detail.title.toUpperCase()}
-                subtitle="MİZAÇ TİPLERİ"
+                title={detail.title}
+                subtitle="Mizaç Tipleri"
                 backgroundImage="/banner5.png"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },
@@ -75,25 +73,19 @@ export default function MizacDetayClient({ slug }: { slug: string }) {
                                 </div>
 
 
-                                {/* IMAGE */}
-                                <div className="relative w-full h-[300px] md:h-[380px] overflow-hidden bg-primary/[0.025]">
-                                    <Image
-                                        src={detail.image}
-                                        alt={detail.title}
-                                        fill
-                                        priority
-                                        className="object-contain p-5 md:p-8"
-                                        sizes="(max-width: 1024px) 100vw, 65vw"
-                                    />
+                                <div className="mx-auto w-full max-w-[620px]">
+                                    <div className="relative aspect-square overflow-hidden rounded-[2rem] bg-[#f5f7f8]">
+                                        <Image src={detail.image} alt={detail.title} fill priority className="object-contain" sizes="(max-width: 768px) 100vw, 620px" />
 
-                                    {/* Decorative corner */}
-                                    <div className="absolute left-0 top-0 h-16 w-px bg-secondary/40" />
-                                    <div className="absolute left-0 top-0 h-px w-16 bg-secondary/40" />
+                                        <div className="pointer-events-none absolute inset-0 rounded-[2rem] ring-1 ring-inset ring-primary/[0.06]" />
 
-                                    <div className="absolute right-0 bottom-0 h-16 w-px bg-primary/10" />
-                                    <div className="absolute right-0 bottom-0 h-px w-16 bg-primary/10" />
+                                        <div className="absolute left-6 top-6 h-12 w-px bg-secondary/35" />
+                                        <div className="absolute left-6 top-6 h-px w-12 bg-secondary/35" />
+
+                                        <div className="absolute bottom-6 right-6 h-12 w-px bg-primary/10" />
+                                        <div className="absolute bottom-6 right-6 h-px w-12 bg-primary/10" />
+                                    </div>
                                 </div>
-
 
                                 {/* CORE DESIRE / FEAR */}
                                 {(coreDesire || coreFear) && (

@@ -50,8 +50,8 @@ export default function MizacTipleriClient() {
     return (
         <main className="bg-white font-cormorant">
             <PageHero
-                title="MİZAÇ TİPLERİ"
-                subtitle="- 9 TEMEL MİZAÇ -"
+                title="Mizaç Tipleri"
+                subtitle="9 Temel Mizaç"
                 backgroundImage="/enneagram_image_2.jpg"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },

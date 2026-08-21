@@ -1,32 +1,36 @@
 export type BlogPost = {
-    slug: string;
-    title: string;
-    excerpt: string;
-    coverImage: string;
-    publishedAt: string;
-    author?: string;
-    categories?: string[];
-    tags?: string[];
-    content: string;
-  };
-  
-  export const blogPosts: BlogPost[] = [
-    {
-      slug: "enneagram-yeni-bir-ruhsal-yolculuk-icin-gecmisi-uzun-yillara-dayanan-oldukca-kullanisli-eski-bir-aracti",
-      title: "Enneagram yeni bir ruhsal yolculuk için oldukça kullanışlı  bir araçtır...",
-      excerpt:
-      "Enneagram yeni bir ruhsal yolculuk için, geçmişi uzun yıllara dayanan oldukça kullanışlı eski bir araçtır..",  
-      coverImage: "/enneagram_banner_2.jpg",
-      publishedAt: "2026-01-20",
-      author: "Enneagram Eğitim & Danışmanlık",
-      categories: ["Enneagram"],
-      tags: ["Enneagram", "ruhsal yolculuk", "Kişilik", "Enneagram eğitimi", "İnsan yaşamı"],
-      content: `## Enneagram ile kendimizi nasıl keşfederiz?
-      Kendimiz ve başkaları için neyi neden yaptığımızı gerçekten görebilseydik ne kadar şefkatli olabileceğimizi hayal edin.
+  slug: string;
+  title: string;
+  excerpt: string;
+  coverImage: string;
+  publishedAt: string;
+  author?: string;
+  categories?: string[];
+  tags?: string[];
+  content: string;
+};
 
-      Enneagram’ın yaptığı tam olarak budur. Bu bir merhamet haritasıdır.
-
-    Enneagram, kişisel ve kolektif dönüşüm için güçlü bir araçtır. Bu geleneğe göre, insan yaşamı bütünlüğe doğru bir yolculuk içerir.
+export const blogPosts: BlogPost[] = [
+  {
+    slug: "enneagram-yeni-bir-ruhsal-yolculuk-icin-gecmisi-uzun-yillara-dayanan-oldukca-kullanisli-eski-bir-aracti",
+    title:
+      "Enneagram yeni bir ruhsal yolculuk için oldukça kullanışlı  bir araçtır...",
+    excerpt:
+      "Enneagram yeni bir ruhsal yolculuk için, geçmişi uzun yıllara dayanan oldukça kullanışlı eski bir araçtır..",
+    coverImage: "/enneagram_banner_2.jpg",
+    publishedAt: "2026-01-20",
+    author: "Enneagram Eğitim & Danışmanlık",
+    categories: ["Enneagram"],
+    tags: [
+      "Enneagram",
+      "ruhsal yolculuk",
+      "Kişilik",
+      "Enneagram eğitimi",
+      "İnsan yaşamı",
+    ],
+    content: `## Enneagram ile kendimizi nasıl keşfederiz?
+  Kendimiz ve başkaları için neyi neden yaptığımızı gerçekten görebilseydik ne kadar şefkatli olabileceğimizi hayal edin.
+  Enneagram’ın yaptığı tam olarak budur. Bu bir merhamet haritasıdır.Enneagram, kişisel ve kolektif dönüşüm için güçlü bir araçtır. Bu geleneğe göre, insan yaşamı bütünlüğe doğru bir yolculuk içerir.
   Kendini derinlemesine anlayabilmek, Enneagram’ın birincil amacıdır. Kişinin olumlu ve olumsuz özellikleri ile kendini tanıması
   ve kendini en sağlıklı seviyeye getirmesi için farkındalık oluşturur. Enneagram, insanı kendisiyle barıştırma çabasıdır.
   Hiçbir kişilik tipi diğerlerinden daha iyi ya da daha üstün değildir.
@@ -43,23 +47,17 @@ export type BlogPost = {
   Enneagram bizi eve götürür… Ichazo’ un dediği gibi “İnsan özden kişiliğe düşer.” Kişiliğimizi enneagram aracılığıyla derinlikli olarak tanıdıkça kendi özümüze doğru daha da yakınlaşırız,
   eve dönüş yolunu bulabiliriz…
   `,
-    },
-    {
-      slug: "oyle-bir-harita-dusunun-ki-size-giden-yolu-gostersin-enneagram",
-      title: "Öyle bir harita düşünün ki, size giden yolu göstersin: Enneagram",
-      excerpt:
-        "Öyle bir harita düşünün ki, size giden yolu göstersin: Enneagram",
-      coverImage: "/hakkimizda_1.jpg",
-      publishedAt: "2025-12-11",
-      author: "Enneagram Eğitim & Danışmanlık",
-      categories: ["Enneagram"],
-      tags: [
-        "Enneagram",
-        "Başarı",
-        "Kişilik",
-        "Kendilik",
-      ],
-      content: `## Size göre bir rehber: Enneagram
+  },
+  {
+    slug: "oyle-bir-harita-dusunun-ki-size-giden-yolu-gostersin-enneagram",
+    title: "Öyle bir harita düşünün ki, size giden yolu göstersin: Enneagram",
+    excerpt: "Öyle bir harita düşünün ki, size giden yolu göstersin: Enneagram",
+    coverImage: "/hakkimizda_1.jpg",
+    publishedAt: "2025-12-11",
+    author: "Enneagram Eğitim & Danışmanlık",
+    categories: ["Enneagram"],
+    tags: ["Enneagram", "Başarı", "Kişilik", "Kendilik"],
+    content: `## Size göre bir rehber: Enneagram
     
    Enneagram kişiliği anlamak üzerine dinamik bir yaklaşımdır. Basit bir sınıflama değildir. Kişinin ana mizacının temel özelliklerini anlatırken, 
    kanat denilen ve kişiyi etkileyen diğer mizacın hayatına getirdiği katkıdan da bahseder. Stres durumlarda kişinin duygu 
@@ -72,26 +70,26 @@ export type BlogPost = {
  Yalnızca kendimiz hakkında daha fazla şey öğrenmekle kalmaz, aynı zamanda insanların düşüncelerini, hissettiklerini, yaptıklarını nasıl ve 
  neden yaptıklarını anlayarak diğer insanların gözünden dünyayı görmeyi öğrenebiliriz. Enneagram bilgeliği, gerçekte
   kim olduğumuza dair bilgiye bizi daha kolay götürebilir. Enneagram, kendi kendinizi yenilgiye uğratan yanlarınızı tanımanıza,
-  üstesinden gelmenize ve en otantik halinize dönüşmenize yardımcı olacaktır.`
-    },
-    {
-      slug: "mizac-ve-sinav-motivasyonu",
-      title: "Mizaç ve Sınav Motivasyonu",
-      excerpt:
-        "Çocuklarımızı girecekleri sınav öncesinde rahatlatmak, onları motive etmek başarılarını artıracaktır.Her bir çocuk için rahatlatıcı yaklaşımlar  ve motive eden cümleler kendi mizaç yapılarına göre farklı olmalıdır.",
-      coverImage: "/enneagram-slayder1.jpg",
-      publishedAt: "2025-10-22",
-      author: "Enneagram Eğiitm & Danışmanlık",
-      categories: ["Enneagram ve Mizaç"],
-      tags: [
-        "Enneagram",
-        "Mizaç",
-        "Mizaç Tipleri",
-        "Sınav Motivasyonu",
-        "Mizaç ve Sınav",
-        "Mizaç ve Motivasyon",
-      ],
-     content: `## Mizaç ve Sınav Motivasyonu
+  üstesinden gelmenize ve en otantik halinize dönüşmenize yardımcı olacaktır.`,
+  },
+  {
+    slug: "mizac-ve-sinav-motivasyonu",
+    title: "Mizaç ve Sınav Motivasyonu",
+    excerpt:
+      "Çocuklarımızı girecekleri sınav öncesinde rahatlatmak, onları motive etmek başarılarını artıracaktır.Her bir çocuk için rahatlatıcı yaklaşımlar  ve motive eden cümleler kendi mizaç yapılarına göre farklı olmalıdır.",
+    coverImage: "/enneagram-slayder1.jpg",
+    publishedAt: "2025-10-22",
+    author: "Enneagram Eğiitm & Danışmanlık",
+    categories: ["Enneagram ve Mizaç"],
+    tags: [
+      "Enneagram",
+      "Mizaç",
+      "Mizaç Tipleri",
+      "Sınav Motivasyonu",
+      "Mizaç ve Sınav",
+      "Mizaç ve Motivasyon",
+    ],
+    content: `## Mizaç ve Sınav Motivasyonu
 
 Çocuklarımızı girecekleri sınav öncesinde rahatlatmak, onları motive etmek başarılarını artıracaktır. Her bir çocuk için rahatlatıcı yaklaşımlar ve motive eden cümleler kendi mizaç yapılarına göre farklı olmalıdır.
 
@@ -190,17 +188,17 @@ Sınava hazırlık sürecin boyunca elinden geleni yaptın. Bazen yorulduğun an
 Bu gireceğin sınavda da elinden geleni yapacağından eminim. Sana güveniyoruz. Dikkatini toplaman ve her bir soruyu önemseyerek çözmen daha başarılı olmanı sağlayacaktır.
 
 Sınav öncesindeki hazırlıklarını tam yapman gerekir. Sınav gereçlerini, belgelerini önceden hazırlaman seni rahatlatacaktır. Bu sınavın önemini fark ettiğini biliyorum. Seni çok seviyorum. Başarılar.”
-`
-    },
-  ];
-  
-  export function getAllBlogPosts() {
-    return [...blogPosts].sort(
-      (a, b) =>
-        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-    );
-  }
-  
-  export function getBlogPostBySlug(slug: string) {
-    return blogPosts.find((p) => p.slug === slug);
-  }
+`,
+  },
+];
+
+export function getAllBlogPosts() {
+  return [...blogPosts].sort(
+    (a, b) =>
+      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+  );
+}
+
+export function getBlogPostBySlug(slug: string) {
+  return blogPosts.find((p) => p.slug === slug);
+}

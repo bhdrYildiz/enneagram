@@ -38,11 +38,11 @@ export default function LogoMarquee() {
 
 function LogoSet() {
     return (
-        <div className="flex items-center gap-10 pr-10 py-4">
+        <div className="flex items-center gap-10 pr-10 py-2">
             {logos.map((logo) => (
                 <div
                     key={logo.src}
-                    className="relative h-12 w-[120px] opacity-80 hover:opacity-100 transition"
+                    className="relative h-20 w-[120px] opacity-80 hover:opacity-100 transition"
                 >
                     <Image
                         src={logo.src}

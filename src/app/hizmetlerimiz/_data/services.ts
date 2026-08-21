@@ -648,7 +648,7 @@ Bir sonraki sempozyumda siz de bu buluşmanın bir parçası olun.`,
 
     logo: "/sempozyumLogo.png",
 
-    heroImage: "/sempozyumLogo.png",
+    heroImage: "/sempozyum.jpg",
   },
   {
     slug: "enneagram-tv-ve-yayincilik",

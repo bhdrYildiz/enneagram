@@ -22,8 +22,8 @@ export default function EnneagramKavramlarClient() {
 
             {/* PAGE HERO */}
             <PageHero
-                title="ENNEAGRAM KAVRAMLARI"
-                subtitle="ENNEAGRAM"
+                title="Enneagram Kavramları"
+                subtitle="Enneagram"
                 backgroundImage="/banner5.png"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },

@@ -4,8 +4,6 @@ import Hero from './Hero/Hero'
 import About from './About/About'
 import Services from './Services/Services'
 import Process from './Process/Process'
-import OurTeam from './OurTeam/OurTeam'
-import EventsSection from './Events/EventsSections'
 import TestimonialsSection from './Testimonial/TestimonialsSection'
 import BlogSection from './BlogSection.tsx/BlogSection'
 import HomeVideosSection from './HomeVideosSection'
@@ -37,8 +35,6 @@ const Home = () => {
             <Services />
             <Process />
             <HomeVideosSection />
-            <OurTeam />
-            <EventsSection />
             <TestimonialsSection />
             <BlogSection />
         </div >

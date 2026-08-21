@@ -29,12 +29,12 @@ export default function AboutClient() {
         <>
             <main className="flex flex-col font-cormorant bg-[#ffffff]">
                 <PageHero
-                    title="HAKKIMIZDA"
-                    subtitle="- ENNEAGRAM EĞİTİM&apos;İ KEŞFEDİN -"
+                    title="Hakkımızda"
+                    subtitle="Keşfedin ve Bize Ulaşın"
                     backgroundImage="/enneagram-slayder1.jpg"
                     breadcrumbs={[
-                        { label: 'ANA SAYFA', href: '/' },
-                        { label: 'HAKKIMIZDA' },
+                        { label: 'Ana Sayfa', href: '/' },
+                        { label: 'Hakkımızda' },
                     ]}
                 />
                 <section className="bg-white">

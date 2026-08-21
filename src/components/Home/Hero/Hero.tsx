@@ -2,218 +2,226 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
-import {
-    FiArrowRight
-} from 'react-icons/fi'
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
+import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi'
 
 export default function Hero() {
+
+    const mouseX = useMotionValue(0)
+    const mouseY = useMotionValue(0)
+
+    const springX = useSpring(mouseX, { stiffness: 60, damping: 20 })
+    const springY = useSpring(mouseY, { stiffness: 60, damping: 20 })
+
+    const imageX = useTransform(springX, [-0.5, 0.5], [-18, 18])
+    const imageY = useTransform(springY, [-0.5, 0.5], [-14, 14])
+
+    const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+        const rect = e.currentTarget.getBoundingClientRect()
+
+        mouseX.set((e.clientX - rect.left) / rect.width - 0.5)
+        mouseY.set((e.clientY - rect.top) / rect.height - 0.5)
+    }
+
     return (
-        <section className="relative overflow-hidden bg-[#101827]">
+        <section onMouseMove={handleMouseMove} className="relative overflow-hidden bg-[#101827]">
 
-            {/* Background */}
+            {/* BACKGROUND */}
+            <div className="pointer-events-none absolute inset-0">
 
-            <div className="absolute inset-0">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#111827] via-[#172433] to-[#0b1520]" />
 
-                <div className="absolute inset-0 bg-gradient-to-br from-[#111827] via-[#1b2635] to-[#0d1722]" />
+                <motion.div animate={{ x: [0, 80, 0], y: [0, -40, 0], scale: [1, 1.15, 1] }} transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }} className="absolute -left-40 top-0 h-[520px] w-[520px] rounded-full bg-secondary/20 blur-[140px]" />
 
-                <div className="absolute -left-40 top-20 w-[500px] h-[500px] rounded-full bg-secondary/20 blur-[130px]" />
+                <motion.div animate={{ x: [0, -70, 0], y: [0, 60, 0], scale: [1, 1.2, 1] }} transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }} className="absolute -right-40 bottom-0 h-[650px] w-[650px] rounded-full bg-secondary/10 blur-[180px]" />
 
-                <div className="absolute right-0 bottom-0 w-[600px] h-[600px] rounded-full bg-hover/10 blur-[180px]" />
+                <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 
             </div>
 
-            <div className="relative z-10">
 
-                <div className="max-w-7xl mx-auto px-6 min-h-[calc(100vh-120px)] flex items-center">
+            {/* BÜYÜK DÖNEN GEOMETRİ */}
+            <motion.div animate={{ rotate: 360 }} transition={{ duration: 80, repeat: Infinity, ease: 'linear' }} className="pointer-events-none absolute -right-[170px] top-1/2 hidden h-[780px] w-[780px] -translate-y-1/2 rounded-full border border-white/[0.06] lg:block">
 
-                    <div className="grid lg:grid-cols-[1.05fr_.95fr] gap-20 items-center w-full">
+                <div className="absolute inset-[80px] rounded-full border border-secondary/[0.08]" />
+                <div className="absolute inset-[170px] rounded-full border border-white/[0.05]" />
 
-                        {/* LEFT */}
+                <div className="absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-transparent via-secondary/15 to-transparent" />
+                <div className="absolute left-0 top-1/2 h-px w-full bg-gradient-to-r from-transparent via-secondary/15 to-transparent" />
 
-                        <motion.div
-                            initial={{ opacity: 0, y: 40 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: .8 }}
-                        >
+            </motion.div>
 
-                            <div className="inline-flex items-center rounded-full border border-white/15 bg-white/10 backdrop-blur-xl px-5 py-2 text-xs uppercase tracking-[0.3em] text-white">
 
-                                Enneagram Eğitim & Danışmanlık
+            <div className="relative z-10 mx-auto flex min-h-[780px] max-w-7xl items-center px-6 py-16">
 
-                            </div>
+                <div className="grid w-full items-center gap-16 lg:grid-cols-[1fr_1fr]">
 
-                            <h1 className="mt-8 text-5xl md:text-7xl leading-[1.02] font-light text-white">
 
-                                Enneagram ile
-                                <br />
+                    {/* LEFT */}
+                    <motion.div initial={{ opacity: 0, y: 35 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8 }} className="relative z-20">
 
-                                Kendinizi
-                                <br />
+                        <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .6, delay: .15 }} className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] px-5 py-2.5 text-[10px] uppercase tracking-[0.3em] text-white/80 backdrop-blur-xl">
 
-                                ve İnsanları
-                                <br />
+                            <motion.span animate={{ scale: [1, 1.5, 1], opacity: [.5, 1, .5] }} transition={{ duration: 2, repeat: Infinity }} className="h-1.5 w-1.5 rounded-full bg-secondary" />
+
+                            Enneagram Eğitim & Danışmanlık
+
+                        </motion.div>
+
+
+                        <h1 className="mt-8 max-w-[720px] text-5xl font-light leading-[1.02] tracking-[-0.035em] text-white md:text-6xl lg:text-[72px]">
+
+                            Enneagram ile
+
+                            <br />
+
+                            Kendinizi ve İnsanları
+
+                            <br />
+
+                            <span className="relative inline-block text-secondary">
 
                                 Daha İyi Tanıyın
 
-                            </h1>
+                                <motion.span initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 1, delay: .7 }} className="absolute -bottom-2 left-0 h-px w-full origin-left bg-gradient-to-r from-secondary via-secondary/50 to-transparent" />
 
-                            <p className="mt-8 max-w-xl text-lg leading-9 text-white/75">
+                            </span>
 
-                                Eğitim, danışmanlık ve kurumsal gelişim
-                                çözümleriyle bireylerin ve ekiplerin
-                                potansiyellerini ortaya çıkarıyoruz.
+                        </h1>
 
+
+                        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .8, delay: .5 }} className="mt-8 max-w-xl text-lg leading-9 text-white/65">
+
+                            Eğitim, danışmanlık ve kurumsal gelişim çözümleriyle bireylerin ve ekiplerin potansiyellerini ortaya çıkarıyoruz.
+
+                        </motion.p>
+
+
+                        <div className="mt-10 flex flex-wrap gap-4">
+
+                            <Link href="/egitimlerimiz" className="group inline-flex items-center gap-3 rounded-full bg-secondary px-7 py-4 text-sm text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(0,0,0,.25)]">
+
+                                Eğitimleri Keşfet
+
+                                <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+
+                            </Link>
+
+                            <Link href="/hakkimizda" className="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.06] px-7 py-4 text-sm text-white backdrop-blur-xl transition-all duration-300 hover:border-white/30 hover:bg-white/[0.1]">
+
+                                Bizi Tanıyın
+
+                                <FiArrowUpRight className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+
+                            </Link>
+
+                        </div>
+
+
+                        {/* STATS */}
+                        <div className="mt-14 flex flex-wrap gap-x-10 gap-y-6 border-t border-white/10 pt-8">
+
+                            <div>
+                                <span className="text-3xl font-light text-white">13+</span>
+                                <p className="mt-1 text-sm text-white/40">Yıllık Deneyim</p>
+                            </div>
+
+                            <div className="hidden h-12 w-px bg-white/10 sm:block" />
+
+                            <div>
+                                <span className="text-3xl font-light text-white">100.000+</span>
+                                <p className="mt-1 text-sm text-white/40">Ulaşılan Birey</p>
+                            </div>
+
+                            <div className="hidden h-12 w-px bg-white/10 sm:block" />
+
+                            <div>
+                                <span className="text-3xl font-light text-white">500+</span>
+                                <p className="mt-1 text-sm text-white/40">Çalışılan Kurum</p>
+                            </div>
+
+                        </div>
+
+                    </motion.div>
+
+
+                    {/* RIGHT */}
+                    <motion.div style={{ x: imageX, y: imageY }} className="relative hidden h-[650px] lg:block">
+
+
+                        {/* ANA GÖRSEL */}
+                        <motion.div animate={{ y: [0, -14, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="absolute right-3 top-2 h-[455px] w-[365px] overflow-hidden rounded-[34px] border border-white/10 shadow-[0_35px_90px_rgba(0,0,0,.4)]">
+
+                            <Image src="/enherethero.jpg" alt="Enneagram eğitimleri" fill priority className="object-cover transition-transform duration-1000 hover:scale-105" />
+
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#101827]/35 via-transparent to-transparent" />
+
+                        </motion.div>
+
+
+                        {/* SOL GÖRSEL */}
+                        <motion.div animate={{ y: [0, 12, 0], rotate: [-2, -1, -2] }} transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-8 left-0 h-[310px] w-[235px] overflow-hidden rounded-[28px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
+
+                            <Image src="/enneagramhero.jpg" alt="Enneagram" fill className="object-cover" />
+
+                        </motion.div>
+
+
+                        {/* ALT SAĞ GÖRSEL */}
+                        <motion.div animate={{ y: [0, -10, 0], rotate: [2, 1, 2] }} transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-0 right-2 h-[210px] w-[280px] overflow-hidden rounded-[26px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
+
+                            <Image src="/enneagram-slayder1.jpg" alt="Enneagram etkinlikleri" fill className="object-cover" />
+
+                        </motion.div>
+
+
+                        {/* ORBIT */}
+                        <motion.div animate={{ rotate: 360 }} transition={{ duration: 18, repeat: Infinity, ease: 'linear' }} className="absolute left-[205px] top-[220px] h-[150px] w-[150px] rounded-full border border-secondary/25">
+
+                            <span className="absolute -top-1 left-1/2 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-secondary shadow-[0_0_18px_rgba(255,255,255,.3)]" />
+
+                        </motion.div>
+
+
+                        {/* FLOATING LABEL */}
+                        <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }} className="absolute left-[155px] top-[140px] rounded-2xl border border-white/15 bg-white/[0.08] px-5 py-4 backdrop-blur-xl">
+
+                            <p className="text-[9px] uppercase tracking-[0.25em] text-secondary">
+                                Mizaç
                             </p>
 
-                            <div className="mt-10 flex flex-wrap gap-5">
-
-                                <Link
-                                    href="/egitimlerimiz"
-                                    className="group rounded-full bg-secondary hover:bg-hover px-8 py-4 text-white inline-flex items-center gap-3 transition-all"
-                                >
-
-                                    Eğitimleri İncele
-
-                                    <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
-
-                                </Link>
-
-                                <Link
-                                    href="/hakkimizda"
-                                    className="rounded-full border border-white/15 bg-white/10 backdrop-blur-xl hover:bg-white/20 px-8 py-4 text-white transition"
-                                >
-
-                                    Hakkımızda
-
-                                </Link>
-
-                            </div>
-
-                            {/* Stats */}
-
-                            <div className="mt-16 grid grid-cols-3 gap-10">
-
-                                <div>
-
-                                    <h3 className="text-4xl font-light text-white">
-
-                                        100+
-
-                                    </h3>
-
-                                    <p className="mt-2 text-white/60">
-
-                                        Eğitim
-
-                                    </p>
-
-                                </div>
-
-                                <div>
-
-                                    <h3 className="text-4xl font-light text-white">
-
-                                        15+
-
-                                    </h3>
-
-                                    <p className="mt-2 text-white/60">
-
-                                        Yıllık Deneyim
-
-                                    </p>
-
-                                </div>
-
-                                <div>
-
-                                    <h3 className="text-4xl font-light text-white">
-
-                                        %100
-
-                                    </h3>
-
-                                    <p className="mt-2 text-white/60">
-
-                                        Memnuniyet
-
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </motion.div>
-                        {/* RIGHT */}
-
-                        <motion.div
-                            initial={{ opacity: 0, x: 60 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: .8, delay: .25 }}
-                            className="relative hidden lg:block h-[760px]"
-                        >
-
-                            {/* Büyük Fotoğraf */}
-
-                            <motion.div
-                                whileHover={{ y: -8, rotate: -1 }}
-                                transition={{ duration: .3 }}
-                                className="absolute right-0 top-0 w-[420px] h-[500px] rounded-[34px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,.35)]"
-                            >
-
-                                <Image
-                                    src="/enherethero.jpg"
-                                    alt=""
-                                    fill
-                                    className="object-cover hover:scale-105 transition duration-700"
-                                />
-
-                            </motion.div>
-
-                            {/* Sol Alt */}
-
-                            <motion.div
-                                whileHover={{ y: -8, rotate: 1 }}
-                                transition={{ duration: .3 }}
-                                className="absolute left-0 bottom-60 w-[260px] h-[320px] rounded-[28px] overflow-hidden shadow-2xl"
-                            >
-
-                                <Image
-                                    src="/enneagramhero.jpg"
-                                    alt=""
-                                    fill
-                                    className="object-cover hover:scale-105 transition duration-700"
-                                />
-
-                            </motion.div>
-
-                            {/* Sağ Alt */}
-
-                            <motion.div
-                                whileHover={{ y: -8, rotate: -1 }}
-                                transition={{ duration: .3 }}
-                                className="absolute right-20 top-120 w-[300px] h-[240px] rounded-[28px] overflow-hidden shadow-2xl"
-                            >
-
-                                <Image
-                                    src="/enneagram-slayder1.jpg"
-                                    alt=""
-                                    fill
-                                    className="object-cover hover:scale-105 transition duration-700"
-                                />
-
-                            </motion.div>
+                            <p className="mt-1 text-sm text-white/85">
+                                Kendini keşfet
+                            </p>
 
                         </motion.div>
 
-                    </div>
+
+                        {/* KÜÇÜK PARLAK NOKTALAR */}
+                        <motion.span animate={{ opacity: [.2, 1, .2], scale: [.7, 1.2, .7] }} transition={{ duration: 3, repeat: Infinity }} className="absolute left-24 top-16 h-2 w-2 rounded-full bg-secondary" />
+
+                        <motion.span animate={{ opacity: [.3, 1, .3], scale: [.8, 1.4, .8] }} transition={{ duration: 4, repeat: Infinity, delay: 1 }} className="absolute bottom-36 right-8 h-1.5 w-1.5 rounded-full bg-white" />
+
+                    </motion.div>
 
                 </div>
 
             </div>
+
+
+            {/* SCROLL INDICATOR */}
+            <div className="absolute bottom-7 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-white/30 lg:flex">
+
+                <span className="text-[8px] uppercase tracking-[0.3em]">
+                    Keşfet
+                </span>
+
+                <div className="relative h-10 w-px overflow-hidden bg-white/10">
+                    <motion.span animate={{ y: [-30, 40] }} transition={{ duration: 1.7, repeat: Infinity, ease: 'easeInOut' }} className="absolute left-0 top-0 h-5 w-px bg-secondary" />
+                </div>
+
+            </div>
+
         </section>
-
     )
-
 }

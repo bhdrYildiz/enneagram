@@ -175,16 +175,16 @@ export default function ContactClient() {
 
   return (
     <>
-      <main className="bg-white font-[300] text-primary">
+      <main className="bg-white font-[300] text-cormorant">
 
         {/* HERO */}
         <PageHero
-          title="BİZİMLE İLETİŞİME GEÇİN"
-          subtitle="- ENNEAGRAM YOLCULUĞUNUZ İÇİN BURADAYIZ -"
-          backgroundImage="/enneagram_banner.jpg"
+          title="Bizimle İletişime geçin"
+          subtitle="Enneagram yolculuğunuz için buradayız"
+          backgroundImage="/iletisimbanner.png"
           breadcrumbs={[
-            { label: 'ANA SAYFA', href: '/' },
-            { label: 'İLETİŞİM' },
+            { label: 'Ana Sayfa', href: '/' },
+            { label: 'İletişim' },
           ]}
         />
 
@@ -197,7 +197,7 @@ export default function ContactClient() {
                 BİZE ULAŞIN
               </span>
 
-              <h2 className="mt-4 text-4xl md:text-5xl tracking-wide font-[300] text-primary leading-tight">
+              <h2 className="mt-4 text-4xl md:text-5xl tracking-wide font-[300] text-cormorant leading-tight">
                 Size nasıl yardımcı olabiliriz?
               </h2>
 

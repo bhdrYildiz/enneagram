@@ -6,7 +6,6 @@ import { educations, WHATSAPP_URL } from "../_data/educations";
 
 function Stars({ rating }: { rating: number }) {
     const full = Math.max(0, Math.min(5, rating));
-
     return (
         <div className="flex items-center gap-1" aria-label={`Puan: ${full}/5`}>
             {Array.from({ length: 5 }).map((_, i) => (
@@ -32,18 +31,13 @@ export default async function EducationDetailPage({ params }: { params: Promise<
 
     return (
         <main className="bg-white font-cormorant">
-            <PageHero title={education.title} subtitle="- EĞİTİM DETAYI -" backgroundImage="/enneagram_banner.jpg" breadcrumbs={[{ label: "ANA SAYFA", href: "/" }, { label: "EĞİTİMLERİMİZ", href: "/egitimlerimiz" }, { label: education.title }]} />
+            <PageHero title={education.title} subtitle="Eğitim Detayı" backgroundImage="/enneagram_banner.jpg" breadcrumbs={[{ label: "ANA SAYFA", href: "/" }, { label: "EĞİTİMLERİMİZ", href: "/egitimlerimiz" }, { label: education.title }]} />
 
             <section className="bg-white">
                 <div className="max-w-[1280px] mx-auto px-6 py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12 items-start">
 
-                        <article className="min-w-0">
-
-                            <div className="relative aspect-[16/8] overflow-hidden rounded-2xl bg-gray-100">
-                                <Image src={education.poster} alt={education.title} fill priority sizes="(max-width: 1024px) 100vw, 70vw" className="object-cover transition-transform duration-700 hover:scale-[1.02]" />
-                            </div>
-
+                        <article className="min-w-0">   
                             <div className="mt-10">
                                 <span className="text-xs uppercase tracking-[0.3em] text-secondary">
                                     ENNEAGRAM EĞİTİM & DANIŞMANLIK

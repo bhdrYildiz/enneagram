@@ -76,7 +76,7 @@ function formatDateBadge(iso: string) {
     const d = new Date(iso);
     if (Number.isNaN(d.getTime())) return { day: "--", monthYear: "--" };
     const day = d.getDate().toString().padStart(2, "0");
-    const month = d.toLocaleString("en-US", { month: "short" }).toUpperCase();
+    const month = d.toLocaleString("tr-TR", { month: "short" }).toUpperCase();
     const year = d.getFullYear().toString().slice(-2);
     return { day, monthYear: `${month} ${year}` };
 }
@@ -143,12 +143,12 @@ export default async function BlogPage({
         <>
             <main className="bg-white font-cormorant">
                 <PageHero
-                    title="BLOG"
-                    subtitle="- SİZİN İÇİN HAZIRLADIĞIMIZ BLOG YAZILARI -"
-                    backgroundImage="enneagram_banner.jpg"
+                    title="Blog"
+                    subtitle="Sizin için hazırladığımız blog yazıları"
+                    backgroundImage="/blogbanner.png"
                     breadcrumbs={[
-                        { label: 'ANA SAYFA', href: '/' },
-                        { label: 'BLOG' },
+                        { label: 'Ana Sayfa', href: '/' },
+                        { label: 'Blog' },
                     ]}
                 />
 
@@ -156,84 +156,81 @@ export default async function BlogPage({
                     <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
                         <div className="grid grid-cols-1 lg:grid-cols-[1.7fr_0.9fr] gap-12 lg:gap-16 items-start">
                             <div>
-                                <div className="space-y-16">
+                                <div className="space-y-14">
                                     {posts.map((post) => {
                                         const badge = formatDateBadge(post.publishedAt);
                                         const metaTags = (post.tags ?? []).slice(0, 3);
-                                        return (
-                                            <article key={post.slug} className="border-b border-black/10 pb-14">
-                                                <Link href={`/blog/${post.slug}`} className="block group">
-                                                    <div className="relative">
-                                                        <div className="relative h-[260px] md:h-[360px] overflow-hidden bg-gray-100">
-                                                            <Image
-                                                                src={post.coverImage}
-                                                                alt={post.title}
-                                                                fill
-                                                                sizes="(max-width: 768px) 100vw, 900px"
-                                                                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                                            />
-                                                        </div>
 
-                                                        <div className="absolute left-6 top-6 w-[84px] h-[84px] bg-primary text-white flex flex-col items-center justify-center">
-                                                            <div className="text-4xl font-light leading-none">
-                                                                {badge.day}
-                                                            </div>
-                                                            <div className="mt-1 text-xs tracking-widest bg-hover px-2 py-1 w-full text-center">
-                                                                {badge.monthYear}
-                                                            </div>
-                                                        </div>
+                                        return (
+                                            <article key={post.slug} className="group">
+
+                                                <Link href={`/blog/${post.slug}`} className="block">
+
+                                                    <div className="relative aspect-[16/9] overflow-hidden rounded-[1.75rem] bg-primary/[0.03]">
+                                                        <Image src={post.coverImage} alt={post.title} fill sizes="(max-width: 768px) 100vw, 900px" className="object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
+
+                                                        <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/[0.05]" />
                                                     </div>
 
-                                                    <div className="pt-8">
-                                                        <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
-                                                            {post.author ?? "Enneagram Eğitim"}
-                                                            <span className="mx-3">·</span>
-                                                            {metaTags.length ? metaTags.join(", ") : "Kapadokya"}
-                                                        </p>
+                                                    <div className="pt-7">
 
-                                                        <h2 className="mt-4 text-3xl md:text-4xl font-light text-[#1c2c34] leading-tight">
+                                                        <div className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] uppercase tracking-[0.16em] text-primary/40">
+                                                            <span>{badge.day} {badge.monthYear}</span>
+
+                                                            <span className="h-1 w-1 rounded-full bg-secondary/80" />
+
+                                                            <span>{post.author ?? "Enneagram Eğitim"}</span>
+
+                                                            {metaTags.length > 0 && (
+                                                                <>
+                                                                    <span className="h-1 w-1 rounded-full bg-secondary/80" />
+                                                                    <span>{metaTags.join(" • ")}</span>
+                                                                </>
+                                                            )}
+                                                        </div>
+
+                                                        <h2 className="max-w-[850px] text-3xl md:text-4xl font-light leading-[1.15] tracking-[-0.02em] text-primary transition-colors duration-300 group-hover:text-secondary">
                                                             {post.title}
                                                         </h2>
 
-                                                        <div className="h-px w-16 bg-[#ab9a8b] mt-5" />
-
-                                                        <p className="mt-6 text-gray-600 leading-relaxed">
+                                                        <p className="mt-5 max-w-[800px] text-base md:text-[17px] leading-8 text-primary/60">
                                                             {post.excerpt}
                                                         </p>
 
-                                                        <div className="mt-8 inline-flex items-center gap-3 text-[#1c2c34] tracking-[0.25em] text-xs font-bold uppercase">
+                                                        <div className="mt-7 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.2em] text-primary/55 transition-all duration-300 group-hover:gap-4 group-hover:text-secondary">
                                                             <span>Devamını Oku</span>
                                                             <span className="text-base leading-none">→</span>
                                                         </div>
+
                                                     </div>
+
                                                 </Link>
+
+                                                <div className="mt-12 h-px w-full bg-black/[0.07]" />
+
                                             </article>
                                         );
                                     })}
                                 </div>
 
-                                <div className="flex items-center justify-center flex-wrap gap-3 mt-10">
+                                <div className="mt-14 flex flex-wrap items-center justify-center gap-2">
+
                                     {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
                                         <Link
                                             key={p}
                                             href={makePageHref(p)}
-                                            className={`h-12 w-12 grid place-items-center border text-sm ${p === safePage
-                                                ? "bg-[#1c2c34] text-white border-[#1c2c34]"
-                                                : "bg-white text-[#1c2c34] border-black/10 hover:border-[#ab9a8b]"
-                                                }`}
+                                            className={`grid h-10 w-10 place-items-center rounded-full border text-sm transition-all duration-300 ${p === safePage ? "border-primary bg-primary text-white" : "border-black/10 bg-white text-primary/60 hover:border-secondary hover:text-secondary"}`}
                                         >
                                             {p}
                                         </Link>
                                     ))}
+
                                     {safePage < totalPages && (
-                                        <Link
-                                            href={makePageHref(safePage + 1)}
-                                            className="h-12 w-12 grid place-items-center border border-black/10 hover:border-[#ab9a8b]"
-                                            aria-label="Next page"
-                                        >
-                                            »
+                                        <Link href={makePageHref(safePage + 1)} className="grid h-10 w-10 place-items-center rounded-full border border-black/10 text-primary/60 transition-all duration-300 hover:border-secondary hover:text-secondary" aria-label="Sonraki sayfa">
+                                            →
                                         </Link>
                                     )}
+
                                 </div>
                             </div>
                             <BlogSidebar categories={categories} tags={allTags} recentPosts={recentPosts} />

@@ -11,8 +11,8 @@ export default function ServiceDetailClient({ service }: { service: Service }) {
     return (
         <main className="bg-white font-cormorant">
             <PageHero
-                title={service.title.toUpperCase()}
-                subtitle="- HİZMET DETAYI -"
+                title={service.title}
+                subtitle="Hizmet Detayı"
                 backgroundImage={service.heroImage ?? "/enneagram-slayder1.jpg"}
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },

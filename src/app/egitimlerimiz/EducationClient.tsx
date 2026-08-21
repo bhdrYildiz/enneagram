@@ -49,8 +49,8 @@ export default function EducationClient({ items }: { items: EducationItem[] }) {
         <main className="bg-white font-cormorant">
 
             <PageHero
-                title="EĞİTİM VE ATÖLYELER"
-                subtitle="EĞİTİMLERİMİZİ KEŞFEDİN"
+                title="Eğitim ve Atölyeler"
+                subtitle="Eğitimlerimizi Keşfedin"
                 backgroundImage="/banner4.png"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },

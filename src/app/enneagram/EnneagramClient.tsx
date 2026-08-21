@@ -23,8 +23,8 @@ export default function EnneagramClient() {
 
             {/* PAGE HERO */}
             <PageHero
-                title="ENNEAGRAM NEDİR?"
-                subtitle="ENNEAGRAM'I KEŞFEDİN"
+                title="Enneagram Nedir?"
+                subtitle="Enneagramı Keşfedin"
                 backgroundImage="/banner5.png"
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },

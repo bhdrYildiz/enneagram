@@ -51,8 +51,6 @@ export default function MizacDetaySidebar() {
                                         >
                                             {String(index + 1).padStart(2, "0")}
                                         </span>
-
-                                        {/* ACTIVE INDICATOR */}
                                         <span
                                             className={[
                                                 "absolute left-0 bottom-0 h-[2px]",
@@ -62,13 +60,9 @@ export default function MizacDetaySidebar() {
                                                     : "w-0 group-hover:w-6",
                                             ].join(" ")}
                                         />
-
-                                        {/* TITLE */}
                                         <span className="flex-1 text-[16px] leading-tight">
                                             {m.title}
                                         </span>
-
-                                        {/* ARROW */}
                                         <span
                                             className={[
                                                 "text-base transition-all duration-300",

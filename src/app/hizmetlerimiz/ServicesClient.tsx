@@ -10,17 +10,15 @@ import { services } from "./_data/services";
 export default function ServicesClient() {
     return (
         <main className="bg-white font-cormorant overflow-x-hidden">
-
             <PageHero
-                title="HİZMETLERİMİZ"
-                subtitle="İNSANI ANLAMAYA ODAKLANAN BİR YOLCULUK"
-                backgroundImage="/banner4.png"
+                title="Hizmetlerimiz"
+                subtitle="İnsanı anlamaya odaklanan bir yolculuk"
+                backgroundImage="/hizmetlerimizbanner.jpg"
                 breadcrumbs={[
-                    { label: "ANA SAYFA", href: "/" },
-                    { label: "HİZMETLERİMİZ" },
+                    { label: "Ana Sayfa", href: "/" },
+                    { label: "Hizmetlerimiz" },
                 ]}
             />
-
             <section className="px-6 py-20 md:py-28">
                 <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="max-w-6xl mx-auto text-center">
 
@@ -43,10 +41,6 @@ export default function ServicesClient() {
                     </motion.p>
 
                 </motion.div>
-
-
-                {/* İSTATİSTİKLER */}
-
                 <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="max-w-5xl mx-auto mt-20 md:mt-24 grid grid-cols-1 md:grid-cols-3 border-y border-black/10">
 
                     {[
@@ -61,10 +55,6 @@ export default function ServicesClient() {
                     ))}
 
                 </motion.div>
-
-
-                {/* HİZMETLER */}
-
                 <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} className="max-w-7xl mx-auto mt-28">
 
                     <motion.div variants={fadeUp} className="flex items-end justify-between gap-6 mb-12 border-b border-black/10 pb-5">
@@ -78,51 +68,48 @@ export default function ServicesClient() {
                         </span>
                     </motion.div>
 
-
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
                         {services.map((service, index) => (
-                            <motion.article key={service.slug} variants={fadeInCard} className="group relative overflow-hidden rounded-3xl border border-black/10 bg-white transition-all duration-500">
-
-                                <div className="relative h-[360px] overflow-hidden">
-
-                                    <Image
-                                        src={service.heroImage}
-                                        alt={service.title}
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, 50vw"
-                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                    />
-
-                                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-primary/5 to-transparent" />
-
-                                    <div className="absolute top-6 left-6 flex items-center gap-3">
-                                        <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-black/10 text-xs text-white backdrop-blur-sm">{String(index + 1).padStart(2, "0")}</span>
-                                        <h6 className="text-2xl md:text-3xl text-white leading-tight">{service.title}</h6>
-                                    </div>
-                                </div>
-
-
-                                <div className="p-7 md:p-9">
-
-                                    <p className="text-base md:text-lg leading-8 text-primary/65 line-clamp-3">
-                                        {service.description}
-                                    </p>
-
-                                    <div className="mt-7 flex items-center justify-between border-t border-black/10 pt-5">
-
-                                        <span className="text-[10px] uppercase tracking-[0.2em] text-primary/40">
-                                            ENNEAGRAM EĞİTİM & DANIŞMANLIK
-                                        </span>
-
-                                        <Link href={`/hizmetlerimiz/${service.slug}`} className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-primary transition-all duration-300 group-hover:gap-4 group-hover:text-secondary">
-                                            Detayları İncele
-                                            <span className="text-base">↗</span>
-                                        </Link>
-
+                            <motion.article key={service.slug} variants={fadeInCard} className="group relative overflow-hidden rounded-3xl border border-black/10 bg-white transition-all duration-500 hover:-translate-y-1 hover:border-secondary/30 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
+                                <Link href={`/hizmetlerimiz/${service.slug}`} className="block h-full">
+                                    <div className="relative h-[320px] overflow-hidden">
+                                        <Image
+                                            src={service.heroImage}
+                                            alt={service.title}
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        />
                                     </div>
 
-                                </div>
+                                    <div className="p-7 md:p-9">
+
+                                        <div className="mb-5 flex items-start gap-4">
+
+                                            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-secondary/30 text-xs text-secondary transition-all duration-300 group-hover:border-secondary group-hover:bg-secondary group-hover:text-white">
+                                                {String(index + 1).padStart(2, "0")}
+                                            </span>
+
+                                            <h3 className="text-2xl md:text-3xl text-primary leading-tight transition-colors duration-300 group-hover:text-secondary">
+                                                {service.title}
+                                            </h3>
+
+                                        </div>
+
+                                        <p className="text-base md:text-lg leading-8 text-primary/65 line-clamp-3">
+                                            {service.description}
+                                        </p>
+
+                                        <div className="mt-7 flex items-center justify-end border-t border-black/10 pt-5">
+                                            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-primary/50 transition-all duration-300 group-hover:gap-4 group-hover:text-secondary">
+                                                Detayları İncele
+                                                <span className="text-base">↗</span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                </Link>
 
                             </motion.article>
                         ))}
@@ -130,8 +117,6 @@ export default function ServicesClient() {
                     </div>
 
                 </motion.div>
-                {/* NEDEN MİZAÇ MERKEZLİ? */}
-
                 <motion.section variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }} className="mt-32">
 
                     <motion.div variants={fadeUp} className="max-w-3xl mx-auto text-center">
@@ -154,10 +139,6 @@ export default function ServicesClient() {
                         </p>
 
                     </motion.div>
-
-
-                    {/* AVANTAJLAR */}
-
                     <motion.div variants={staggerContainer} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-16">
 
                         {[

@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { FaQuoteLeft, FaStar } from 'react-icons/fa';
 import { testimonials } from '@/constant/constant';
-
+import TextMarquee from "@/motion/TextMarquee";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
@@ -113,6 +113,9 @@ export default function TestimonialsSection() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+            </div>
+            <div className="mt-12">
+                <TextMarquee />
             </div>
         </section >
     );
