@@ -3,7 +3,7 @@ export type Service = {
   title: string;
   description: string;
   longDescription?: string;
-  logo: string;
+  pagehero: string;
   heroImage?: string;
   content?: string;
   features?: string[];
@@ -138,8 +138,8 @@ export const services = [
       Türkiye'nin farklı bölgelerinde birçok eğitim kurumuyla gerçekleştirilen çalışmalarla Enoksis, mizaç merkezli eğitim anlayışının okullarda uygulanmasına katkı sağlamaktadır.
       
       Detaylı bilgi ve ayrıntılar için www.enoksis.com ziyaret ediniz.`,
-    logo: "/Enoksis.png",
-    heroImage: "/enoksishero.png",
+    pagehero: "/hizmetler/enoksisbanner.jpg",
+    heroImage: "/hizmetler/enoksisdeneme2.png",
   },
   {
     slug: "enneagramik",
@@ -239,8 +239,8 @@ Ekip üyeleri birbirlerinin farklılıklarını fark eder.
 Ve kurum, farklılıkların çatışma yerine uyum ve gelişim kaynağı olduğu bir çalışma kültürü oluşturabilir.
 
 Detaylı bilgi ve ayrıntılar için www.enneagramik.com ziyaret ediniz.`,
-    logo: "/Enneagramik.png",
-    heroImage: "/enneagramikhero.jpeg",
+    pagehero: "/hizmetler/enneagramikbanner.png",
+    heroImage: "/hizmetler/enneagramikhero.jpeg",
   },
   {
     slug: "egitimler",
@@ -272,8 +272,8 @@ Amacımız yalnızca Enneagram hakkında bilgi vermek değil; bireylerin öğren
 Kendinizi tanımak, ilişkilerinizi geliştirmek ve mizaç merkezli bir bakış açısıyla hayatınıza yeni bir perspektif kazandırmak için Rehberimiz ile bu yolculuğa başlayabilirsiniz.
 
 Detaylı bilgi ve ayrıntılı incelemeniz için www.rehberimiz.com sitemizi inceleyebilirsiniz.`,
-    logo: "/TurkiyeEnenagramAkademisi.png",
-    heroImage: "/enneagramhero.jpg",
+    pagehero: "/hizmetler/enneagramikbanner.png",
+    heroImage: "/hizmetler/enneagramhero.jpg",
   },
   {
     slug: "turkiye-enneagram-akademisi",
@@ -376,10 +376,9 @@ Kendini tanımak, insanı anlamak ve Enneagram bilgisini daha ileri bir seviyeye
 
 İhtiyacınıza ve bilgi seviyenize uygun eğitimi keşfedin, Enneagram bilgisini adım adım öğrenin ve öğrendiklerinizi hayatınızın farklı alanlarında kullanmaya başlayın.
 
-Detaylı eğitim programları ve kayıt seçenekleri için Türkiye Enneagram Akademisi'ni ziyaret edebilirsiniz.`,
-    logo: "/teaLogo.jpg",
-
-    heroImage: "/teaLogo.jpg",
+Detaylı eğitim programları ve kayıt seçenekleri için www.turkiyeenneagramakademisi.com ziyaret edebilirsiniz.`,
+    pagehero: "/hizmetler/teabanner.png",
+    heroImage: "/hizmetler/teahero2.png",
   },
   {
     slug: "ennelog",
@@ -504,8 +503,8 @@ Ennelog, bu yolculuğun ilk adımını kolaylaştırmak için geliştirilmiştir
 Ennelog'u şimdi keşfedin ve mizaç bilgisini her an yanınızda taşıyın.
 
 Detaylı inceleme için www.ennelog.com ziyaret ediniz.`,
-    logo: "/Ennelog.png",
-    heroImage: "/Ennelog.png",
+    pagehero: "/hizmetler/enneagramikbanner.png",
+    heroImage: "/hizmetler/Ennelog.png",
   },
   {
     slug: "enrehet",
@@ -543,8 +542,8 @@ Tüm eğitim kademelerini içeren toplam 198 rehberlik etkinliğinden oluşmakta
 Etkinlikler mizaçların potansiyel kabiliyet ve riskleri göz önüne alınarak her mizaç için özel olarak hazırlanmıştır. Rehber öğretmene mizaç odaklı rehberlik imkanı sunmaktadır.
 Etkinlik uygulamaları basit ve sade protokollere sahiptir.
 `,
-    logo: "/Ennelog.png",
-    heroImage: "/enherethero.jpg",
+    pagehero: "/hizmetler/enoksisbanner.jpg",
+    heroImage: "/hizmetler/enherethero.jpg",
   },
   {
     slug: "enneagram-sempozyumu",
@@ -644,11 +643,10 @@ Uzmanların bir araya geldiği
 
 ve Enneagram'ın farklı yaşam alanlarındaki karşılığının konuşulduğu yıllık bir buluşmadır.
 
-Bir sonraki sempozyumda siz de bu buluşmanın bir parçası olun.`,
+Bir sonraki sempozyumda siz de bu buluşmanın bir parçası olun. www.enneagramsempozyumu.com`,
 
-    logo: "/sempozyumLogo.png",
-
-    heroImage: "/sempozyum.jpg",
+    pagehero: "/hizmetler/enneagramikbanner.png",
+    heroImage: "/hizmetler/sempozyum.jpg",
   },
   {
     slug: "enneagram-tv-ve-yayincilik",
@@ -770,9 +768,8 @@ Yayınlarımızı keşfedin, uzmanların görüşlerinden faydalanın ve Enneagr
 
 Detaylar için www.youtube.com/@tv.enneagram ziyaret ediniz.`,
 
-    logo: "/EnneagramTVlogo.png",
-
-    heroImage: "/EnneagramTVlogo.png",
+    pagehero: "/hizmetler/teabanner.png",
+    heroImage: "/hizmetler/EnneagramTVlogo.png",
   },
 ];
 

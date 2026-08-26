@@ -25,14 +25,6 @@
 
   --font-sans: var(--font-inter);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -62,4 +54,13 @@ body {
   width: 34px;
   border-radius: 999px;
   background: #0794c7;
+}
+@keyframes loadingSlide {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(320%);
+  }
 }

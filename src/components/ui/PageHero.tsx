@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 
 export type BreadcrumbItem = {
     label: string;
@@ -20,14 +22,38 @@ export default function PageHero({
     backgroundImage,
     breadcrumbs,
 }: PageHeroProps) {
+    const readySent = useRef(false);
     const lastIndex = Math.max(0, breadcrumbs.length - 1);
 
-    return (
-        <section className="relative overflow-hidden border-b border-black/[0.06] bg-[#f7f8fa]">
+    const sendReady = () => {
+        if (readySent.current) return;
 
+        readySent.current = true;
+        window.dispatchEvent(new Event('page-hero-ready'));
+    };
+
+    useEffect(() => {
+        readySent.current = false;
+
+        if (!backgroundImage) {
+            requestAnimationFrame(sendReady);
+        }
+    }, [backgroundImage]);
+
+    return (
+        <section data-page-hero className="relative overflow-hidden border-b border-black/[0.06] bg-[#f7f8fa]">
             {backgroundImage && (
                 <>
-                    <div className="absolute inset-0 bg-cover bg-center opacity-[0.3]" style={{ backgroundImage: `url('${backgroundImage}')` }} />
+                    <Image
+                        src={backgroundImage}
+                        alt=""
+                        fill
+                        priority
+                        sizes="100vw"
+                        className="object-cover object-center opacity-[0.3]"
+                        onLoad={sendReady}
+                    />
+
                     <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-[#f7f8fa]/50 to-[#f7f8fa]" />
                 </>
             )}
@@ -40,12 +66,15 @@ export default function PageHero({
             </div>
 
             <div className="relative z-10 mx-auto flex min-h-[290px] max-w-7xl items-center justify-center px-6 py-14 md:min-h-[360px] md:py-16">
-
                 <div className="mx-auto max-w-4xl text-center">
 
                     <div className="mb-5 flex items-center justify-center gap-4">
                         <span className="h-px w-8 bg-secondary/60 md:w-12" />
-                        <span className="text-[10px] uppercase tracking-[0.3em] text-secondary md:text-xs">ENNEAGRAM EĞİTİM & DANIŞMANLIK</span>
+
+                        <span className="text-[10px] uppercase tracking-[0.3em] text-secondary md:text-xs">
+                            ENNEAGRAM EĞİTİM & DANIŞMANLIK
+                        </span>
+
                         <span className="h-px w-8 bg-secondary/60 md:w-12" />
                     </div>
 
@@ -75,9 +104,7 @@ export default function PageHero({
                                         </span>
                                     )}
 
-                                    {!isLast && (
-                                        <span aria-hidden="true" className="h-[3px] w-[3px] rounded-full bg-secondary/80" />
-                                    )}
+                                    {!isLast && <span aria-hidden="true" className="h-[3px] w-[3px] rounded-full bg-secondary/80" />}
                                 </span>
                             );
                         })}
@@ -87,7 +114,6 @@ export default function PageHero({
             </div>
 
             <div className="absolute bottom-0 left-1/2 h-[2px] w-16 -translate-x-1/2 bg-secondary/70" />
-
         </section>
     );
 }

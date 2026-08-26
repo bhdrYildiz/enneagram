@@ -125,7 +125,7 @@ export default async function BlogPostPage(
                 <PageHero
                     title="Blog"
                     subtitle="Blog Yazılarımız"
-                    backgroundImage="/enneagram_banner.jpg"
+                    backgroundImage="/banner4.png"
                     breadcrumbs={[
                         { label: "ANA SAYFA", href: "/" },
                         { label: "BLOG", href: "/blog" },

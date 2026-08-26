@@ -58,7 +58,7 @@ export default function ServicesSidebar({ services }: { services: Service[] }) {
 
             {/* İLETİŞİM KARTI */}
 
-            <div className="relative overflow-hidden border border-black/10 bg-primary p-8 text-center">
+            <div className="relative overflow-hidden border rounded-lg border-black/10 bg-primary p-8 text-center">
 
                 <div className="absolute -right-16 -top-16 w-40 h-40 rounded-full border border-secondary/10" />
 
@@ -101,7 +101,7 @@ export default function ServicesSidebar({ services }: { services: Service[] }) {
                             <FaYoutube size={19} />
                         </Link>
 
-                        <Link href="https://wa.me/905303897163" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp" className="transition-colors hover:text-secondary">
+                        <Link href="https://wa.me/905435406443" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp" className="transition-colors hover:text-secondary">
                             <FaWhatsapp size={19} />
                         </Link>
 

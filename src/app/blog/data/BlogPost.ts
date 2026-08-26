@@ -190,6 +190,248 @@ Bu gireceğin sınavda da elinden geleni yapacağından eminim. Sana güveniyoru
 Sınav öncesindeki hazırlıklarını tam yapman gerekir. Sınav gereçlerini, belgelerini önceden hazırlaman seni rahatlatacaktır. Bu sınavın önemini fark ettiğini biliyorum. Seni çok seviyorum. Başarılar.”
 `,
   },
+  {
+    slug: "kendini-tanimak-yetmez-enneagramda-kendini-yakalamak",
+    title: "Kendini Tanımak Yetmez: Enneagram’da Kendini Yakalamak",
+    excerpt:
+      "Kendimizi tanıdığımızı düşünürüz. Peki bir eleştiri aldığımızda, anlaşılmadığımızda, kontrolü kaybettiğimizde ya da değer görmediğimizi hissettiğimizde ortaya çıkan o otomatik halimizi ne kadar tanıyoruz?",
+    coverImage: "/kendinibil.png",
+    publishedAt: "2026-08-26",
+    author: "Enneagram Eğitim & Danışmanlık",
+    categories: ["Enneagram ve Mizaç"],
+    tags: [
+      "Enneagram",
+      "Mizaç",
+      "Kendini tanımak",
+      "Farkındalık",
+      "Kişilik",
+      "Kişisel gelişim",
+    ],
+    content: `## Kendimizi gerçekten ne kadar tanıyoruz?
+  
+  “Kendimi tanıyorum.”
+  
+  Bu cümleyi söylemek çoğumuz için kolaydır. Neleri sevdiğimizi, hangi ortamlarda rahat ettiğimizi, nelere kızdığımızı, güçlü ve zayıf yönlerimizi az çok biliriz.
+  
+  Fakat insanın kendisini tanıması yalnızca özelliklerini bilmesi değildir.
+  
+  Asıl soru şudur:
+  
+  **Kendimizi, kendimiz gibi davranmadığımız anlarda da tanıyor muyuz?**
+  
+  Birisi bizi eleştirdiğinde...
+  
+  Beklediğimiz ilgiyi göremediğimizde...
+  
+  Başarısız olduğumuzda...
+  
+  Kontrolümüz dışında bir şey geliştiğinde...
+  
+  Belirsizliğin içinde kaldığımızda...
+  
+  Ya da çok istediğimiz bir şey gerçekleşmediğinde...
+  
+  İşte bu anlarda kişiliğimizin daha otomatik tarafları ortaya çıkmaya başlar.
+  
+  Enneagram’ın en güçlü taraflarından biri de tam burada karşımıza çıkar. Bize yalnızca nasıl biri olduğumuzu anlatmakla kalmaz; **neden bazı durumlarda tekrar tekrar aynı şekilde düşündüğümüzü, hissettiğimizi ve davrandığımızı fark etmemize yardımcı olur.**
+  
+  ## Mizaç yalnızca davranışlarımız değildir
+  
+  İki insan dışarıdan aynı davranışı gösterebilir fakat o davranışın arkasındaki neden tamamen farklı olabilir.
+  
+  İki kişi de çok çalışabilir.
+  
+  Biri yaptığı işi doğru ve eksiksiz yapmak istediği için çalışırken, diğeri başarılı olmak ve ortaya güçlü bir sonuç çıkarmak için çalışabilir.
+  
+  İki kişi de insanlara yardım edebilir.
+  
+  Biri yakınlık ve bağ kurmayı önemserken, diğeri sorumluluk duygusuyla hareket ediyor olabilir.
+  
+  İki kişi de sessiz kalabilir.
+  
+  Biri zihninde olanları anlamlandırmak için geri çekilirken, diğeri ortamda çatışma oluşmasını istemediği için sessizliği tercih edebilir.
+  
+  Bu nedenle Enneagram açısından yalnızca **“Ne yapıyorum?”** sorusu yeterli değildir.
+  
+  Daha derindeki soru şudur:
+  
+  **“Bunu neden yapıyorum?”**
+  
+  Mizaç tam da bu noktada anlam kazanmaya başlar.
+  
+  ## Enneagram bize bir etiket değil, bir ayna sunar
+  
+  Enneagram’ı yalnızca dokuz kişilik tipinden oluşan bir sınıflandırma sistemi olarak ele aldığımızda onun en değerli tarafını kaçırabiliriz.
+  
+  “Ben Mizaç 1’im.”
+  
+  “Ben Mizaç 5’im.”
+  
+  “Ben kesinlikle Mizaç 8’im.”
+  
+  Bunları öğrenmek başlangıç için kıymetlidir. Fakat asıl yolculuk mizaç tipimizi öğrendikten sonra başlar.
+  
+  Çünkü Enneagram’ın amacı insanı bir tanımın içine hapsetmek değil; insanın kendisini hangi kalıpların içinde yaşadığını fark etmesine yardımcı olmaktır.
+  
+  Kendimizi tanımaya başladığımızda bazı davranışlarımızın sandığımız kadar bilinçli tercihler olmadığını görebiliriz.
+  
+  Bazen otomatik olarak düzeltiriz.
+  
+  Bazen kendimizi gerekli hissetmek isteriz.
+  
+  Bazen başarıya koşarız.
+  
+  Bazen duygularımızın içinde derinleşiriz.
+  
+  Bazen geri çekilip gözlemlemeyi seçeriz.
+  
+  Bazen bütün ihtimalleri düşünürüz.
+  
+  Bazen yeni seçeneklere yöneliriz.
+  
+  Bazen kontrolü ele alırız.
+  
+  Bazen de huzur bozulmasın diye kendi isteğimizi erteleriz.
+  
+  Bunların hiçbiri tek başına “iyi” ya da “kötü” değildir.
+  
+  Önemli olan, **bunu seçiyor muyuz, yoksa otomatik olarak mı yapıyoruz?**
+  
+  ## Kendini yakalamak ne demektir?
+  
+  Kendini yakalamak, davranış ortaya çıktıktan sonra kendimizi suçlamak değildir.
+  
+  Tam tersine, davranış ortaya çıkmadan hemen önce içeride ne olduğunu görebilmektir.
+  
+  Örneğin bir eleştiri aldığımızı düşünelim.
+  
+  Bir anda kendimizi savunmaya başladık.
+  
+  Burada durabiliriz:
+  
+  **“Şu anda neden kendimi savunma ihtiyacı hissediyorum?”**
+  
+  Bir arkadaşımız mesajımıza cevap vermedi ve hemen kırıldık.
+  
+  Yine durabiliriz:
+  
+  **“Şu anda beni asıl rahatsız eden şey ne?”**
+  
+  Önemli bir karar vereceğiz fakat sürekli yeni ihtimaller düşünüyoruz.
+  
+  Kendimize sorabiliriz:
+  
+  **“Gerçekten daha fazla bilgiye mi ihtiyacım var, yoksa yanlış karar vermekten mi çekiniyorum?”**
+  
+  İşte Enneagram farkındalığı bu küçük duraklarda gelişir.
+  
+  Çünkü insan değişmeye çoğu zaman davranışını zorla değiştirdiğinde değil, **davranışının arkasındaki içsel hareketi fark ettiğinde** başlar.
+  
+  ## Her mizacın kendini yakalayacağı an farklıdır
+  
+  Dokuz mizaç aynı dünyada yaşar fakat aynı dünyayı aynı şekilde deneyimlemez.
+  
+  Mizaç 1 için kendini yakalamak, içinden yükselen “Böyle olmamalıydı” cümlesini fark etmek olabilir.
+  
+  Mizaç 2 için, başkasının ihtiyacına koşarken kendi ihtiyacını yeniden geri plana attığını görmek olabilir.
+  
+  Mizaç 3 için, durmanın kendisini neden huzursuz ettiğini fark etmek olabilir.
+  
+  Mizaç 4 için, yoğun bir duygunun içindeyken o duygunun bütün gerçekliği temsil etmediğini görebilmek olabilir.
+  
+  Mizaç 5 için, yeterince hazır olmayı beklerken hayatın dışında kaldığını fark etmek olabilir.
+  
+  Mizaç 6 için, zihninde art arda oluşan ihtimallerin hangisinin gerçek, hangisinin kaygının ürettiği bir senaryo olduğunu ayırt etmek olabilir.
+  
+  Mizaç 7 için, yeni bir seçeneğe yönelme isteğinin gerçekten meraktan mı yoksa mevcut sıkıntıdan uzaklaşma arzusundan mı geldiğini görmek olabilir.
+  
+  Mizaç 8 için, güçlü tepkinin altında incinmiş veya korunmaya ihtiyaç duyan bir tarafının bulunabileceğini fark etmek olabilir.
+  
+  Mizaç 9 için ise huzuru korumaya çalışırken kendi isteğini bir kez daha görünmez hale getirdiğini yakalamak olabilir.
+  
+  İşte bu nedenle aynı gelişim reçetesi herkese uymaz.
+  
+  **İnsanın gelişim yolu, kendi mizacının otomatikleştiği noktaları fark etmesiyle kişiselleşir.**
+  
+  ## Farkındalık, kendimize karşı savaş açmak değildir
+  
+  Kendimizi tanımaya başladığımızda sık yapılan hatalardan biri de kendi mizacımızla mücadele etmeye başlamaktır.
+  
+  “Bunu artık yapmamalıyım.”
+  
+  “Yine aynı şeyi yaptım.”
+  
+  “Demek ki hâlâ değişemedim.”
+  
+  Oysa farkındalık kendimizi reddetmek değildir.
+  
+  Mizacımızın getirdiği özelliklerin önemli bir kısmı aynı zamanda güçlü yönlerimizin de kaynağıdır.
+  
+  Titizlik geliştiğinde kaliteye,
+  
+  duyarlılık şefkate,
+  
+  başarı arzusu üretkenliğe,
+  
+  duygusal derinlik özgünlüğe,
+  
+  gözlem gücü uzmanlığa,
+  
+  tedbir öngörüye,
+  
+  merak yaratıcılığa,
+  
+  güç koruyuculuğa,
+  
+  uyum ise kapsayıcılığa dönüşebilir.
+  
+  Mesele mizacımızdan kurtulmak değildir.
+  
+  Mesele, **mizacımızın bizi yönetmesi yerine onu daha bilinçli yaşayabilmektir.**
+  
+  ## Bugün kendinizi bir kez yakalayın
+  
+  Belki bugün kendinizle ilgili büyük bir karar vermenize gerek yok.
+  
+  Kendinizi değiştirmeye çalışmanız da gerekmiyor.
+  
+  Sadece gün içinde otomatikleştiğinizi hissettiğiniz bir anı fark edin.
+  
+  Durun.
+  
+  Ve kendinize sorun:
+  
+  **“Şu anda içimde ne oluyor?”**
+  
+  Ardından ikinci soruyu sorun:
+  
+  **“Ben şu anda gerçekten neye ihtiyaç duyuyorum?”**
+  
+  Belki vereceğiniz cevap hemen her şeyi değiştirmeyecek.
+  
+  Ama daha önce otomatik olarak verdiğiniz bir tepkiyi ilk kez fark ederek verdiğiniz anda çok önemli bir şey değişmeye başlamıştır:
+  
+  **Artık yalnızca davranmıyor, kendinizi gözlemliyorsunuz.**
+  
+  Enneagram yolculuğu da biraz böyledir.
+  
+  Önce mizacımızı öğreniriz.
+  
+  Sonra davranışlarımızı tanırız.
+  
+  Daha sonra davranışlarımızın arkasındaki temel arayışları görmeye başlarız.
+  
+  Ve zamanla şu soruya yaklaşırız:
+  
+  **“Ben gerçekten neyi seçiyorum, neyi sadece alıştığım için tekrar ediyorum?”**
+  
+  Belki de kendini tanımanın en kıymetli tarafı budur.
+  
+  Kendimiz hakkında daha fazla bilgi sahibi olmak değil;
+  
+  **kendimizi tam yaşadığımız anda fark edebilmek.**
+    `,
+  },
 ];
 
 export function getAllBlogPosts() {

@@ -122,7 +122,7 @@ export default function Hero() {
                         <div className="mt-14 flex flex-wrap gap-x-10 gap-y-6 border-t border-white/10 pt-8">
 
                             <div>
-                                <span className="text-3xl font-light text-white">13+</span>
+                                <span className="text-3xl font-light text-white">15+</span>
                                 <p className="mt-1 text-sm text-white/40">Yıllık Deneyim</p>
                             </div>
 
@@ -150,7 +150,7 @@ export default function Hero() {
 
 
                         {/* ANA GÖRSEL */}
-                        <motion.div animate={{ y: [0, -14, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="absolute right-3 top-2 h-[455px] w-[365px] overflow-hidden rounded-[34px] border border-white/10 shadow-[0_35px_90px_rgba(0,0,0,.4)]">
+                        <motion.div animate={{ y: [0, -14, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="absolute right-3 top-2 h-[520px] w-[480px] overflow-hidden rounded-[34px] border border-white/10 shadow-[0_35px_90px_rgba(0,0,0,.4)]">
 
                             <Image src="/enherethero.jpg" alt="Enneagram eğitimleri" fill priority className="object-cover transition-transform duration-1000 hover:scale-105" />
 
@@ -160,15 +160,15 @@ export default function Hero() {
 
 
                         {/* SOL GÖRSEL */}
-                        <motion.div animate={{ y: [0, 12, 0], rotate: [-2, -1, -2] }} transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-8 left-0 h-[310px] w-[235px] overflow-hidden rounded-[28px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
+                        <motion.div animate={{ y: [0, 12, 0], rotate: [1, -1, 1] }} transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-8 left-0 h-[310px] w-[260px] overflow-hidden rounded-[28px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
 
-                            <Image src="/enneagramhero.jpg" alt="Enneagram" fill className="object-cover" />
+                            <Image src="/hizmetler/enoksisbanner.jpg" alt="Enneagram" fill className="object-cover" />
 
                         </motion.div>
 
 
                         {/* ALT SAĞ GÖRSEL */}
-                        <motion.div animate={{ y: [0, -10, 0], rotate: [2, 1, 2] }} transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-0 right-2 h-[210px] w-[280px] overflow-hidden rounded-[26px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
+                        <motion.div animate={{ y: [0, -10, 0], rotate: [1, 1, 1] }} transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-12 -right-12 h-[210px] w-[280px] overflow-hidden rounded-[26px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
 
                             <Image src="/enneagram-slayder1.jpg" alt="Enneagram etkinlikleri" fill className="object-cover" />
 
@@ -181,21 +181,6 @@ export default function Hero() {
                             <span className="absolute -top-1 left-1/2 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-secondary shadow-[0_0_18px_rgba(255,255,255,.3)]" />
 
                         </motion.div>
-
-
-                        {/* FLOATING LABEL */}
-                        <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }} className="absolute left-[155px] top-[140px] rounded-2xl border border-white/15 bg-white/[0.08] px-5 py-4 backdrop-blur-xl">
-
-                            <p className="text-[9px] uppercase tracking-[0.25em] text-secondary">
-                                Mizaç
-                            </p>
-
-                            <p className="mt-1 text-sm text-white/85">
-                                Kendini keşfet
-                            </p>
-
-                        </motion.div>
-
 
                         {/* KÜÇÜK PARLAK NOKTALAR */}
                         <motion.span animate={{ opacity: [.2, 1, .2], scale: [.7, 1.2, .7] }} transition={{ duration: 3, repeat: Infinity }} className="absolute left-24 top-16 h-2 w-2 rounded-full bg-secondary" />

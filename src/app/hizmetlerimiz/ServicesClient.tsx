@@ -44,7 +44,7 @@ export default function ServicesClient() {
                 <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="max-w-5xl mx-auto mt-20 md:mt-24 grid grid-cols-1 md:grid-cols-3 border-y border-black/10">
 
                     {[
-                        { number: "13+", title: "Yıllık Deneyim" },
+                        { number: "15+", title: "Yıllık Deneyim" },
                         { number: "100.000+", title: "Ulaşılan Birey" },
                         { number: "500+", title: "Çalışılan Kurum" },
                     ].map((item, index) => (

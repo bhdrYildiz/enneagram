@@ -2,8 +2,6 @@
 
 import PageHero from "@/components/ui/PageHero";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { staggerContainer, fadeInCard, fadeUp } from "@/app/lib/animations";
 import EnneagramSidebar from "./EnneagramSidebar";
 import { enneagramPageContent } from "./_data/enneagram";
 
@@ -40,16 +38,10 @@ export default function EnneagramClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-[1.7fr_0.9fr] gap-16 lg:gap-20 items-start">
 
                         {/* MAIN CONTENT */}
-                        <motion.div
-                            variants={staggerContainer}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true, amount: 0.12 }}
-                            className="space-y-24"
-                        >
+                        <div className="space-y-24">
 
                             {/* INTRO */}
-                            <motion.article variants={fadeInCard}>
+                            <article>
 
                                 <div className="mb-10">
                                     <p className="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-secondary mb-5">
@@ -85,11 +77,10 @@ export default function EnneagramClient() {
                                     </Link>
                                 </div>
 
-                            </motion.article>
-
+                            </article>
 
                             {/* MİZAÇ / KİŞİLİK / KARAKTER */}
-                            <motion.article variants={fadeInCard}>
+                            <article>
 
                                 <div className="mb-14">
                                     <p className="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-secondary mb-5">
@@ -103,13 +94,11 @@ export default function EnneagramClient() {
                                     <div className="mt-6 h-px w-20 bg-secondary" />
                                 </div>
 
-
                                 <div className="space-y-16">
 
                                     {content.cards.map((card, index) => (
-                                        <motion.section
+                                        <section
                                             key={card.title}
-                                            variants={fadeUp}
                                             className="relative"
                                         >
 
@@ -133,11 +122,10 @@ export default function EnneagramClient() {
 
                                             </div>
 
-                                        </motion.section>
+                                        </section>
                                     ))}
 
                                 </div>
-
 
                                 <div className="mt-12">
                                     <Link
@@ -155,15 +143,14 @@ export default function EnneagramClient() {
                                     </Link>
                                 </div>
 
-                            </motion.article>
-
+                            </article>
 
                             {/* ÖZET */}
-                            <motion.section variants={fadeInCard}>
+                            <section>
 
-                                <div className="relative overflow-hidden rounded-sm bg-primary px-8 py-12 md:px-12 md:py-14">
+                                <div className="relative overflow-hidden rounded-lg bg-primary px-8 py-12 md:px-12 md:py-14">
 
-                                    {/* Decorative element */}
+                                    {/* Decorative elements */}
                                     <div className="absolute -right-16 -top-16 h-52 w-52 rounded-full border border-white/10" />
                                     <div className="absolute -right-8 -top-8 h-36 w-36 rounded-full border border-secondary/20" />
 
@@ -194,10 +181,9 @@ export default function EnneagramClient() {
 
                                 </div>
 
-                            </motion.section>
+                            </section>
 
-                        </motion.div>
-
+                        </div>
 
                         {/* SIDEBAR */}
                         <EnneagramSidebar
@@ -210,10 +196,6 @@ export default function EnneagramClient() {
                                 {
                                     label: "Enneagram Kavramları",
                                     href: "/enneagram/enneagram-kavramlari",
-                                },
-                                {
-                                    label: "Eğitimler",
-                                    href: "/egitimlerimiz",
                                 },
                                 {
                                     label: "Mizaç Tipleri",

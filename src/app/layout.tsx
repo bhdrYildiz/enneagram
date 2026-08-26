@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import PageLoader from '@/components/ui/PageLoader';
+import CookieConsent from "@/components/CookieConsent/CookieConsent";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
 
@@ -76,10 +78,12 @@ export default function RootLayout({
     <html lang="tr" className={inter.variable}>
       <body className="min-h-screen flex flex-col">
         <ResponsiveNav />
+        <PageLoader />
         <main className="flex-1 pt-[calc(10vh+40px)] bg-primary">
           {children}
         </main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );

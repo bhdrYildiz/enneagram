@@ -1,8 +1,7 @@
 "use client";
 
 import PageHero from "@/components/ui/PageHero";
-import { motion } from "framer-motion";
-import { staggerContainer, fadeUp, fadeInCard } from "@/app/lib/animations";
+import Link from "next/link";
 import EnneagramSidebar from "../EnneagramSidebar";
 import { enneagramKavramlarContent } from "../_data/enneagram";
 
@@ -39,16 +38,10 @@ export default function EnneagramKavramlarClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-[1.7fr_0.9fr] gap-16 lg:gap-20 items-start">
 
                         {/* MAIN CONTENT */}
-                        <motion.div
-                            variants={staggerContainer}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true, amount: 0.12 }}
-                            className="space-y-20"
-                        >
+                        <div className="space-y-20">
 
                             {/* SECTION INTRO */}
-                            <motion.article variants={fadeInCard}>
+                            <article>
 
                                 <div className="mb-12">
                                     <p className="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-secondary mb-5">
@@ -62,19 +55,16 @@ export default function EnneagramKavramlarClient() {
                                     <div className="mt-6 h-px w-20 bg-secondary" />
                                 </div>
 
-                            </motion.article>
-
+                            </article>
 
                             {/* CONCEPTS */}
                             <div className="space-y-16">
 
                                 {content.blocks.map((block, index) => (
-                                    <motion.article
+                                    <article
                                         key={block.title}
-                                        variants={fadeUp}
                                         className="relative"
                                     >
-
                                         <div className="flex items-start gap-6 md:gap-8">
 
                                             {/* NUMBER */}
@@ -98,22 +88,12 @@ export default function EnneagramKavramlarClient() {
                                                 <div className="mt-4 mb-7 h-px w-16 bg-secondary" />
 
                                                 <TextBlock text={block.body} />
-
                                             </div>
-
                                         </div>
-
-                                    </motion.article>
+                                    </article>
                                 ))}
-
                             </div>
-
-
-                            {/* BOTTOM NOTE */}
-                            <motion.section
-                                variants={fadeInCard}
-                                className="border-t border-primary/10 pt-10"
-                            >
+                            <section className="border-t border-primary/10 pt-10">
 
                                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 
@@ -127,7 +107,7 @@ export default function EnneagramKavramlarClient() {
                                         </p>
                                     </div>
 
-                                    <a
+                                    <Link
                                         href="/mizac-tipleri"
                                         className="group inline-flex items-center gap-4 text-sm tracking-[0.22em] uppercase text-primary"
                                     >
@@ -139,16 +119,10 @@ export default function EnneagramKavramlarClient() {
                                         <span className="text-lg transition-transform duration-300 group-hover:translate-x-2">
                                             →
                                         </span>
-                                    </a>
-
+                                    </Link>
                                 </div>
-
-                            </motion.section>
-
-                        </motion.div>
-
-
-                        {/* SIDEBAR */}
+                            </section>
+                        </div>
                         <EnneagramSidebar
                             title="Enneagram"
                             items={[
@@ -161,21 +135,14 @@ export default function EnneagramKavramlarClient() {
                                     href: "/enneagram/enneagram-kavramlari",
                                 },
                                 {
-                                    label: "Eğitimler",
-                                    href: "/egitimlerimiz",
-                                },
-                                {
                                     label: "Mizaç Tipleri",
                                     href: "/mizac-tipleri",
                                 },
                             ]}
                         />
-
                     </div>
-
                 </div>
             </section>
-
         </main>
     );
 }

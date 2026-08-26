@@ -56,11 +56,7 @@ export default function Footer() {
                     </div>
 
                 </div>
-
                 <div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-6 py-20 lg:grid-cols-[1.2fr_.8fr_.8fr]">
-
-                    {/* LEFT */}
-
                     <div>
 
                         <Link href="/" className="inline-block">
@@ -75,7 +71,7 @@ export default function Footer() {
 
                         </Link>
 
-                        <p className="mt-8 max-w-md text-lg font-light leading-9 text-white/70">
+                        <p className="mt-6 max-w-md text-lg font-light leading-9 text-white/70">
 
                             Enneagram Eğitim & Danışmanlık; bireysel gelişim,
                             kurumsal dönüşüm ve eğitim süreçlerinde mizaç merkezli

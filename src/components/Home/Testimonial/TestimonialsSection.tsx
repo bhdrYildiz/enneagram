@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
                     loop={true}
                     speed={800}
                     autoplay={{
-                        delay: 5000,
+                        delay: 2000,
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true,
                     }}

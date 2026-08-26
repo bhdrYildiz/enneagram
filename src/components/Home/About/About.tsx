@@ -8,15 +8,11 @@ import { FiArrowUpRight, FiBookOpen, FiUsers, FiTarget } from 'react-icons/fi';
 const AboutSection = () => {
     return (
         <section className="relative overflow-hidden bg-white py-24 font-cormorant">
-
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute -left-32 top-32 h-80 w-80 rounded-full bg-secondary/[0.05] blur-3xl" />
                 <div className="absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-primary/[0.04] blur-3xl" />
             </div>
-
             <div className="relative mx-auto max-w-[1380px] px-6 lg:px-12">
-
-                {/* BAŞLIK */}
                 <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }} className="mb-16">
 
                     <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -36,24 +32,13 @@ const AboutSection = () => {
                         <p className="max-w-md text-base leading-7 text-primary/55 md:text-right">
                             Eğitimden rehberliğe, mizaç analizinden kurumsal gelişime uzanan bütüncül bir yaklaşım.
                         </p>
-
                     </div>
-
                 </motion.div>
-
-
                 <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_.95fr] lg:gap-20">
-
-                    {/* SOL / GÖRSEL KOMPOZİSYON */}
                     <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="relative min-h-[650px]">
-
-                        {/* ANA FOTOĞRAF */}
                         <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }} className="group absolute left-0 top-0 h-[440px] w-[78%] overflow-hidden rounded-[2rem] shadow-[0_25px_60px_rgba(0,0,0,0.10)]">
-
-                            <Image src="/enherethero.jpg" alt="Enneagram Eğitim" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-
+                            <Image src="/about.jpg" alt="Enneagram Eğitim" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
-
                             <div className="absolute bottom-6 left-6 rounded-2xl border border-white/20 bg-white/85 px-5 py-4 backdrop-blur-xl">
                                 <p className="text-3xl font-light text-primary">13+</p>
                                 <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-primary/50">Yıllık Deneyim</p>
@@ -61,23 +46,14 @@ const AboutSection = () => {
 
                         </motion.div>
 
-
-                        {/* KÜÇÜK FOTOĞRAF */}
                         <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="group absolute bottom-0 right-0 h-[285px] w-[48%] overflow-hidden rounded-[2rem] border-[8px] border-white shadow-[0_25px_60px_rgba(0,0,0,0.12)]">
-
-                            <Image src="/enneagramhero.jpg" alt="Kurumsal Eğitim" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-
+                            <Image src="/ozgurluk.jpeg" alt="Kurumsal Eğitim" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary/45 to-transparent" />
-
                             <div className="absolute bottom-5 left-5 text-white">
                                 <p className="text-3xl font-light">100.000+</p>
                                 <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-white/60">Ulaşılan Birey</p>
                             </div>
-
                         </motion.div>
-
-
-                        {/* FLOATING ETİKET */}
                         <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }} className="absolute right-[7%] top-[90px] rounded-2xl border border-black/[0.06] bg-white/90 px-5 py-4 shadow-lg backdrop-blur-xl">
 
                             <span className="text-[9px] uppercase tracking-[0.24em] text-secondary">

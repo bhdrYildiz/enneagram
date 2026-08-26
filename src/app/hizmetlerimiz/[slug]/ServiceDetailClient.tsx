@@ -13,7 +13,7 @@ export default function ServiceDetailClient({ service }: { service: Service }) {
             <PageHero
                 title={service.title}
                 subtitle="Hizmet Detayı"
-                backgroundImage={service.heroImage ?? "/enneagram-slayder1.jpg"}
+                backgroundImage={service.pagehero ?? "/enneagram-slayder1.jpg"}
                 breadcrumbs={[
                     { label: "ANA SAYFA", href: "/" },
                     { label: "HİZMETLERİMİZ", href: "/hizmetlerimiz" },

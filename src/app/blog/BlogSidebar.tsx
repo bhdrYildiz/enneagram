@@ -40,8 +40,8 @@ export default function BlogSidebar(props: {
             <div className="rounded-[1.75rem] border border-black/[0.08] bg-white p-7 text-center">
 
                 <div className="flex justify-center">
-                    <div className="relative h-[92px] w-[92px] overflow-hidden rounded-full border border-black/[0.08] bg-white">
-                        <Image src="/Logo.png" alt="Enneagram Eğitim" fill sizes="92px" className="object-contain p-2" />
+                    <div className="relative h-[92px] w-[96px] overflow-hidden rounded-full border border-black/[0.08] bg-white">
+                        <Image src="/Logo.png.png" alt="Enneagram Eğitim" fill sizes="92px" className="object-contain p-2" />
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@ export default function BlogSidebar(props: {
                         <FaInstagram />
                     </Link>
 
-                    <Link href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer" prefetch={false} className="grid h-9 w-9 place-items-center rounded-full border border-primary/10 text-sm text-primary/60 transition-all hover:border-secondary hover:bg-secondary hover:text-white">
+                    <Link href="https://www.facebook.com/enneagramegitim" aria-label="Facebook" target="_blank" rel="noopener noreferrer" prefetch={false} className="grid h-9 w-9 place-items-center rounded-full border border-primary/10 text-sm text-primary/60 transition-all hover:border-secondary hover:bg-secondary hover:text-white">
                         <FaFacebookF />
                     </Link>
 
@@ -84,17 +84,12 @@ export default function BlogSidebar(props: {
                 </p>
 
                 <form action="/blog" method="get" className="flex overflow-hidden rounded-xl border border-black/10">
-
                     <input name="q" placeholder="Arama yapın..." className="w-full bg-transparent px-4 py-3 text-sm text-primary outline-none placeholder:text-primary/30" />
-
                     <button type="submit" aria-label="Arama yapın" className="grid w-12 shrink-0 place-items-center bg-primary text-white transition-colors hover:bg-secondary">
                         <span className="text-lg leading-none">⌕</span>
                     </button>
-
                 </form>
-
             </div>
-
 
             {/* KATEGORİLER */}
             {categories.length > 0 && (
@@ -116,9 +111,7 @@ export default function BlogSidebar(props: {
                                 <span className="text-xs text-primary/25">→</span>
                             </Link>
                         ))}
-
                     </div>
-
                 </div>
             )}
 

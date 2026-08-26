@@ -24,7 +24,6 @@ export default function AboutClient() {
         { src: "/logo/kulturgen.png", alt: "Logo 13" },
         { src: "/logo/serendip-koleji.png", alt: "Logo 14" },
     ];
-
     return (
         <>
             <main className="flex flex-col font-cormorant bg-[#ffffff]">
@@ -38,91 +37,71 @@ export default function AboutClient() {
                     ]}
                 />
                 <section className="bg-white">
-                    <div className="max-w-[1400px] mx-auto px-6 py-20">
-                        <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.1fr] gap-14 items-start">
-                            <div className="grid grid-cols-2 gap-6 items-stretch">
-                                <div className="relative mt-12 w-full overflow-hidden group">
-                                    <div className="relative h-[575px] w-full overflow-hidden">
-                                        <Image
-                                            src="/hakkimizda_1.jpg"
-                                            alt="Enneagram Eğitim"
-                                            fill
-                                            sizes="(max-width: 1024px) 100vw, 520px"
-                                            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                                        />
-                                        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/20" />
-                                    </div>
-                                </div>
+                    <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-28 md:py-36">
+                        <div className="max-w-5xl">
+                            <p className="text-xs tracking-[0.35em] uppercase text-secondary">
+                                ENNEAGRAM EĞİTİM & DANIŞMANLIK
+                            </p>
 
-                                <div className="relative overflow-hidden group">
-                                    <div className="relative h-[520px] w-full overflow-hidden">
-                                        <Image
-                                            src="/enneagram_image_2.jpg"
-                                            alt="Enneagram Eğitim"
-                                            fill
-                                            sizes="(max-width: 1024px) 100vw, 520px"
-                                            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                                        />
-                                        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/20" />
-                                    </div>
-                                </div>
-                            </div>
+                            <h1 className="mt-8 text-5xl md:text-7xl lg:text-8xl leading-[1.05] tracking-wide font-[300] text-primary">
+                                İnsanı anlamak,
+                                <br />
+                                gelişimi dönüştürür.
+                            </h1>
 
-                            <div className="text-primary">
-                                <div className="inline-flex items-center px-5 py-2 rounded-md border border-black/10 text-xs tracking-[0.35em] uppercase text-primary">
+                            <p className="mt-10 max-w-2xl text-base md:text-lg leading-relaxed text-primary/70 font-[300] tracking-wide">
+                                Mizaç ve kişilik dinamiklerini merkeze alan eğitim, danışmanlık ve
+                                ölçümleme sistemleriyle bireylerin, eğitim kurumlarının ve
+                                organizasyonların gelişim süreçlerine eşlik ediyoruz.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section className="bg-primary text-white">
+                    <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-20 md:py-28">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+
+                            <div>
+                                <p className="text-xs tracking-[0.35em] uppercase text-secondary">
                                     HAKKIMIZDA
-                                </div>
-
-                                <h2 className="mt-6 text-4xl md:text-6xl leading-[1.05] tracking-wide font-[300]">
-                                    Tutkuyla bağlı olduğunuz gelişim yolu
-                                    <br />
-                                    sizin için burada
-                                </h2>
-
-                                <p className="mt-8 text-base md:text-lg leading-relaxed text-primary/80 max-w-2xl font-[300] tracking-wide">
-                                    Enneagram Eğitim, mizaç ve kişilik dinamiklerini anlamaya yönelik programlarla
-                                    bireylerin ve ekiplerin potansiyelini açığa çıkarmayı hedefler. Uygulamalı içerikler,
-                                    ölçümleme ve rehberlik süreçleriyle sürdürülebilir dönüşüm sağlar.
                                 </p>
 
-                                <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-10">
-                                    <div className="border-t border-black/10 pt-6">
-                                        <p className="text-xs tracking-[0.35em] uppercase text-primary/70">
-                                            01. KATILIMCI
+                                <h2 className="mt-6 text-4xl md:text-5xl leading-tight font-[300] tracking-wide">
+                                    İnsanı merkeze alan
+                                    <br />
+                                    bütüncül bir yaklaşım.
+                                </h2>
+                            </div>
+
+                            <div>
+                                <p className="text-base md:text-lg leading-8 text-white/75 font-[300] tracking-wide">
+                                    Enneagram Eğitim & Danışmanlık; bireylerin, ailelerin,
+                                    eğitim kurumlarının ve organizasyonların insanı daha
+                                    derinlikli tanımasına yardımcı olan mizaç merkezli eğitim,
+                                    danışmanlık ve ölçümleme sistemleri geliştirir.
+                                </p>
+
+                                <div className="mt-12 grid grid-cols-2 gap-8">
+                                    <div className="border-t border-white/20 pt-6">
+                                        <p className="text-5xl font-[200]">
+                                            100.000<span className="text-secondary">+</span>
                                         </p>
-                                        <p className="mt-4 text-5xl md:text-6xl font-[200] text-primary">
-                                            1000<span className="text-secondary">+</span>
+                                        <p className="mt-3 text-xs tracking-[0.25em] text-white/60 uppercase">
+                                            Katılımcı
                                         </p>
                                     </div>
 
-                                    <div className="border-t border-black/10 pt-6">
-                                        <p className="text-xs tracking-[0.35em] uppercase text-primary/70">
-                                            02. MEMNUNİYET
+                                    <div className="border-t border-white/20 pt-6">
+                                        <p className="text-5xl font-[200]">
+                                            15<span className="text-secondary">+</span>
                                         </p>
-                                        <p className="mt-4 text-5xl md:text-6xl font-[200] text-primary">
-                                            100<span className="text-secondary">%</span>
+                                        <p className="mt-3 text-xs tracking-[0.25em] text-white/60 uppercase">
+                                            Yıllık Deneyim
                                         </p>
                                     </div>
-                                </div>
-
-                                <div className="mt-10 flex flex-wrap gap-3">
-                                    <Link
-                                        href="/iletisim"
-                                        className="inline-flex items-center justify-center px-8 py-3 border border-black/20 text-sm tracking-widest
-            text-primary hover:bg-primary hover:text-white transition"
-                                    >
-                                        BİLGİ AL
-                                    </Link>
-
-                                    <Link
-                                        href="/egitimlerimiz"
-                                        className="inline-flex items-center justify-center px-8 py-3 border border-primary text-sm tracking-widest
-            text-secondary hover:bg-secondary hover:text-white transition"
-                                    >
-                                        EĞİTİMLER
-                                    </Link>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -363,10 +342,10 @@ export default function AboutClient() {
                         <div className="mt-12 bg-white p-10 w-full">
                             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                                 {[
-                                    '/egitimler/afis1.jpg',
-                                    '/egitimler/afis2.jpg',
-                                    '/egitimler/afis3.jpg',
-                                    '/egitimler/afissonSite.png'
+                                    '/sosyalmedya1.png',
+                                    '/sosyalmedya2.png',
+                                    '/sosyalmedya3.png',
+                                    '/sosyalmedya4.png'
                                 ].map((src, index) => (
                                     <div key={index} className="relative aspect-square hover:scale-105 transition-all duration-300 overflow-hidden bg-white">
                                         <Image

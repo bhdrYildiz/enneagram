@@ -132,7 +132,7 @@ export default function BlogSection() {
                 <div className="flex justify-center mt-12">
                     <Link
                         href="/blog"
-                        className="inline-flex items-center justify-center bg-primary hover:bg-secondary text-white px-10 py-3 text-sm font-semibold font-[300] tracking-wider transition-colors duration-300"
+                        className="inline-flex items-center rounded-lg justify-center bg-primary hover:bg-secondary text-white px-10 py-3 text-sm font-semibold font-[300] tracking-wider transition-colors duration-300"
                         prefetch={false}
                     >
                         TÜM YAZILARI GÖR

@@ -6,13 +6,8 @@ import VideoLightbox from '@/app/lib/VideoLightbox';
 const videos = [
     {
         title: 'Bizim çocuk ders çalışmıyor...',
-        src: '/videos/video3.mp4',
+        src: '/videos/enneagramvideo-1.mp4',
         poster: '/videos/videoDeneme-2.png',
-    },
-    {
-        title: 'Çocuğunuzu yeterince tanıyor musunuz?',
-        src: '/videos/video2.mp4',
-        poster: '/videos/videoDeneme-1.png',
     },
     {
         title: 'İlişkiler doğduğumuz andan itibaren karşılaştığımız süreçlerdir...',
@@ -20,9 +15,9 @@ const videos = [
         poster: '/videos/videoDeneme-3.png',
     },
     {
-        title: 'Enneagramda uzmanlaşmanızı sağlayan çok önemli bir eğitim...',
-        src: '/videos/video5.mp4',
-        poster: '/videos/videoDeneme-4.png',
+        title: 'Çocuğunuzu yeterince tanıyor musunuz?',
+        src: '/videos/video2.mp4',
+        poster: '/videos/videoDeneme-1.png',
     },
 ];
 
@@ -30,8 +25,6 @@ export default function HomeVideosSection() {
     return (
         <section className="py-24 bg-gradient-to-b from-white to-slate-50">
             <div className="max-w-7xl mx-auto px-6">
-
-                {/* Başlık */}
 
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -64,7 +57,7 @@ export default function HomeVideosSection() {
                 >
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-                        {videos.slice(1).map((video, index) => (
+                        {videos.map((video, index) => (
 
                             <motion.div
                                 key={index}
@@ -94,8 +87,7 @@ export default function HomeVideosSection() {
                                     </h4>
 
                                     <button
-                                        className="
-                                        mt-6 inline-flex items-center gap-2 font-semibold text-secondary group-hover:gap-4 transition-all"
+                                        className="mt-6 inline-flex items-center gap-2 font-semibold text-secondary group-hover:gap-4 transition-all"
                                     >
 
                                         Videoyu İzle
@@ -114,19 +106,12 @@ export default function HomeVideosSection() {
                                                 strokeLinejoin="round"
                                             />
                                         </svg>
-
                                     </button>
-
                                 </div>
-
                             </motion.div>
-
                         ))}
-
                     </div>
-
                 </motion.div>
-
             </div>
         </section>
     );

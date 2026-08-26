@@ -215,7 +215,7 @@ export default function MizacDetayClient({ slug }: { slug: string }) {
                             {!!quote.trim() && (
                                 <motion.section variants={fadeInCard}>
 
-                                    <div className="relative overflow-hidden bg-primary px-8 py-12 md:px-12 md:py-14">
+                                    <div className="relative overflow-hidden rounded-md bg-primary px-8 py-12 md:px-12 md:py-14">
 
                                         {/* Decorative circles */}
                                         <div className="absolute -right-16 -top-16 h-52 w-52 rounded-full border border-white/10" />
