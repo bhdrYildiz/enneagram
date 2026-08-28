@@ -96,29 +96,16 @@ export default function Hero() {
 
                         </motion.p>
 
-
                         <div className="mt-10 flex flex-wrap gap-4">
-
                             <Link href="/egitimlerimiz" className="group inline-flex items-center gap-3 rounded-full bg-secondary px-7 py-4 text-sm text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(0,0,0,.25)]">
-
                                 Eğitimleri Keşfet
-
                                 <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-
                             </Link>
-
                             <Link href="/hakkimizda" className="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.06] px-7 py-4 text-sm text-white backdrop-blur-xl transition-all duration-300 hover:border-white/30 hover:bg-white/[0.1]">
-
                                 Bizi Tanıyın
-
                                 <FiArrowUpRight className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-
                             </Link>
-
                         </div>
-
-
-                        {/* STATS */}
                         <div className="mt-14 flex flex-wrap gap-x-10 gap-y-6 border-t border-white/10 pt-8">
 
                             <div>
@@ -152,7 +139,7 @@ export default function Hero() {
                         {/* ANA GÖRSEL */}
                         <motion.div animate={{ y: [0, -14, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="absolute right-3 top-2 h-[520px] w-[480px] overflow-hidden rounded-[34px] border border-white/10 shadow-[0_35px_90px_rgba(0,0,0,.4)]">
 
-                            <Image src="/enherethero.jpg" alt="Enneagram eğitimleri" fill priority className="object-cover transition-transform duration-1000 hover:scale-105" />
+                            <Image src="/hizmetler/enherethero.jpg" alt="Enneagram eğitimleri" fill priority className="object-cover transition-transform duration-1000 hover:scale-105" />
 
                             <div className="absolute inset-0 bg-gradient-to-t from-[#101827]/35 via-transparent to-transparent" />
 

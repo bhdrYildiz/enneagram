@@ -52,23 +52,15 @@ export default function ServicesSidebar({ services }: { services: Service[] }) {
                         })}
                     </ul>
                 </nav>
-
             </div>
 
-
-            {/* İLETİŞİM KARTI */}
-
             <div className="relative overflow-hidden border rounded-lg border-black/10 bg-primary p-8 text-center">
-
                 <div className="absolute -right-16 -top-16 w-40 h-40 rounded-full border border-secondary/10" />
-
                 <div className="absolute -left-20 -bottom-20 w-44 h-44 rounded-full border border-secondary/10" />
-
                 <div className="relative z-10">
-
                     <div className="flex justify-center">
                         <div className="relative w-24 h-24 rounded-full overflow-hidden border border-white/10 bg-white">
-                            <Image src="/Logo.png" alt="Enneagram Eğitim & Danışmanlık" fill sizes="96px" className="object-contain" />
+                            <Image src="/Logo.png.png" alt="Enneagram Eğitim & Danışmanlık" fill sizes="96px" className="object-contain" />
                         </div>
                     </div>
 

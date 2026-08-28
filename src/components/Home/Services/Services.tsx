@@ -28,28 +28,28 @@ export default function Services() {
             desc: "Eğitime mizaç merkezli perspektif sunan, özgün ve nitelikli bir eğitim yaklaşımıdır. Mizaç farklılıklarını esas alır ve rehberlik süreçlerini destekler.",
             href: "/hizmetlerimiz/enoksis",
             icon: <FiUsers className="w-6 h-6" />,
-            image: "/enoksishero.png",
+            image: "/hizmetler/enoksishero.png",
         },
         {
             title: "EnneagramİK",
             desc: "Yönetim, işe alım, kariyer, ekip oluşturma, eğitim planlama ve iletişim süreçlerinde kurumlara mizaç temelli destek sunar.",
             href: "/hizmetlerimiz/enneagramik",
             icon: <FiBookOpen className="w-6 h-6" />,
-            image: "/enneagramikhero.jpeg",
+            image: "/hizmetler/enneagramikhero.jpeg",
         },
         {
             title: "Enrehet",
             desc: "Rehber öğretmenler için bireysel ya da grup halinde uygulanabilen, mizaçlar özelinde hazırlanmış rehberlik etkinlikleri sunar.",
             href: "/hizmetlerimiz/enrehet",
             icon: <FiTarget className="w-6 h-6" />,
-            image: "/enherethero.jpg",
+            image: "/hizmetler/enherethero.jpg",
         },
         {
             title: "Enneagram Eğitimleri",
             desc: "Mizaç yapısını tanımayı, fark etmeyi ve bireysel gelişim sürecini daha bilinçli şekilde yönetmeyi destekleyen eğitimler sunar.",
             href: "/hizmetlerimiz/egitimler",
             icon: <FiHeart className="w-6 h-6" />,
-            image: "/enneagramhero.jpg",
+            image: "/hizmetler/enneagramhero.jpg",
         },
     ];
 

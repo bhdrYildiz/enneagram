@@ -62,7 +62,7 @@ export default function Footer() {
                         <Link href="/" className="inline-block">
 
                             <Image
-                                src="/Logo.png"
+                                src="/Logo.png.png"
                                 alt="Enneagram Eğitim"
                                 width={320}
                                 height={320}
