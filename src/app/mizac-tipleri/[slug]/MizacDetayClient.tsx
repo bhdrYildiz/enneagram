@@ -34,14 +34,9 @@ export default function MizacDetayClient({ slug }: { slug: string }) {
                     { label: detail.title.toUpperCase() },
                 ]}
             />
-
-            {/* CONTENT */}
             <section className="relative bg-white">
                 <div className="max-w-[1280px] mx-auto px-6 py-16 md:py-20">
-
                     <div className="grid grid-cols-1 lg:grid-cols-[1.7fr_0.9fr] gap-16 lg:gap-20 items-start">
-
-                        {/* MAIN CONTENT */}
                         <motion.div
                             variants={staggerContainer}
                             initial="hidden"
@@ -49,11 +44,7 @@ export default function MizacDetayClient({ slug }: { slug: string }) {
                             viewport={{ once: true, amount: 0.1 }}
                             className="space-y-20"
                         >
-
-                            {/* MİZAÇ INTRO */}
                             <motion.article variants={fadeInCard}>
-
-                                {/* Section heading */}
                                 <div className="mb-10">
                                     <p className="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-secondary mb-5">
                                         MİZAÇ TİPLERİ / GENEL PROFİL
@@ -134,7 +125,6 @@ export default function MizacDetayClient({ slug }: { slug: string }) {
                                     </div>
                                 )}
 
-
                                 {/* TRAITS */}
                                 {!!traits.length && (
                                     <div className="mt-10">
@@ -171,7 +161,6 @@ export default function MizacDetayClient({ slug }: { slug: string }) {
                                 )}
 
                             </motion.article>
-
 
                             {/* GENERAL OVERVIEW */}
                             {!!longDescription.trim() && (

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   icons: {
-    icon: '/favicon.png',
+    icon: '/icon.png',
   },
 
   title: {

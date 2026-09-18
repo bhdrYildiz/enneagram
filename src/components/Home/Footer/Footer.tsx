@@ -235,48 +235,14 @@ export default function Footer() {
                     </div>
 
                 </div>
-
-                {/* Bottom */}
-
                 <div className="border-t border-white/10">
-
-                    <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-8 text-sm text-white/60 lg:flex-row">
-
+                    <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-6 px-6 py-8 text-center text-sm text-white/60">
                         <p>
                             © {new Date().getFullYear()} Enneagram Eğitim & Danışmanlık. Tüm hakları saklıdır.
                         </p>
-
-                        <div className="flex flex-wrap items-center gap-6">
-
-                            <Link
-                                href="/kvkk"
-                                className="transition hover:text-white"
-                            >
-                                KVKK
-                            </Link>
-
-                            <Link
-                                href="/gizlilik-politikasi"
-                                className="transition hover:text-white"
-                            >
-                                Gizlilik Politikası
-                            </Link>
-
-                            <Link
-                                href="/cerez-politikasi"
-                                className="transition hover:text-white"
-                            >
-                                Çerez Politikası
-                            </Link>
-
-                        </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </footer>
     );
 }

@@ -6,7 +6,7 @@ import remarkGfm from "remark-gfm";
 import type { Metadata } from "next";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/app/blog/data/BlogPost";
 import BlogSidebar from "@/app/blog/BlogSidebar";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import PageHero from "@/components/ui/PageHero";
 
 const BASE_URL = "https://www.enneagramegitim.com";

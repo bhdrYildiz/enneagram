@@ -90,8 +90,6 @@ export default function BlogSidebar(props: {
                     </button>
                 </form>
             </div>
-
-            {/* KATEGORİLER */}
             {categories.length > 0 && (
                 <div>
 
@@ -114,9 +112,6 @@ export default function BlogSidebar(props: {
                     </div>
                 </div>
             )}
-
-
-            {/* SON YAZILAR */}
             {props.recentPosts.length > 0 && (
                 <div>
 
