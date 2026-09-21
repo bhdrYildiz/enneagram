@@ -386,40 +386,4 @@ Yaşam Standartlarını ve Esenliğini Yükseltmeyi Hedefleyenler: Günlük haya
       },
     ],
   },
-  {
-    id: "enneagram-ile-kocluk",
-    slug: "enneagram-ile-kocluk",
-    title:
-      "Enneagram ile Koçluk: İnsanın Özüne Yolculuk ve Profesyonel Dönüşüm",
-    priceText: "₺6,000.00",
-    poster: "/egitimler/enneagramilekocluk.jpg",
-
-    intro: [
-      "Bu eğitim, koçlara sadece bir kişilik modeli sunmakla kalmaz; aynı zamanda insanın bütünlüğüne dair derin bir bakış açısı kazandırır.",
-      "Enneagram ile koçluk; koçların müşterilerinin ihtiyaçlarını daha hızlı belirlemesine, her mizaç tipine özel gelişim yolları oluşturmasına ve daha derin, kalıcı sonuçlar elde etmesine yardımcı olur.",
-      "Eğitim 20.00 – 23.00 saatlerinde, Zoom platformu üzerinden online olarak yapılmaktadır.",
-      "Eğitim tarihinden 1 gün önce katılımcılar eğitim WhatsApp grubuna eklenir. Online eğitim giriş linki ve diğer bilgiler bu grup üzerinden paylaşılır.",
-      "Banka havalesi ile yapılan ödemelerde %10 indirim uygulanmaktadır. Ödeme sayfasında banka havalesi seçildiğinde sistem indirimi otomatik olarak uygular.",
-    ],
-
-    topicsTitle: "Eğitim Kazançları",
-    topicsIntro:
-      "Enneagram ile Koçluk eğitimi sonunda katılımcıların koçluk süreçlerinde kullanabilecekleri temel kazanımlar:",
-
-    topics: [
-      "Müşterinizin temel motivasyonlarını ve sınırlayıcı inançlarını hızlıca analiz etme yetisi.",
-      "9 farklı mizaç tipine özgü, sonuç odaklı eylem planları geliştirme becerisi.",
-      "Müşterinizin stres ve rahatlama hatlarını takip ederek gelişimini profesyonel olarak destekleme.",
-      "Kendi kör noktalarınızı keşfederek koçluk performansınızı en üst seviyeye çıkarma.",
-    ],
-
-    audienceTitle: "Kimler Katılabilir?",
-
-    audience: `Bu modül, koçluk görüşmelerinde daha derin dönüşümler hedefleyen, temel koçluk eğitimi almış ve müşterisinin mizaç yapısına uygun “özel” bir yol arkadaşlığı sunmak isteyen tüm profesyonel koçlar için tasarlanmıştır.
-
-Siz de profesyonel koçluk sanatınızı Enneagram’ın binlerce yıllık bilgeliği ve modern psikolojinin verileriyle taçlandırabilirsiniz.`,
-    schedule: "AĞUSTOS 2026",
-    durationText: "15 Saat",
-    instructor: "Ekrem Özden, PCC / Muammer Küçükyazıcı",
-  },
 ];

@@ -25,7 +25,6 @@ export default function Navbar({
             className={`fixed left-0 right-0 z-[1000] transition-all duration-500 ${showTopBar ? "top-10" : "top-0"
                 }`}
         >
-
             <div
                 className={`mx-auto flex h-[88px] max-w-[1500px] items-center justify-between px-8 transition-all duration-500 ${transparent
                     ? "bg-transparent"

@@ -30,7 +30,15 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
             w-[75%] sm:w-[55%] bg-primary z-[1050] flex flex-col`}>
 
                 <div className="flex items-center justify-between px-8 py-6 border-b border-white/20">
-                    <Image src="/Logo.png" alt="Logo" width={100} height={50} className="object-contain" />
+                    <Link href="/" onClick={closeNav}>
+                        <Image
+                            src="/Logo.png.png"
+                            alt="Logo"
+                            width={100}
+                            height={50}
+                            className="object-contain cursor-pointer"
+                        />
+                    </Link>
                     <CgClose
                         onClick={closeNav}
                         className='cursor-pointer w-6 h-6 text-white hover:text-secondary transition-colors duration-200'

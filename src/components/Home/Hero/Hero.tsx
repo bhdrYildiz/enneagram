@@ -147,10 +147,8 @@ export default function Hero() {
 
 
                         {/* SOL GÖRSEL */}
-                        <motion.div animate={{ y: [0, 12, 0], rotate: [1, -1, 1] }} transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-8 left-0 h-[310px] w-[260px] overflow-hidden rounded-[28px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
-
-                            <Image src="/hizmetler/enoksisbanner.jpg" alt="Enneagram" fill className="object-cover" />
-
+                        <motion.div animate={{ y: [0, 12, 0], rotate: [1, -1, 1] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-8 left-0 h-[310px] w-[260px] overflow-hidden rounded-[28px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
+                            <Image src="/hizmetler/heroyeni.jpg" alt="Enneagram" fill className="object-cover" />
                         </motion.div>
 
 

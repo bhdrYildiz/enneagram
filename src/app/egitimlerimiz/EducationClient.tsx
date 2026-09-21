@@ -80,19 +80,12 @@ export default function EducationClient({ items }: { items: EducationItem[] }) {
                         ve sahip olduğunuz potansiyeli fark etmenize yardımcı
                         olacak çalışmalar sunuyoruz.
                     </p>
-
                 </div>
-
-
                 <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
-
                     {items.map((it, index) => (
                         <Card key={it.id} it={it} index={index} />
                     ))}
-
                 </div>
-
-
                 <div className="mt-24 border-t border-black/10 pt-16">
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -143,47 +136,33 @@ export default function EducationClient({ items }: { items: EducationItem[] }) {
                                 destekleyin.
                             </p>
                         </div>
-
                     </div>
-
                 </div>
-
-
                 <div className="mt-24 overflow-hidden rounded-3xl bg-primary px-8 py-14 md:px-14 md:py-16">
-
                     <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] items-center gap-10">
-
                         <div>
-
                             <span className="text-[10px] uppercase tracking-[0.3em] text-secondary">
                                 BİZE ULAŞIN
                             </span>
-
                             <h2 className="mt-4 max-w-2xl text-3xl md:text-4xl text-white leading-tight">
                                 Hangi eğitimin sizin için
                                 uygun olduğunu birlikte keşfedelim.
                             </h2>
-
                             <p className="mt-5 max-w-2xl text-base leading-7 text-white/55">
                                 Eğitimlerimiz hakkında detaylı bilgi almak,
                                 içerikleri incelemek veya kayıt süreciyle
                                 ilgili sorularınızı iletmek için bizimle
                                 iletişime geçebilirsiniz.
                             </p>
-
                         </div>
 
                         <Link href="/iletisim" className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-secondary px-7 py-4 text-xs uppercase tracking-[0.18em] text-white transition-all duration-300 hover:gap-5">
                             İletişime Geçin
                             <span className="text-base">↗</span>
                         </Link>
-
                     </div>
-
                 </div>
-
             </section>
-
         </main>
     );
 }

@@ -86,7 +86,7 @@ export default function ContactClient() {
     };
 
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('/contact.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
