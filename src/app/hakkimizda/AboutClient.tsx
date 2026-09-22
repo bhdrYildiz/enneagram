@@ -19,8 +19,8 @@ export default function AboutClient() {
         { src: "/logo/ago-logo.jpg", alt: "Logo 7" },
         { src: "/logo/armagan-logo.png", alt: "Logo 8" },
         { src: "/logo/A&D.png", alt: "Logo 10" },
-        { src: "/logo/final-özel-basaksehir.png", alt: "Logo 11" },
-        { src: "/logo/kızılay-yatırım.png", alt: "Logo 12" },
+        { src: "/logo/final.png", alt: "Logo 11" },
+        { src: "/logo/kizilay.png", alt: "Logo 12" },
         { src: "/logo/kulturgen.png", alt: "Logo 13" },
         { src: "/logo/serendip-koleji.png", alt: "Logo 14" },
     ];

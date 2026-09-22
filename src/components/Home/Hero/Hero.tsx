@@ -18,7 +18,6 @@ export default function Hero() {
 
     const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
         const rect = e.currentTarget.getBoundingClientRect()
-
         mouseX.set((e.clientX - rect.left) / rect.width - 0.5)
         mouseY.set((e.clientY - rect.top) / rect.height - 0.5)
     }
@@ -50,8 +49,6 @@ export default function Hero() {
                 <div className="absolute left-0 top-1/2 h-px w-full bg-gradient-to-r from-transparent via-secondary/15 to-transparent" />
 
             </motion.div>
-
-
             <div className="relative z-10 mx-auto flex min-h-[780px] max-w-7xl items-center px-6 py-16">
 
                 <div className="grid w-full items-center gap-16 lg:grid-cols-[1fr_1fr]">

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import PageLoader from '@/components/ui/PageLoader';
+import { GoogleTagManager } from "@next/third-parties/google";
+import PageLoader from "@/components/ui/PageLoader";
 import CookieConsent from "@/components/CookieConsent/CookieConsent";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
-import FloatingButtons from '@/components/ui/FloatingButtons'
+import FloatingButtons from "@/components/ui/FloatingButtons";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,13 +20,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   icons: {
-    icon: '/icon.png',
+    icon: "/icon.png",
   },
 
   title: {
     default: "Enneagram Eğitim & Danışmanlık",
     template: "%s | Enneagram Eğitim & Danışmanlık",
   },
+
   description:
     "Enneagram temelli eğitim ve danışmanlık: bireysel gelişim, kurumsal programlar, ekip çalışmaları ve raporlama çözümleri.",
 
@@ -39,10 +41,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-video-preview": -1,
     },
-  },
-
-  alternates: {
-    canonical: siteUrl,
   },
 
   openGraph: {
@@ -74,7 +72,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="tr" className={inter.variable}>
       <body className="min-h-screen flex flex-col">
@@ -85,10 +85,12 @@ export default function RootLayout({
         <main className="flex-1 pt-[calc(10vh+40px)] bg-primary">
           {children}
         </main>
+
         <Footer />
         <FloatingButtons />
         <CookieConsent />
       </body>
+      <GoogleTagManager gtmId="GTM-5NXZXRBR" />
     </html>
   );
 }
