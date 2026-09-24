@@ -18,25 +18,25 @@ export default function Process() {
             no: "01",
             title: "Okul",
             desc: "Değişen dünya ve yeni arayışların eşiğinde özellikle eğitim alanında ‘iyileştirici’ ve ‘dönüştürücü’ sonuçlar için mizaç merkezli yaklaşımlar ve mizaca yönelik eğitim süreçleri ve rehberlik yaklaşımları geliştirilmelidir.",
-            image: "/okul.png",
+            image: "/okulyeni.jpg",
         },
         {
             no: "02",
             title: "Kendini Bil",
             desc: "Her insan doğuştan getirdiği ve ömür boyu taşıyacağı mizacın kişisel gelişim aşamalarını, potansiyel kabiliyet ve imkanlarını tanımalı, enerji ve kaynaklarını daha verimli ve maksimum fayda ile kullanmalı.",
-            image: "/kendinibil.png",
+            image: "/kendinibilyeni.jpg",
         },
         {
             no: "03",
             title: "İş Hayatı",
             desc: "Kalıcı ve sürdürülebilir sonuçlar ve verimli üretim için iş ortamlarında kurulacak takım ve ekipler, organizasyon yapısına uygun mizaçlara sahip kişilerden oluşturulmalı. Bu ihtiyacın karşılanmasında enneagram bilgisi ve mizaç yaklaşımı insan kaynakları için önemli kolaylıklar sağlar.",
-            image: "/ishayati.png",
+            image: "/ishayatiyeni.jpg",
         },
         {
             no: "04",
             title: "Aile",
             desc: "Aile fertleri birbirlerinin mizaç farklılıklarını fark etmeli, bu farklılıkları aile saadeti ve huzuru için olumlu yönde kullanma becerisi geliştirmeli. Enneagram bilgisi yardımıyla karı-koca ve çocuk-ebeveyn ilişkileri daha sağlıklı kurulabilir.",
-            image: "/aile.png",
+            image: "/aileyeni.jpg",
         },
     ];
 

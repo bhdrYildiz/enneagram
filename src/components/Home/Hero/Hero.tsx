@@ -66,23 +66,21 @@ export default function Hero() {
                             Enneagram Eğitim & Danışmanlık
 
                         </motion.div>
+                        <h1 className="mt-8 font-light leading-[1.08] tracking-[-0.035em] text-white text-[38px] md:text-[48px] lg:text-[clamp(38px,3.4vw,54px)]">
 
+                            <span className="block whitespace-nowrap">
+                                Enneagram ile
+                            </span>
 
-                        <h1 className="mt-8 max-w-[720px] text-5xl font-light leading-[1.02] tracking-[-0.035em] text-white md:text-6xl lg:text-[72px]">
-
-                            Enneagram ile
-
-                            <br />
-
-                            Kendinizi ve İnsanları
-
-                            <br />
+                            <span className="block whitespace-nowrap">
+                                Kendinizi ve İnsanları
+                            </span>
 
                             <motion.span
                                 aria-label="Daha İyi Tanıyın"
                                 initial="hidden"
                                 animate="visible"
-                                className="relative inline-block pb-2 font-[family-name:var(--font-caveat)] text-[#0794c7]"
+                                className="relative block w-fit pb-2 font-[family-name:var(--font-caveat)] text-[#0794c7]"
                                 style={{
                                     fontSize: "1.15em",
                                     fontWeight: 600,
@@ -118,10 +116,7 @@ export default function Hero() {
                                     </motion.span>
                                 ))}
                             </motion.span>
-
                         </h1>
-
-
                         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .8, delay: .5 }} className="mt-8 max-w-xl text-lg leading-9 text-white/65">
 
                             Eğitim, danışmanlık ve kurumsal gelişim çözümleriyle bireylerin ve ekiplerin potansiyellerini ortaya çıkarıyoruz.
@@ -195,10 +190,10 @@ export default function Hero() {
                         </div>
 
                         {/* İKİNCİ GÖRSEL */}
-                        <div className="group absolute bottom-5 left-0 h-[290px] w-[240px] overflow-hidden rounded-[26px] border-[6px] border-[#101827] shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
+                        <div className="group absolute bottom-5 left-0 h-[290px] w-[340px] overflow-hidden rounded-[26px] border-[6px] border-[#101827] shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
 
                             <Image
-                                src="/hizmetler/heroyeni.jpg"
+                                src="/herogorsel2.jpeg"
                                 alt="Enneagram etkinlikleri"
                                 fill
                                 loading="lazy"

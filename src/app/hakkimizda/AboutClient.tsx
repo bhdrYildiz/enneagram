@@ -23,6 +23,7 @@ export default function AboutClient() {
         { src: "/logo/kizilay.png", alt: "Logo 12" },
         { src: "/logo/kulturgen.png", alt: "Logo 13" },
         { src: "/logo/serendip-koleji.png", alt: "Logo 14" },
+        { src: "/logo/herobabylogo.png", alt: "Logo 15" },
     ];
     return (
         <>

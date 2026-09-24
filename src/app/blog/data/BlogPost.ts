@@ -195,7 +195,7 @@ Sınav öncesindeki hazırlıklarını tam yapman gerekir. Sınav gereçlerini, 
     title: "Kendini Tanımak Yetmez: Enneagram’da Kendini Yakalamak",
     excerpt:
       "Kendimizi tanıdığımızı düşünürüz. Peki bir eleştiri aldığımızda, anlaşılmadığımızda, kontrolü kaybettiğimizde ya da değer görmediğimizi hissettiğimizde ortaya çıkan o otomatik halimizi ne kadar tanıyoruz?",
-    coverImage: "/kendinibil.png",
+    coverImage: "/kendinibilyeni.jpg",
     publishedAt: "2026-08-26",
     author: "Enneagram Eğitim & Danışmanlık",
     categories: ["Enneagram ve Mizaç"],
