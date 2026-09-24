@@ -42,18 +42,10 @@ export default async function EducationDetailPage({ params }: { params: Promise<
                                 <span className="text-xs uppercase tracking-[0.3em] text-secondary">
                                     ENNEAGRAM EĞİTİM & DANIŞMANLIK
                                 </span>
-
                                 <h1 className="mt-4 text-4xl md:text-5xl text-primary leading-tight tracking-wide">
                                     {education.title}
                                 </h1>
-
                                 <div className="mt-6 flex flex-wrap items-center gap-4">
-                                    <span className="text-2xl text-secondary">
-                                        {education.priceText}
-                                    </span>
-
-                                    <span className="h-5 w-px bg-black/10" />
-
                                     <span className="text-sm text-primary/60">
                                         Online Eğitim
                                     </span>
@@ -222,16 +214,6 @@ export default async function EducationDetailPage({ params }: { params: Promise<
                                     )}
 
                                     <div className="mt-5 border-t border-black/10 pt-6">
-                                        <div className="text-center">
-                                            <span className="text-[10px] uppercase tracking-[0.25em] text-primary/40">
-                                                Eğitim Ücreti
-                                            </span>
-
-                                            <p className="mt-2 text-3xl text-secondary">
-                                                {education.priceText}
-                                            </p>
-                                        </div>
-
                                         <Link href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="mt-6 w-full inline-flex items-center justify-center rounded-full bg-primary px-6 py-4 text-xs tracking-[0.18em] uppercase text-white transition-all duration-300 hover:bg-secondary">
                                             Kayıt & Bilgi Al
                                         </Link>
@@ -274,10 +256,6 @@ export default async function EducationDetailPage({ params }: { params: Promise<
                                         <h3 className="mt-4 text-lg leading-snug text-primary transition-colors group-hover:text-secondary">
                                             {it.title}
                                         </h3>
-
-                                        <p className="mt-2 text-sm text-primary/60">
-                                            {it.priceText}
-                                        </p>
                                     </Link>
                                 ))}
                             </div>

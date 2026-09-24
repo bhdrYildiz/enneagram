@@ -165,10 +165,9 @@ export default function Footer() {
                         </ul>
 
                     </div>
+
                     {/* RIGHT */}
-
                     <div>
-
                         <span className="text-sm uppercase tracking-[0.3em] text-secondary">
                             İletişim
                         </span>
@@ -177,8 +176,8 @@ export default function Footer() {
 
                             <div className="space-y-6">
 
+                                {/* ADRES */}
                                 <div>
-
                                     <p className="text-xs uppercase tracking-[0.25em] text-white/40">
                                         Adres
                                     </p>
@@ -188,50 +187,70 @@ export default function Footer() {
                                         <br />
                                         Fatih / İstanbul
                                     </p>
-
                                 </div>
 
+                                {/* E-POSTA */}
                                 <div>
-
                                     <p className="text-xs uppercase tracking-[0.25em] text-white/40">
                                         E-posta
                                     </p>
 
                                     <a
                                         href="mailto:bilgi@enneagramegitim.com"
-                                        className="mt-2 block text-white transition hover:text-secondary"
+                                        className="mt-2 block text-white transition-colors hover:text-secondary"
                                     >
                                         bilgi@enneagramegitim.com
                                     </a>
-
                                 </div>
 
+                                {/* TELEFON */}
                                 <div>
-
                                     <p className="text-xs uppercase tracking-[0.25em] text-white/40">
                                         Telefon
                                     </p>
 
                                     <a
                                         href="tel:+905557597345"
-                                        className="mt-2 block text-white transition hover:text-secondary"
+                                        className="mt-2 block text-white transition-colors hover:text-secondary"
                                     >
                                         +90 555 759 73 45
                                     </a>
-
                                 </div>
 
                             </div>
 
+                            {/* İLETİŞİM BUTONU */}
                             <Link
                                 href="/iletisim"
-                                className="mt-10 inline-flex w-full items-center justify-center rounded-full bg-secondary px-6 py-4 font-medium transition hover:bg-hover"
+                                className="mt-10 inline-flex w-full items-center justify-center rounded-full bg-secondary px-6 py-4 font-medium transition-colors hover:bg-hover"
                             >
                                 İletişime Geç
                             </Link>
 
-                        </div>
+                            {/* YASAL BAĞLANTILAR */}
+                            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 border-t border-white/10 pt-5 text-xs text-white/45">
 
+                                <Link
+                                    href="/kvkk"
+                                    className="transition-colors hover:text-secondary"
+                                >
+                                    KVKK Aydınlatma Metni
+                                </Link>
+
+                                <span aria-hidden="true" className="text-white/20">
+                                    •
+                                </span>
+
+                                <Link
+                                    href="/cerez-politikasi"
+                                    className="transition-colors hover:text-secondary"
+                                >
+                                    Çerez Politikası
+                                </Link>
+
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>

@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
     title: "Mizaç ve Sınav Motivasyonu",
     excerpt:
       "Çocuklarımızı girecekleri sınav öncesinde rahatlatmak, onları motive etmek başarılarını artıracaktır.Her bir çocuk için rahatlatıcı yaklaşımlar  ve motive eden cümleler kendi mizaç yapılarına göre farklı olmalıdır.",
-    coverImage: "/enneagram-slayder1.jpg",
+    coverImage: "/blogYeni.jpg",
     publishedAt: "2025-10-22",
     author: "Enneagram Eğiitm & Danışmanlık",
     categories: ["Enneagram ve Mizaç"],

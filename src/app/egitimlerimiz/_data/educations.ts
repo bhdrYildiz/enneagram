@@ -10,7 +10,6 @@ export type EducationItem = {
   id: string;
   slug: string;
   title: string;
-  priceText: string;
   poster: string;
   href?: string;
   intro?: string[];
@@ -32,7 +31,6 @@ export const educations: EducationItem[] = [
     id: "donusum-atolyesi",
     slug: "enneagram-isiginda-donusum-atolyesi",
     title: "İsmail Acarkan’la Enneagram Işığında Dönüşüm Atölyesi",
-    priceText: "₺6,000.00 – ₺7,000.00",
     poster: "/egitimler/enneagramisiginda.jpg",
     intro: [
       "Kendinizi daha derinlemesine tanımaya, içsel dönüşüm yolculuğunuzu başlatmaya hazır mısınız? 12 hafta sürecek olan bu özel atölye, haftada 1 gün, 3 saat boyunca, hayatınıza yeni bir perspektif kazandırmak ve içsel dünyanızı keşfetmenize yardımcı olmak için tasarlandı.",
@@ -80,7 +78,6 @@ export const educations: EducationItem[] = [
     id: "modul-1-temel",
     slug: "temel-enneagram-egitimi",
     title: "Modül 1 – Temel Enneagram Eğitimi",
-    priceText: "₺3,250.00 – ₺3,500.00",
     poster: "/egitimler/afis3.jpg",
     intro: [
       "Enneagram Mizaç Merkezli Kişilik metodolojisinin temel kavramlarının, 9 mizaç yapısının anlatıldığı Enneagram’ın ilk basamak eğitimidir.",
@@ -129,7 +126,6 @@ export const educations: EducationItem[] = [
     id: "modul-2-ikinci-seviye",
     slug: "2-seviye-enneagram-egitimi",
     title: "Modül 2 – 2. Seviye Enneagram Eğitimi",
-    priceText: "₺5,000.00",
     poster: "/egitimler/2.seviye.jpg",
     intro: [
       "Temel Enneagram Eğitimini tamamlayıp öğrenilen Enneagram kavramları ve mizaçlar hakkında daha detaylı bilgiler edinmek, derinleşmek ve ilerlemek isteyenler için düzenlenen bir eğitimdir.",
@@ -205,7 +201,6 @@ export const educations: EducationItem[] = [
     id: "modul-5-iliskiler",
     slug: "enneagram-iliskiler-egitimi",
     title: "Modül 5 – Enneagram İlişkiler Eğitimi",
-    priceText: "₺550.00 – ₺6,000.00",
     poster: "/egitimler/enneagramiliskileregitimi.jpg",
     intro: [
       "İlişkilerde ortaya çıkan duygu, düşünce ve davranışlarımız doğuştan sahip olduğumuz mizaç yapımızdan kök alır. Bir diğeriyle ilişkideki uyumumuz, mizaçlarımıza bağlı olan imkân ve riskleri beraberinde taşır. Bu imkânları değerlendirmek ve risklerinden kaçınmak için sahip olduğumuz mizaç yapımızı bilmeye ve tanımaya ihtiyacımız vardır. Bu sayede bilinçli ve sağlıklı ilişkiler kurabilir ve geliştirebiliriz.",
@@ -278,7 +273,6 @@ export const educations: EducationItem[] = [
     id: "cocuk-merkezli-enneagram",
     slug: "cocuk-merkezli-enneagram-egitimi",
     title: "Çocuk Merkezli Enneagram Eğitimi",
-    priceText: "₺3,250.00",
     poster: "/egitimler/cocukmerkezliegitim.jpg",
     intro: [
       "Bu eğitim, 9 mizacın “Çocuk Merkezli” olarak ele alındığı ‘Enneagram Gelişim Modülü’ eğitimlerindendir.",
@@ -336,7 +330,6 @@ export const educations: EducationItem[] = [
     id: "profesyonel-kocluk-egitimi",
     slug: "profesyonel-kocluk-egitimi-60-saat",
     title: "PROFESYONEL KOÇLUK EĞİTİMİ (60 Saat)",
-    priceText: "₺15,000.00",
     poster: "/egitimler/profesyonelkoc.jpg",
 
     intro: [

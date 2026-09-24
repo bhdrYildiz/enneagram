@@ -7,6 +7,8 @@ import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi'
 
 export default function Hero() {
 
+    const text = "Daha İyi Tanıyın";
+
     const mouseX = useMotionValue(0)
     const mouseY = useMotionValue(0)
 
@@ -76,13 +78,46 @@ export default function Hero() {
 
                             <br />
 
-                            <span className="relative inline-block text-secondary">
-
-                                Daha İyi Tanıyın
-
-                                <motion.span initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 1, delay: .7 }} className="absolute -bottom-2 left-0 h-px w-full origin-left bg-gradient-to-r from-secondary via-secondary/50 to-transparent" />
-
-                            </span>
+                            <motion.span
+                                aria-label="Daha İyi Tanıyın"
+                                initial="hidden"
+                                animate="visible"
+                                className="relative inline-block pb-2 font-[family-name:var(--font-caveat)] text-[#0794c7]"
+                                style={{
+                                    fontSize: "1.15em",
+                                    fontWeight: 600,
+                                    lineHeight: 1.1,
+                                }}
+                            >
+                                {Array.from(text).map((letter, index) => (
+                                    <motion.span
+                                        key={index}
+                                        aria-hidden="true"
+                                        className="inline-block whitespace-pre"
+                                        variants={{
+                                            hidden: {
+                                                opacity: 0,
+                                                y: 18,
+                                                rotate: -6,
+                                                filter: "blur(4px)",
+                                            },
+                                            visible: {
+                                                opacity: 1,
+                                                y: 0,
+                                                rotate: 0,
+                                                filter: "blur(0px)",
+                                            },
+                                        }}
+                                        transition={{
+                                            duration: 0.45,
+                                            delay: 0.4 + index * 0.065,
+                                            ease: [0.22, 1, 0.36, 1],
+                                        }}
+                                    >
+                                        {letter}
+                                    </motion.span>
+                                ))}
+                            </motion.span>
 
                         </h1>
 
@@ -127,49 +162,60 @@ export default function Hero() {
                         </div>
 
                     </motion.div>
+                    {/* RIGHT - OPTIMIZED TWO IMAGE LAYOUT */}
+                    <div className="relative hidden h-[620px] lg:block">
 
+                        {/* ARKA PLAN DEKORASYONU */}
+                        <div
+                            aria-hidden="true"
+                            className="pointer-events-none absolute right-0 top-12 h-[420px] w-[520px] rounded-full border border-white/[0.06]"
+                        />
 
-                    {/* RIGHT */}
-                    <motion.div style={{ x: imageX, y: imageY }} className="relative hidden h-[650px] lg:block">
-
+                        <div
+                            aria-hidden="true"
+                            className="pointer-events-none absolute right-12 top-12 h-[420px] w-[420px] rounded-full border border-secondary/10"
+                        />
 
                         {/* ANA GÖRSEL */}
-                        <motion.div animate={{ y: [0, -14, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="absolute right-3 top-2 h-[520px] w-[480px] overflow-hidden rounded-[34px] border border-white/10 shadow-[0_35px_90px_rgba(0,0,0,.4)]">
+                        <div className="group absolute right-0 top-0 h-[520px] w-[440px] overflow-hidden rounded-[32px] border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.3)]">
 
-                            <Image src="/hizmetler/enherethero.jpg" alt="Enneagram eğitimleri" fill priority className="object-cover transition-transform duration-1000 hover:scale-105" />
+                            <Image
+                                src="/hizmetler/herogorsel.jpg"
+                                alt="Enneagram eğitim ve danışmanlık"
+                                fill
+                                priority
+                                fetchPriority="high"
+                                sizes="440px"
+                                quality={80}
+                                className="object-cover transition-transform duration-500 group-hover:scale-[1.025]"
+                            />
 
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#101827]/35 via-transparent to-transparent" />
+                            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#101827]/30 via-transparent to-transparent" />
 
-                        </motion.div>
+                        </div>
 
+                        {/* İKİNCİ GÖRSEL */}
+                        <div className="group absolute bottom-5 left-0 h-[290px] w-[240px] overflow-hidden rounded-[26px] border-[6px] border-[#101827] shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
 
-                        {/* SOL GÖRSEL */}
-                        <motion.div animate={{ y: [0, 12, 0], rotate: [1, -1, 1] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-8 left-0 h-[310px] w-[260px] overflow-hidden rounded-[28px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
-                            <Image src="/hizmetler/heroyeni.jpg" alt="Enneagram" fill className="object-cover" />
-                        </motion.div>
+                            <Image
+                                src="/hizmetler/heroyeni.jpg"
+                                alt="Enneagram etkinlikleri"
+                                fill
+                                loading="lazy"
+                                sizes="240px"
+                                quality={75}
+                                className="object-cover transition-transform duration-500 group-hover:scale-[1.025]"
+                            />
 
+                        </div>
 
-                        {/* ALT SAĞ GÖRSEL */}
-                        <motion.div animate={{ y: [0, -10, 0], rotate: [1, 1, 1] }} transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }} className="absolute bottom-12 -right-12 h-[210px] w-[280px] overflow-hidden rounded-[26px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,.35)]">
+                        {/* KÜÇÜK DEKORATİF NOKTA */}
+                        <div
+                            aria-hidden="true"
+                            className="absolute right-4 top-[-18px] h-2.5 w-2.5 rounded-full bg-secondary"
+                        />
 
-                            <Image src="/enneagram-slayder1.jpg" alt="Enneagram etkinlikleri" fill className="object-cover" />
-
-                        </motion.div>
-
-
-                        {/* ORBIT */}
-                        <motion.div animate={{ rotate: 360 }} transition={{ duration: 18, repeat: Infinity, ease: 'linear' }} className="absolute left-[205px] top-[220px] h-[150px] w-[150px] rounded-full border border-secondary/25">
-
-                            <span className="absolute -top-1 left-1/2 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-secondary shadow-[0_0_18px_rgba(255,255,255,.3)]" />
-
-                        </motion.div>
-
-                        {/* KÜÇÜK PARLAK NOKTALAR */}
-                        <motion.span animate={{ opacity: [.2, 1, .2], scale: [.7, 1.2, .7] }} transition={{ duration: 3, repeat: Infinity }} className="absolute left-24 top-16 h-2 w-2 rounded-full bg-secondary" />
-
-                        <motion.span animate={{ opacity: [.3, 1, .3], scale: [.8, 1.4, .8] }} transition={{ duration: 4, repeat: Infinity, delay: 1 }} className="absolute bottom-36 right-8 h-1.5 w-1.5 rounded-full bg-white" />
-
-                    </motion.div>
+                    </div>
 
                 </div>
 

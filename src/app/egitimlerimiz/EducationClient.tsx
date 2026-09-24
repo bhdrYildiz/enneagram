@@ -9,7 +9,6 @@ function Card({ it, index }: { it: EducationItem; index: number }) {
     return (
         <article className="group overflow-hidden rounded-2xl border border-black/10 bg-white transition-all duration-500 hover:-translate-y-1 hover:border-black/20 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
             <Link href={`/egitimlerimiz/${it.slug}`} className="block">
-
                 <div className="relative aspect-[1/1] overflow-hidden bg-gray-100">
                     <Image src={it.poster} alt={it.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
@@ -18,27 +17,12 @@ function Card({ it, index }: { it: EducationItem; index: number }) {
                     <h3 className="mt-5 text-xl md:text-2xl leading-snug text-primary tracking-wide transition-colors duration-300 group-hover:text-secondary">
                         {it.title}
                     </h3>
-
                     <div className="mt-6 flex items-end justify-between gap-4 border-t border-black/10 pt-5">
-
-                        <div>
-                            <span className="block text-[10px] uppercase tracking-[0.2em] text-primary/40">
-                                Ücret
-                            </span>
-
-                            <span className="mt-1 block text-base text-primary">
-                                {it.priceText}
-                            </span>
-                        </div>
-
                         <span className="text-xs uppercase tracking-[0.15em] text-primary transition-all duration-300 group-hover:text-secondary">
                             İncele →
                         </span>
-
                     </div>
-
                 </div>
-
             </Link>
         </article>
     );

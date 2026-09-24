@@ -64,3 +64,143 @@ body {
     transform: translateX(320%);
   }
 }
+
+/* 404 SAYFASI */
+
+@keyframes revealUp {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+    filter: blur(6px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+.notfound-reveal {
+  opacity: 0;
+  animation: revealUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.notfound-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.notfound-delay-2 {
+  animation-delay: 0.45s;
+}
+
+.notfound-delay-3 {
+  animation-delay: 0.7s;
+}
+
+.notfound-glow {
+  animation: breathe 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notfound-reveal {
+    opacity: 1;
+  }
+
+  .notfound-reveal,
+  .notfound-glow {
+    animation: none;
+  }
+}
+
+/* 404 - DIŞ ÇEMBER */
+
+@keyframes nfOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nf-orbit {
+  animation: nfOrbit 8s linear infinite !important;
+  transform-origin: center center;
+}
+
+/* 404 - İÇ ÇEMBER */
+
+@keyframes nfOrbitReverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.nf-orbit-reverse {
+  animation: nfOrbitReverse 12s linear infinite !important;
+  transform-origin: center center;
+}
+
+/* 404 - BİRİNCİ NOKTA */
+
+@keyframes nfFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate3d(-20px, -25px, 0);
+    opacity: 1;
+  }
+}
+
+.nf-float {
+  animation: nfFloat 3s ease-in-out infinite !important;
+}
+
+/* 404 - İKİNCİ NOKTA */
+
+@keyframes nfFloatReverse {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate3d(22px, 18px, 0);
+    opacity: 1;
+  }
+}
+
+.nf-float-reverse {
+  animation: nfFloatReverse 4s ease-in-out infinite !important;
+}
+
+/* ERİŞİLEBİLİRLİK */
+
+@media (prefers-reduced-motion: reduce) {
+  .nf-orbit,
+  .nf-orbit-reverse,
+  .nf-float,
+  .nf-float-reverse {
+    animation: none !important;
+  }
+}

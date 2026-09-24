@@ -7,6 +7,14 @@ import CookieConsent from "@/components/CookieConsent/CookieConsent";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
 import FloatingButtons from "@/components/ui/FloatingButtons";
+import { Caveat } from "next/font/google";
+
+const caveat = Caveat({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-caveat",
+});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -77,7 +85,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className={inter.variable}>
-      <body className="min-h-screen flex flex-col">
+      <body className={`min-h-screen flex flex-col ${caveat.variable}`}>
         <ResponsiveNav />
 
         <PageLoader />
