@@ -191,246 +191,182 @@ Sınav öncesindeki hazırlıklarını tam yapman gerekir. Sınav gereçlerini, 
 `,
   },
   {
-    slug: "kendini-tanimak-yetmez-enneagramda-kendini-yakalamak",
-    title: "Kendini Tanımak Yetmez: Enneagram’da Kendini Yakalamak",
+    slug: "insan-kendine-en-cok-hangi-konuda-yalan-soyler",
+    title: "İnsan Kendine En Çok Hangi Konuda Yalan Söyler?",
     excerpt:
-      "Kendimizi tanıdığımızı düşünürüz. Peki bir eleştiri aldığımızda, anlaşılmadığımızda, kontrolü kaybettiğimizde ya da değer görmediğimizi hissettiğimizde ortaya çıkan o otomatik halimizi ne kadar tanıyoruz?",
-    coverImage: "/kendinibilyeni.jpg",
-    publishedAt: "2026-08-26",
-    author: "Enneagram Eğitim & Danışmanlık",
-    categories: ["Enneagram ve Mizaç"],
+      "İnsanın kendine söylediği en büyük yalanlardan biri, hiçbir şeye ihtiyaç duymadığına inanmaktır. Kendini tanımak, verdiğimiz cevaplardan çok sormaya cesaret ettiğimiz sorularla başlar.",
+    coverImage: "/blog1.png",
+    publishedAt: "2026-10-07",
+    author: "Kübra Merve Marhan",
+    categories: ["İnsanın Saklı Cümlesi"],
     tags: [
       "Enneagram",
-      "Mizaç",
-      "Kendini tanımak",
+      "Kendini Tanımak",
       "Farkındalık",
-      "Kişilik",
-      "Kişisel gelişim",
+      "İhtiyaçlar",
+      "Motivasyon",
+      "Kişisel Gelişim",
     ],
-    content: `## Kendimizi gerçekten ne kadar tanıyoruz?
-  
-  “Kendimi tanıyorum.”
-  
-  Bu cümleyi söylemek çoğumuz için kolaydır. Neleri sevdiğimizi, hangi ortamlarda rahat ettiğimizi, nelere kızdığımızı, güçlü ve zayıf yönlerimizi az çok biliriz.
-  
-  Fakat insanın kendisini tanıması yalnızca özelliklerini bilmesi değildir.
-  
-  Asıl soru şudur:
-  
-  **Kendimizi, kendimiz gibi davranmadığımız anlarda da tanıyor muyuz?**
-  
-  Birisi bizi eleştirdiğinde...
-  
-  Beklediğimiz ilgiyi göremediğimizde...
-  
-  Başarısız olduğumuzda...
-  
-  Kontrolümüz dışında bir şey geliştiğinde...
-  
-  Belirsizliğin içinde kaldığımızda...
-  
-  Ya da çok istediğimiz bir şey gerçekleşmediğinde...
-  
-  İşte bu anlarda kişiliğimizin daha otomatik tarafları ortaya çıkmaya başlar.
-  
-  Enneagram’ın en güçlü taraflarından biri de tam burada karşımıza çıkar. Bize yalnızca nasıl biri olduğumuzu anlatmakla kalmaz; **neden bazı durumlarda tekrar tekrar aynı şekilde düşündüğümüzü, hissettiğimizi ve davrandığımızı fark etmemize yardımcı olur.**
-  
-  ## Mizaç yalnızca davranışlarımız değildir
-  
-  İki insan dışarıdan aynı davranışı gösterebilir fakat o davranışın arkasındaki neden tamamen farklı olabilir.
-  
-  İki kişi de çok çalışabilir.
-  
-  Biri yaptığı işi doğru ve eksiksiz yapmak istediği için çalışırken, diğeri başarılı olmak ve ortaya güçlü bir sonuç çıkarmak için çalışabilir.
-  
-  İki kişi de insanlara yardım edebilir.
-  
-  Biri yakınlık ve bağ kurmayı önemserken, diğeri sorumluluk duygusuyla hareket ediyor olabilir.
-  
-  İki kişi de sessiz kalabilir.
-  
-  Biri zihninde olanları anlamlandırmak için geri çekilirken, diğeri ortamda çatışma oluşmasını istemediği için sessizliği tercih edebilir.
-  
-  Bu nedenle Enneagram açısından yalnızca **“Ne yapıyorum?”** sorusu yeterli değildir.
-  
-  Daha derindeki soru şudur:
-  
-  **“Bunu neden yapıyorum?”**
-  
-  Mizaç tam da bu noktada anlam kazanmaya başlar.
-  
-  ## Enneagram bize bir etiket değil, bir ayna sunar
-  
-  Enneagram’ı yalnızca dokuz kişilik tipinden oluşan bir sınıflandırma sistemi olarak ele aldığımızda onun en değerli tarafını kaçırabiliriz.
-  
-  “Ben Mizaç 1’im.”
-  
-  “Ben Mizaç 5’im.”
-  
-  “Ben kesinlikle Mizaç 8’im.”
-  
-  Bunları öğrenmek başlangıç için kıymetlidir. Fakat asıl yolculuk mizaç tipimizi öğrendikten sonra başlar.
-  
-  Çünkü Enneagram’ın amacı insanı bir tanımın içine hapsetmek değil; insanın kendisini hangi kalıpların içinde yaşadığını fark etmesine yardımcı olmaktır.
-  
-  Kendimizi tanımaya başladığımızda bazı davranışlarımızın sandığımız kadar bilinçli tercihler olmadığını görebiliriz.
-  
-  Bazen otomatik olarak düzeltiriz.
-  
-  Bazen kendimizi gerekli hissetmek isteriz.
-  
-  Bazen başarıya koşarız.
-  
-  Bazen duygularımızın içinde derinleşiriz.
-  
-  Bazen geri çekilip gözlemlemeyi seçeriz.
-  
-  Bazen bütün ihtimalleri düşünürüz.
-  
-  Bazen yeni seçeneklere yöneliriz.
-  
-  Bazen kontrolü ele alırız.
-  
-  Bazen de huzur bozulmasın diye kendi isteğimizi erteleriz.
-  
-  Bunların hiçbiri tek başına “iyi” ya da “kötü” değildir.
-  
-  Önemli olan, **bunu seçiyor muyuz, yoksa otomatik olarak mı yapıyoruz?**
-  
-  ## Kendini yakalamak ne demektir?
-  
-  Kendini yakalamak, davranış ortaya çıktıktan sonra kendimizi suçlamak değildir.
-  
-  Tam tersine, davranış ortaya çıkmadan hemen önce içeride ne olduğunu görebilmektir.
-  
-  Örneğin bir eleştiri aldığımızı düşünelim.
-  
-  Bir anda kendimizi savunmaya başladık.
-  
-  Burada durabiliriz:
-  
-  **“Şu anda neden kendimi savunma ihtiyacı hissediyorum?”**
-  
-  Bir arkadaşımız mesajımıza cevap vermedi ve hemen kırıldık.
-  
-  Yine durabiliriz:
-  
-  **“Şu anda beni asıl rahatsız eden şey ne?”**
-  
-  Önemli bir karar vereceğiz fakat sürekli yeni ihtimaller düşünüyoruz.
-  
-  Kendimize sorabiliriz:
-  
-  **“Gerçekten daha fazla bilgiye mi ihtiyacım var, yoksa yanlış karar vermekten mi çekiniyorum?”**
-  
-  İşte Enneagram farkındalığı bu küçük duraklarda gelişir.
-  
-  Çünkü insan değişmeye çoğu zaman davranışını zorla değiştirdiğinde değil, **davranışının arkasındaki içsel hareketi fark ettiğinde** başlar.
-  
-  ## Her mizacın kendini yakalayacağı an farklıdır
-  
-  Dokuz mizaç aynı dünyada yaşar fakat aynı dünyayı aynı şekilde deneyimlemez.
-  
-  Mizaç 1 için kendini yakalamak, içinden yükselen “Böyle olmamalıydı” cümlesini fark etmek olabilir.
-  
-  Mizaç 2 için, başkasının ihtiyacına koşarken kendi ihtiyacını yeniden geri plana attığını görmek olabilir.
-  
-  Mizaç 3 için, durmanın kendisini neden huzursuz ettiğini fark etmek olabilir.
-  
-  Mizaç 4 için, yoğun bir duygunun içindeyken o duygunun bütün gerçekliği temsil etmediğini görebilmek olabilir.
-  
-  Mizaç 5 için, yeterince hazır olmayı beklerken hayatın dışında kaldığını fark etmek olabilir.
-  
-  Mizaç 6 için, zihninde art arda oluşan ihtimallerin hangisinin gerçek, hangisinin kaygının ürettiği bir senaryo olduğunu ayırt etmek olabilir.
-  
-  Mizaç 7 için, yeni bir seçeneğe yönelme isteğinin gerçekten meraktan mı yoksa mevcut sıkıntıdan uzaklaşma arzusundan mı geldiğini görmek olabilir.
-  
-  Mizaç 8 için, güçlü tepkinin altında incinmiş veya korunmaya ihtiyaç duyan bir tarafının bulunabileceğini fark etmek olabilir.
-  
-  Mizaç 9 için ise huzuru korumaya çalışırken kendi isteğini bir kez daha görünmez hale getirdiğini yakalamak olabilir.
-  
-  İşte bu nedenle aynı gelişim reçetesi herkese uymaz.
-  
-  **İnsanın gelişim yolu, kendi mizacının otomatikleştiği noktaları fark etmesiyle kişiselleşir.**
-  
-  ## Farkındalık, kendimize karşı savaş açmak değildir
-  
-  Kendimizi tanımaya başladığımızda sık yapılan hatalardan biri de kendi mizacımızla mücadele etmeye başlamaktır.
-  
-  “Bunu artık yapmamalıyım.”
-  
-  “Yine aynı şeyi yaptım.”
-  
-  “Demek ki hâlâ değişemedim.”
-  
-  Oysa farkındalık kendimizi reddetmek değildir.
-  
-  Mizacımızın getirdiği özelliklerin önemli bir kısmı aynı zamanda güçlü yönlerimizin de kaynağıdır.
-  
-  Titizlik geliştiğinde kaliteye,
-  
-  duyarlılık şefkate,
-  
-  başarı arzusu üretkenliğe,
-  
-  duygusal derinlik özgünlüğe,
-  
-  gözlem gücü uzmanlığa,
-  
-  tedbir öngörüye,
-  
-  merak yaratıcılığa,
-  
-  güç koruyuculuğa,
-  
-  uyum ise kapsayıcılığa dönüşebilir.
-  
-  Mesele mizacımızdan kurtulmak değildir.
-  
-  Mesele, **mizacımızın bizi yönetmesi yerine onu daha bilinçli yaşayabilmektir.**
-  
-  ## Bugün kendinizi bir kez yakalayın
-  
-  Belki bugün kendinizle ilgili büyük bir karar vermenize gerek yok.
-  
-  Kendinizi değiştirmeye çalışmanız da gerekmiyor.
-  
-  Sadece gün içinde otomatikleştiğinizi hissettiğiniz bir anı fark edin.
-  
-  Durun.
-  
-  Ve kendinize sorun:
-  
-  **“Şu anda içimde ne oluyor?”**
-  
-  Ardından ikinci soruyu sorun:
-  
-  **“Ben şu anda gerçekten neye ihtiyaç duyuyorum?”**
-  
-  Belki vereceğiniz cevap hemen her şeyi değiştirmeyecek.
-  
-  Ama daha önce otomatik olarak verdiğiniz bir tepkiyi ilk kez fark ederek verdiğiniz anda çok önemli bir şey değişmeye başlamıştır:
-  
-  **Artık yalnızca davranmıyor, kendinizi gözlemliyorsunuz.**
-  
-  Enneagram yolculuğu da biraz böyledir.
-  
-  Önce mizacımızı öğreniriz.
-  
-  Sonra davranışlarımızı tanırız.
-  
-  Daha sonra davranışlarımızın arkasındaki temel arayışları görmeye başlarız.
-  
-  Ve zamanla şu soruya yaklaşırız:
-  
-  **“Ben gerçekten neyi seçiyorum, neyi sadece alıştığım için tekrar ediyorum?”**
-  
-  Belki de kendini tanımanın en kıymetli tarafı budur.
-  
-  Kendimiz hakkında daha fazla bilgi sahibi olmak değil;
-  
-  **kendimizi tam yaşadığımız anda fark edebilmek.**
-    `,
+    content: `## İnsan Kendine En Çok Hangi Konuda Yalan Söyler?
+
+İnsanın kendine söylediği en büyük yalanlardan biri, hiçbir şeye ihtiyaç duymadığına inanmaktır.
+
+Hayatının her alanında bir şeyleri yoluna koymaya çalışan birini düşün. Sorumluluklarını aksatmayan, çevresindekilere destek olan, sorunlar karşısında çözüm üreten ve herkesin sığındığı bir limana dönüşen birini...
+
+Dışarıdan bakıldığında her şey kontrolü altındadır. Kusursuz olmaya çalışır, çevresindekileri memnun eder ya da kimseye ihtiyaç duymadan kendi yolunda ilerler. Her birinin kendine özgü bir nedeni vardır. Kabul görmek, güvende hissetmek, değerli olduğunu kanıtlamak veya özgürlüğünü korumak...
+
+Ona nasıl olduğunu sorduğunda, çoğunlukla aynı yanıtı alırsın:
+
+> "İyiyim, her şey yolunda."
+
+Peki, gerçekten öyle midir?
+
+Ya güçlü duruşunun ardında dile getiremediği bir yorgunluk, herkesi anlama çabasının içinde unutulmuş kendi ihtiyaçları, bağımsızlığının ardında sakladığı bir yakınlık arzusu varsa?
+
+İnsan, sevilmek için kendinden verebilir, incinmemek için mesafeler koyabilir, yetersiz görünmemek adına kendisine durmayı yasaklayabilir. Zamanla bu tutumlar öylesine tanıdık hâle gelir ki kişi, neyi neden yaptığını sorgulamadan yaşamını sürdürür.
+
+Asıl yabancılaşma, insanın kendi ihtiyaçlarını karşılayamamasından önce, onlara ihtiyaç duyduğunu unutmasıyla başlar.
+
+Çünkü insan, kendisini korumak için geliştirdiği davranışların ardında, bir zamanlar yalnızca anlaşılmak, kabul görmek, güvende hissetmek ya da olduğu hâliyle değerli bulunmak isteyen yanını gözden kaçırabilir.
+
+Ve belki de kendimize söylediğimiz en büyük yalan, gerçekte kim olduğumuzu bilmediğimiz değil, kendimiz hakkında çoktan karar vermiş olduğumuzdur.
+
+Enneagramın bize sunduğu önemli düşünme alanlarından biri tam da burada başlar: Aynı davranış, birbirinden farklı motivasyonlardan beslenebilir.
+
+Sorumluluk üstlenen bir insan, doğru olanı yapma arzusuyla hareket ederken bir başkası sevilmeye, bir diğeri ise kontrolü kaybetmemeye duyduğu ihtiyaçla güçlü durmayı seçebilir. Dışarıdan benzer görünen tutumların ardında, birbirinden farklı beklentiler, korkular ve anlamlar bulunabilir.
+
+**Davranış aynı olabilir. Ancak onu besleyen ihtiyaç farklıdır.**
+
+Dokuz mizaç üzerinden insanın iç dünyasına bakmayı sağlayan Enneagram, yalnızca ne yaptığımızı değil, davranışlarımızın ardındaki motivasyonları da keşfetmemize imkân tanıyan bir farkındalık çerçevesi sunar. Böylece kendimizi ve çevremizdekileri tek bir davranış üzerinden değerlendirmek yerine, daha derin bir anlayış geliştirebiliriz.
+
+Kendini tanımak, "Ben nasıl bir insanım?" sorusundan önce **"Bunu neden yapıyorum?"** sorusunu sormakla başlamalıdır.
+
+Çünkü insanın kendisiyle kurduğu ilişki, verdiği cevaplardan çok, sormaya cesaret ettiği sorularla derinleşir.
+
+---
+
+## BU HAFTA KENDİNİZE BU SORUYU SORUN:
+
+**Kimsenin senden güçlü olmanı beklemediği bir günün olsaydı, nasıl yaşamak isterdin?**
+
+Bu sorunun cevabını hemen bulmak zorunda değilsiniz. Kendinize düşünmek için biraz zaman tanıyın.
+
+*Kendine rastlamak, bazen yıllardır verdiğin bir cevabı ilk kez sorgulamakla başlar.*
+
+Haftaya yeni bir konuda buluşmak dileğiyle...
+
+**Kübra Merve Marhan**
+`,
+  },
+  {
+    slug: "dogru-olmaya-calisirken-kendime-haksizlik-ediyorum",
+    title: "Doğru Olmaya Çalışırken Kendime Haksızlık Ediyorum",
+    excerpt:
+      "İnsan bazen kendisine koyduğu kuralların arasında, kendisine göstermesi gereken anlayışı unutur. Peki doğru olmaya çalışırken kendimize ne kadar adil davranıyoruz?",
+    coverImage: "/kendinibilyeni.jpg",
+    publishedAt: "2026-10-06",
+    author: "Büşra Atabey",
+    categories: ["İnsanın Saklı Cümlesi"],
+    tags: [
+      "İnsanın Saklı Cümlesi",
+      "Enneagram",
+      "Kendini Tanımak",
+      "Farkındalık",
+      "Mükemmeliyetçilik",
+      "Kişisel Gelişim",
+    ],
+    content: `# İNSANIN SAKLI CÜMLESİ
+
+*Her insanın içinde duyulmayı bekleyen bir cümle vardır.*
+
+## Doğru Olmaya Çalışırken Kendime Haksızlık Ediyorum
+
+*İnsan bazen kendisine koyduğu kuralların arasında, kendisine göstermesi gereken anlayışı unutur.*
+
+Hayatımız boyunca doğru kararlar vermeye, sorumluluklarımızı yerine getirmeye ve hata yapmamaya çalışırız. İyi bir insan, iyi bir ebeveyn, başarılı bir çalışan ya da güvenilir bir dost olmak isteriz. Peki, bütün bunları yapmaya çalışırken kendimize nasıl yaklaşırız?
+
+Başkalarının hatalarını anlayışla karşılayabilen bir insan, söz konusu kendi hatası olduğunda neden aynı anlayışı gösteremez?
+
+Belki de üzerinde düşünmemiz gereken asıl konu budur.
+
+## İçimizdeki görünmeyen cetvel
+
+Bazı insanlar için doğru olanı yapmak yalnızca bir tercih değildir. Aynı zamanda içsel bir sorumluluktur.
+
+Yaptıkları işin eksiksiz olmasını, verdikleri sözleri tutmayı ve hayatlarını belirli ilkeler doğrultusunda yaşamayı önemserler. Bu özellikler onların güçlü yanlarıdır. Ancak bazen bu güçlü yanlar, fark edilmeden insanın kendisine yönelttiği ağır beklentilere dönüşebilir.
+
+Bir işi başarıyla tamamlarız ama aklımız hâlâ daha iyi yapabileceğimiz ayrıntılardadır.
+
+Bir gün boyunca onlarca sorumluluğumuzu yerine getiririz ama yapamadığımız tek bir iş zihnimizde egemenlik kurar.
+
+Bir başkasının hatasına iyi hal indirimi uygularken kendi hatamıza yargısız infaz yaparız.
+
+İşte tam da burada kendimize sormamız gereken bir soru vardır:
+
+**Doğru olanı yapmaya mı çalışıyorum, yoksa kendime hata yapma hakkı mı tanımıyorum?**
+
+Bu iki tutum birbirine benzese de insanın iç dünyasında oldukça farklı sonuçlar doğurabilir.
+
+## İçimizde hiç susmayan ses
+
+Hepimizin zaman zaman kendisiyle konuştuğu bir iç sesi vardır.
+
+Bu ses bazen bize yol gösterir, hatalarımızı fark etmemizi sağlar ve daha iyisini yapmamız için bizi ayağa kaldırır. Ancak bazen de hiçbir başarımızı yeterli bulmayan, sürekli eksiklerimizi hatırlatan bir sese dönüşebilir.
+
+> "Daha çok dikkat etmeliydin."
+
+> "Bunu daha iyi yapabilirdin."
+
+> "Nasıl böyle bir hata yaparsın?"
+
+Bu cümleler ilk bakışta sorumluluk bilincinin bir yansıması gibi görünebilir. Oysa sürekli tekrarlandıklarında insanın kendi çabasını görmesinin önünde bir set oluşturabilir.
+
+Burada önemli olan, içimizdeki sesi susturup bastırmak değildir. Onun bizimle nasıl konuştuğunu ve nasıl sustuğunu fark etmektir.
+
+Çünkü insanın kendisine yönelttiği her eleştiri, onu geliştirmek zorunda değildir.
+
+Bazen gelişim, kendimize daha fazla yükler eklemekten değil, kendimizle kurduğumuz ilişkiyi değiştirmekten geçer.
+
+## Peki, bu kadar doğru olma ihtiyacı nereden geliyor?
+
+Hiç düşündünüz mü?
+
+Bir insan neden hata yapmaktan bu kadar rahatsız olur? Neden her şeyin mükemmel olmasını ister? Neden başkalarının kolaylıkla geride bırakabildiği küçük bir yanlış, onun zihninde kira vermeden uzun süre yaşamaya devam eder?
+
+Bazen bunun ardında sorumluluk duygusu, bazen yüksek kişisel standartlar, bazen de yanlış yapmanın doğuracağı sonuçlara karşı kaygılar bulunabilir.
+
+İnsanın davranışını anlamak için yalnızca ne yaptığına değil, onu hangi motivasyonla yaptığına da bakmak gerekir. Çünkü düşünce eylemden önce gelir.
+
+Aynı işi titizlikle yapan iki insan düşünelim.
+
+Biri yaptığı işin kalitesinden keyif aldığı için ayrıntılara önem verirken diğeri hata yaptığında kendisini yetersiz hissedeceğinden endişe duyabilir.
+
+Dışarıdan bakıldığında davranışları aynıdır. Ancak iç dünyalarında yaşadıkları motivasyonlar birbirinden farklıdır.
+
+İşte insanı tanımak, en çok da kendini tanımak, görünen davranışın ardındaki bu görünmeyen nedenleri keşfetmekle başlar.
+
+## Belki de kendimize söylememiz gereken cümle...
+
+Hayatın her alanında daha iyisini yapmaya çalışabiliriz. Kendimizi geliştirebilir, ilkelerimizi koruyabilir ve sorumluluklarımızı yerine getirebiliriz.
+
+Ancak bütün bunları yaparken kendi benliğimize karşı da sorumluluklarımız olduğunu unutmamalıyız.
+
+Belki de gerçek gelişim, kusursuz bir insan olmaya çalışmaktan çok, eksiklerimizle birlikte gelişebilen bir insan olmayı öğrenmektir.
+
+Ve belki de bugün kendimize söylememiz gereken saklı cümle şudur:
+
+> **"Doğru olanı yapmaya çalışırken kendime de adil davranmayı seçiyorum."**
+
+---
+
+## BU HAFTANIN SAKLI SORUSU
+
+**Bir başkasına gösterdiğim anlayışı bugün kendime gösterseydim hayatımda ne değişirdi?**
+
+Bu hafta kendinizi eleştirdiğiniz bir durumu fark edin. Aynı durumda sevdiğiniz birine ne söyleyeceğinizi düşünün. Ardından o cümleyi kendinize söylemeyi deneyin.
+
+**Büşra Atabey**
+`,
   },
 ];
 
