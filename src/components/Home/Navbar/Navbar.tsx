@@ -22,7 +22,7 @@ export default function Navbar({
     return (
 
         <header
-            className={`fixed left-0 right-0 z-[1000] transition-all duration-500 ${showTopBar ? "top-10" : "top-0"
+            className={`fixed left-0 right-0 z-[1000] transition-all duration-500 ${showTopBar ? "top-0 md:top-10" : "top-0"
                 }`}
         >
             <div

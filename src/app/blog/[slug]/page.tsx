@@ -6,8 +6,9 @@ import remarkGfm from "remark-gfm";
 import type { Metadata } from "next";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/app/blog/data/BlogPost";
 import BlogSidebar from "@/app/blog/BlogSidebar";
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import PageHero from "@/components/ui/PageHero";
+import ShareButtons from "@/app/blog/[slug]/ShareButtons";
 
 const BASE_URL = "https://www.enneagramegitim.com";
 
@@ -267,42 +268,11 @@ export default async function BlogPostPage(
 
                                     </div>
 
+                                    <ShareButtons
+                                        shareUrl={shareUrl}
+                                        title={post.title}
+                                    />
 
-                                    {/* PAYLAŞ */}
-                                    <div className="mx-auto mt-16 max-w-[760px] border-t border-black/10 pt-8">
-
-                                        <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-
-                                            <span className="text-[11px] uppercase tracking-[0.22em] text-primary/45">
-                                                Bu Yazıyı Paylaş
-                                            </span>
-
-                                            <div className="flex items-center gap-2">
-
-                                                {[
-                                                    {
-                                                        href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
-                                                        label: "Facebook",
-                                                        icon: <FaFacebookF />,
-                                                    },
-                                                    {
-                                                        href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`,
-                                                        label: "Twitter",
-                                                        icon: <FaTwitter />,
-                                                    },
-                                                    {
-                                                        href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
-                                                        label: "LinkedIn",
-                                                        icon: <FaLinkedinIn />,
-                                                    },
-                                                ].map((s) => (
-                                                    <a key={s.label} href={s.href} aria-label={s.label} target="_blank" rel="noopener noreferrer" className="grid h-10 w-10 place-items-center rounded-full border border-primary/10 text-sm text-primary/60 transition-all duration-300 hover:-translate-y-0.5 hover:border-secondary hover:bg-secondary hover:text-white">
-                                                        {s.icon}
-                                                    </a>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div className="mx-auto mt-12 max-w-[900px]">
 
                                         <div className="grid grid-cols-1 overflow-hidden rounded-2xl border border-black/[0.08] md:grid-cols-2">

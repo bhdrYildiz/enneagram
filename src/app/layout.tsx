@@ -87,13 +87,10 @@ export default function RootLayout({
     <html lang="tr" className={inter.variable}>
       <body className={`min-h-screen flex flex-col ${caveat.variable}`}>
         <ResponsiveNav />
-
         <PageLoader />
-
-        <main className="flex-1 pt-[calc(10vh+40px)] bg-primary">
+        <main className="flex-1 pt-[88px] md:pt-[128px] bg-primary">
           {children}
         </main>
-
         <Footer />
         <FloatingButtons />
         <CookieConsent />
