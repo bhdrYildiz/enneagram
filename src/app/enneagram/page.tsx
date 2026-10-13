@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     },
 
     alternates: {
-        canonical: "https://www.enneagramegitim.com/enneagram",
+        canonical: "https://www.enneagramegitim.com/enneagram/",
     },
 
     openGraph: {

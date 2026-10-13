@@ -15,7 +15,6 @@ export const metadata: Metadata = {
         "ekip gelişimi",
         "enneagram koçluk",
     ],
-
     robots: {
         index: true,
         follow: true,
@@ -28,11 +27,9 @@ export const metadata: Metadata = {
             "max-video-preview": -1,
         },
     },
-
     alternates: {
         canonical: "https://www.enneagramegitim.com/hakkimizda",
     },
-
     openGraph: {
         title: "Hakkımızda | Enneagram Eğitim & Danışmanlık",
         description:
@@ -50,7 +47,6 @@ export const metadata: Metadata = {
         locale: "tr_TR",
         type: "website",
     },
-
     twitter: {
         card: "summary_large_image",
         title: "Hakkımızda | Enneagram Eğitim & Danışmanlık",

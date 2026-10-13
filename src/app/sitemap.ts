@@ -46,22 +46,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/enneagram-yeni-bir-ruhsal-yolculuk-icin-gecmisi-uzun-yillara-dayanan-oldukca-kullanisli-eski-bir-aracti",
     "/blog/oyle-bir-harita-dusunun-ki-size-giden-yolu-gostersin-enneagram",
     "/blog/mizac-ve-sinav-motivasyonu",
+    "/blog/insan-kendine-en-cok-hangi-konuda-yalan-soyler",
+    "/blog/dogru-olmaya-calisirken-kendime-haksizlik-ediyorum/",
 
     "/iletisim",
   ];
 
-  return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    changeFrequency: route.startsWith("/blog") ? "weekly" : "monthly",
-    priority:
-      route === ""
-        ? 1
-        : route === "/hizmetlerimiz" ||
-            route === "/egitimlerimiz" ||
-            route === "/enneagram" ||
-            route === "/mizac-tipleri" ||
-            route === "/blog"
-          ? 0.9
-          : 0.8,
-  }));
+  return routes.map((route) => {
+    // Ana sayfa haricindeki URL'lerin sonuna / ekle
+    const normalizedRoute =
+      route === "" ? "/" : `${route.replace(/\/+$/, "")}/`;
+
+    return {
+      url: `${baseUrl}${normalizedRoute}`,
+      changeFrequency: route.startsWith("/blog") ? "weekly" : "monthly",
+      priority:
+        route === ""
+          ? 1
+          : [
+                "/hizmetlerimiz",
+                "/egitimlerimiz",
+                "/enneagram",
+                "/mizac-tipleri",
+                "/blog",
+              ].includes(route)
+            ? 0.9
+            : 0.8,
+    };
+  });
 }

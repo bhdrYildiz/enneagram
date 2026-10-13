@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/ui/PageHero";
 import { educations, WHATSAPP_URL } from "../_data/educations";
+import type { Metadata } from "next";
 
 function Stars({ rating }: { rating: number }) {
     const full = Math.max(0, Math.min(5, rating));
@@ -21,6 +22,53 @@ export function generateStaticParams() {
     return educations.map((e) => ({ slug: e.slug }));
 }
 
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+    const { slug } = await params;
+
+    const education = educations.find((e) => e.slug === slug);
+
+    if (!education) {
+        return {
+            title: "Eğitim Bulunamadı",
+            robots: {
+                index: false,
+                follow: false,
+            },
+        };
+    }
+
+    const title = education.title;
+    const url = `https://www.enneagramegitim.com/egitimlerimiz/${education.slug}/`;
+
+    return {
+        title,
+        description: `${title} hakkında detaylı bilgi alın. Enneagram Eğitim & Danışmanlık eğitim programlarını keşfedin.`,
+
+        alternates: {
+            canonical: url,
+        },
+
+        robots: {
+            index: true,
+            follow: true,
+        },
+
+        openGraph: {
+            title,
+            description: `${title} hakkında detaylı bilgi alın. Enneagram Eğitim & Danışmanlık.`,
+            url,
+            siteName: "Enneagram Eğitim & Danışmanlık",
+            locale: "tr_TR",
+            type: "website",
+        },
+    };
+}
+
+
 export default async function EducationDetailPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const education = educations.find((e) => e.slug === slug);
@@ -37,7 +85,7 @@ export default async function EducationDetailPage({ params }: { params: Promise<
                 <div className="max-w-[1280px] mx-auto px-6 py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12 items-start">
 
-                        <article className="min-w-0">   
+                        <article className="min-w-0">
                             <div className="mt-10">
                                 <span className="text-xs uppercase tracking-[0.3em] text-secondary">
                                     ENNEAGRAM EĞİTİM & DANIŞMANLIK

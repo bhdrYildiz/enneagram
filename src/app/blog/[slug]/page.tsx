@@ -35,7 +35,7 @@ export async function generateMetadata(
     const post = getBlogPostBySlug(slug);
     if (!post) return {};
 
-    const url = `${BASE_URL}/blog/${post.slug}`;
+    const url = `${BASE_URL}/blog/${post.slug}/`;
     const ogImage = post.coverImage.startsWith("http")
         ? post.coverImage
         : `${BASE_URL}${post.coverImage}`;

@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     },
 
     alternates: {
-        canonical: "https://www.enneagramegitim.com/egitimlerimiz",
+        canonical: "https://www.enneagramegitim.com/egitimlerimiz/",
     },
 
     openGraph: {
         title: "Eğitimlerimiz & Atölyeler | Enneagram Eğitim & Danışmanlık",
         description:
             "Enneagram temelli eğitim programları ve atölyeleri inceleyin. İçerik, detay ve başvuru bilgileri burada.",
-        url: "https://www.enneagramegitim.com/egitimlerimiz",
+        url: "https://www.enneagramegitim.com/egitimlerimiz/",
         siteName: "Enneagram Eğitim & Danışmanlık",
         images: [
             {
